@@ -10,14 +10,15 @@ function breakDiamondAtEnterShort() {
             result.push(breakDiamondMoreThan5Short(sent))
         }
     }
-    document.getElementById("txtOutput").value=result.join("\n\n\n");
+    return result;
+    // document.getElementById("txtOutput").value=result.join("\n\n\n");
 }
 
 function breakDiamondAtEnterTall() {
     var txtInput1 = document.getElementById("txtInput").value
     var txtInput = txtInput1.replace(/\n\n?/g, "\n")
     let split1= txtInput.split("\n");
-    var result = [];
+    let result = [];
     for (sent of split1) {
         if (sent.split(" ").length <= 6) {
             result.push(breakDiamondAt5(sent))
@@ -25,7 +26,7 @@ function breakDiamondAtEnterTall() {
             result.push(breakDiamondMoreThan5Tall(sent))
         }
     }
-    document.getElementById("txtOutput").value=result.join("\n\n\n");
+    return result;
 }
 
 function breakDiamondAt5(str) {
@@ -35,7 +36,7 @@ function breakDiamondAt5(str) {
 }
 
 function breakDiamondMoreThan5Short(str) {
-    var rows = Math.ceil(Math.sqrt(str.split(" ").length))
+    var rows = Math.round(Math.sqrt(str.split(" ").length))
     var len = Math.floor(str.length/rows)
     var re = RegExp("(?:\\s|^)(.{1," + len + "})(?=\\s|$)", "g");
     var res = [];
@@ -58,7 +59,8 @@ function breakDiamondMoreThan5Short(str) {
         finalResult.push(res[i]);    
     }
     finalResult.push(res[res.length - 1]);
-    return finalResult.join('\n').replace(/\s\s+/g, " ")
+    finalResult = finalResult.join('\n').replace(/\s\s+/g, " ")
+    return finalResult;
 }
 
 
@@ -161,7 +163,10 @@ async function checkBox() {
     var rd4 = document.getElementById("rd4")
     var rd5 = document.getElementById("rd5")
     if (rd1.checked == true && rd4.checked == true) {
-        breakDiamondAtEnterShort();
+        let  myTable = populateTable(breakDiamondAtEnterShort());
+        document.getElementById("myDiv").innerHTML = myTable;
+        
+        document.getElementById("txtOutput").value=breakDiamondAtEnterShort().join("\n\n\n");
     } else if (rd1.checked == true && rd5.checked == true) {
         breakDiamondAtEnterLong();
     } else if(rd2.checked == true) {
@@ -185,12 +190,55 @@ function copyInput() {
     var textarea = document.getElementById('txtInput');
     textarea.select();
     document.execCommand("copy");
-    alert("It's copy to your clipboard!")
+    alert("INPUT copied!")
 }
 
 function copyOutput() {
     var textarea = document.getElementById("txtOutput");
     textarea.select();
     document.execCommand("copy");
-    alert("It's copy to your clipboard!")
+    alert("OUTPUT copied!")
 }
+
+///////////////////////////////////////////////////////////////////////////////////
+//// add copy button for each dialog for easy copy and paste//
+function populateTable(dataArray) {
+    let arrayCopy = dataArray.slice(0); // Create a copy as not to alter the original array
+    let myTable = "<table>";
+    let nColumns =1;
+    // Populate body
+    while (arrayCopy.length > 0) {
+      myTable += "<tr>";
+      for (let i = 0; i < nColumns; i++) {
+        if (arrayCopy.length == 0) {
+          myTable += "<td>" + "" + "</td>";
+        } else {
+          myTable += "<td>" + arrayCopy.shift() + "</td>" 
+        }
+      }
+      myTable += '<td><button class="otherButton">Copy</button></td></tr>';
+    }
+    myTable += "</table>";
+    return myTable;
+  }
+  
+  function copyToClipboard(text) {
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+  }
+  
+  var a = document.getElementsByClassName("otherButton");
+  
+  for (let i = 0; i < a.length; i++) {
+a[i].addEventListener('click', function() {
+    console.log("hello")
+    var b = this.parentNode.parentNode.cells[0].textContent;
+    copyToClipboard(b);
+    alert(b);
+});
+}
+
