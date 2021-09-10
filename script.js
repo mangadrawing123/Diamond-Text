@@ -36,8 +36,8 @@ function breakDiamondAt5(str) {
 }
 
 function breakDiamondMoreThan5Short(str) {
-    var rows = Math.round(Math.sqrt(str.split(" ").length))
-    var len = Math.floor(str.length/rows)
+    var rows = Math.floor(Math.sqrt(str.split(" ").length))
+    var len = Math.ceil(str.length/rows)
     var re = RegExp("(?:\\s|^)(.{1," + len + "})(?=\\s|$)", "g");
     var res = [];
     var finalResult = [];
@@ -167,7 +167,9 @@ async function checkBox() {
         document.getElementById("myDiv").innerHTML = myTable;
         document.getElementById("txtOutput").value=breakDiamondAtEnterShort().join("\n\n\n");
     } else if (rd1.checked == true && rd5.checked == true) {
-        breakDiamondAtEnterLong();
+        let  myTable = populateTable(breakDiamondAtEnterTall());
+        document.getElementById("myDiv").innerHTML = myTable;
+        document.getElementById("txtOutput").value=breakDiamondAtEnterTall().join("\n\n\n");
     } else if(rd2.checked == true) {
         keepDialogOnly();
     } else if (rd3.checked == true) { 
@@ -197,7 +199,7 @@ function copyOutput() {
     var textarea = document.getElementById("txtOutput");
     textarea.select();
     document.execCommand("copy");
-    alert("OUTPUT copied!")
+    alert("ALL OUTPUT copied!")
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -213,7 +215,7 @@ function populateTable(dataArray) {
         if (arrayCopy.length == 0) {
           myTable += "<td>" + "" + "</td>";
         } else {
-          myTable += "<td>" + arrayCopy.shift() + "</td>" 
+          myTable += '<td><textarea id="copyEach" cols="30" rows="4">' + arrayCopy.shift() + '</textarea></td>';
         }
       }
       myTable += '<td><button class="otherButton">Copy</button></td></tr>';
@@ -224,6 +226,7 @@ function populateTable(dataArray) {
 
 async function copyEach() {
 var a = document.getElementsByClassName('otherButton');
+console.log(a);
 for (var i = 0; i < a.length; i++) {
   a[i].addEventListener('click', function() {
     var b = this.parentNode.parentNode.cells[0].textContent;
