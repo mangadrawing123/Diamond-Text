@@ -165,7 +165,6 @@ async function checkBox() {
     if (rd1.checked == true && rd4.checked == true) {
         let  myTable = populateTable(breakDiamondAtEnterShort());
         document.getElementById("myDiv").innerHTML = myTable;
-        
         document.getElementById("txtOutput").value=breakDiamondAtEnterShort().join("\n\n\n");
     } else if (rd1.checked == true && rd5.checked == true) {
         breakDiamondAtEnterLong();
@@ -176,6 +175,7 @@ async function checkBox() {
     } else {
         return false;
     }
+    copyEach()
 }
 
 async function paste(input) {
@@ -220,25 +220,24 @@ function populateTable(dataArray) {
     }
     myTable += "</table>";
     return myTable;
-  }
-  
-  function copyToClipboard(text) {
-    var dummy = document.createElement("textarea");
-    document.body.appendChild(dummy);
-    dummy.value = text;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
-  }
-  
-  var a = document.getElementsByClassName("otherButton");
-  
-  for (let i = 0; i < a.length; i++) {
-a[i].addEventListener('click', function() {
-    console.log("hello")
+}
+
+async function copyEach() {
+var a = document.getElementsByClassName('otherButton');
+for (var i = 0; i < a.length; i++) {
+  a[i].addEventListener('click', function() {
     var b = this.parentNode.parentNode.cells[0].textContent;
     copyToClipboard(b);
     alert(b);
-});
+  });
+}
 }
 
+function copyToClipboard(text) {
+  var dummy = document.createElement("textarea");
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand("copy");
+  document.body.removeChild(dummy);
+}
