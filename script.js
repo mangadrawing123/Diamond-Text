@@ -215,7 +215,7 @@ function populateTable(dataArray) {
         if (arrayCopy.length == 0) {
           myTable += "<td>" + "" + "</td>";
         } else {
-          myTable += '<td><textarea id="copyEach" cols="30" rows="4">' + arrayCopy.shift() + '</textarea></td>';
+          myTable += '<td><textarea id="copyEach" cols="30" rows="3">' + arrayCopy.shift() + '</textarea></td>';
         }
       }
       myTable += '<td><button class="otherButton">Copy</button></td></tr>';
@@ -231,7 +231,7 @@ for (var i = 0; i < a.length; i++) {
   a[i].addEventListener('click', function() {
     var b = this.parentNode.parentNode.cells[0].textContent;
     copyToClipboard(b);
-    alert(b);
+    // alert(b);
   });
 }
 }
