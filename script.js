@@ -36,7 +36,7 @@ function breakDiamondAt5(str) {
 }
 
 function breakDiamondMoreThan5Short(str) {
-    var rows = Math.floor(Math.sqrt(str.split(" ").length))
+    var rows = Math.ceil(Math.sqrt(str.split(" ").length))
     var len = Math.ceil(str.length/rows)
     var re = RegExp("(?:\\s|^)(.{1," + len + "})(?=\\s|$)", "g");
     var res = [];
