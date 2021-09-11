@@ -180,7 +180,7 @@ async function checkBox() {
     copyEach()
 }
 
-async function paste(input) {
+async function paste() {
     var textarea2 = document.getElementById("txtInput");
     textarea2.select()
     const text = await navigator.clipboard.readText();
@@ -218,15 +218,20 @@ function populateTable(dataArray) {
           myTable += '<td><textarea id="copyEach" cols="30" rows="3">' + arrayCopy.shift() + '</textarea></td>';
         }
       }
-      myTable += '<td><button class="otherButton">Copy</button></td></tr>';
+    //   myTable += '<td><button class="otherButton" id="jQueryColorChange">Copy</button></td></tr>';
+      myTable += '<td><button class="otherButton" id="jQueryColorChange">Copy</button></td></tr>';
     }
     myTable += "</table>";
+    $(document).ready(function(){
+        $( "button#jQueryColorChange" ).click(function() {
+            $(this).toggleClass( "selected" );
+          });
+        });
     return myTable;
 }
 
 async function copyEach() {
 var a = document.getElementsByClassName('otherButton');
-console.log(a);
 for (var i = 0; i < a.length; i++) {
   a[i].addEventListener('click', function() {
     var b = this.parentNode.parentNode.cells[0].textContent;
@@ -244,3 +249,10 @@ function copyToClipboard(text) {
   document.execCommand("copy");
   document.body.removeChild(dummy);
 }
+
+// $(document).ready(function(){
+// $( "button#jQueryColorChange" ).click(function() {
+//     $(this).toggleClass( "selected" );
+//   });
+// });
+
