@@ -215,7 +215,7 @@ function populateTable(dataArray) {
         if (arrayCopy.length == 0) {
           myTable += "<td>" + "" + "</td>";
         } else {
-          myTable += '<td><textarea id="copyEach" cols="30" rows="3">' + arrayCopy.shift() + '</textarea></td>';
+          myTable += '<td><textarea id="copyEach" cols="25" rows="3">' + arrayCopy.shift() + '</textarea></td>';
         }
       }
       myTable += '<td><button class="otherButton" id="jQueryColorChange">Copy</button></td></tr>';
@@ -266,7 +266,7 @@ $(document).ready(function() {
 
     // Document Ctrl + C/V 
     $(document).keydown(function(e) {
-        if (ctrlDown && (e.keyCode == cKey)) {console.log("Document catch Ctrl+C"); };
+        if (ctrlDown && (e.keyCode == cKey)) {console.log("Document catch Ctrl+C"); copyOutput()};
         if (ctrlDown && (e.keyCode == vKey)) {console.log("Document catch Ctrl+V"); paste()};
         if (ctrlDown && (e.keyCode == enterKey)) {console.log("Enter pressed with ctrl"); checkBox()};
     });
