@@ -47,17 +47,17 @@ h1,h6 {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
-.otherButton:hover {
+/* .otherButton:hover {
 	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
 	background-color:#dfdfdf;
-}
+} */
 .otherButton:active {
 	position:relative;
 	top:1px;
 }
 
 button.otherButton:active{
-    color: white;
+    /* color: white; */
     background:#3E8CEC;
 }
 
