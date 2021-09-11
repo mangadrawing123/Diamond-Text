@@ -55,11 +55,11 @@ h1,h6 {
 	position:relative;
 	top:1px;
 }
-
+/* 
 button.otherButton:active{
-    /* color: white; */
+    color: white;
     background:#3E8CEC;
-}
+} */
 
 .selected {
     color: white;	

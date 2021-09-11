@@ -218,7 +218,6 @@ function populateTable(dataArray) {
           myTable += '<td><textarea id="copyEach" cols="30" rows="3">' + arrayCopy.shift() + '</textarea></td>';
         }
       }
-    //   myTable += '<td><button class="otherButton" id="jQueryColorChange">Copy</button></td></tr>';
       myTable += '<td><button class="otherButton" id="jQueryColorChange">Copy</button></td></tr>';
     }
     myTable += "</table>";
@@ -250,9 +249,26 @@ function copyToClipboard(text) {
   document.body.removeChild(dummy);
 }
 
-// $(document).ready(function(){
-// $( "button#jQueryColorChange" ).click(function() {
-//     $(this).toggleClass( "selected" );
-//   });
-// });
+$(document).ready(function() {
+    var ctrlDown = false,
+        ctrlKey = 17,
+        cmdKey = 91,
+        enterDown = false,
+        enterKey = 13,
+        vKey = 86,
+        cKey = 67;
+
+    $(document).keydown(function(e) {
+        if (e.keyCode == ctrlKey || e.keyCode == cmdKey || e.keyCode == enterKey) ctrlDown = true;
+    }).keyup(function(e) {
+        if (e.keyCode == ctrlKey || e.keyCode == cmdKey || e.keyCode == enterKey) ctrlDown = false;
+    });
+
+    // Document Ctrl + C/V 
+    $(document).keydown(function(e) {
+        if (ctrlDown && (e.keyCode == cKey)) {console.log("Document catch Ctrl+C"); };
+        if (ctrlDown && (e.keyCode == vKey)) {console.log("Document catch Ctrl+V"); paste()};
+        if (ctrlDown && (e.keyCode == enterKey)) {console.log("Enter pressed with ctrl"); checkBox()};
+    });
+});
 
