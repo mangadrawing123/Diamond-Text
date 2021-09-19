@@ -11,7 +11,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - auto calculate the width and height and x+y position of of the circle depend how mnay character in a sentence.
 - example: circle wrapping insidse - fit text with hypen nad tag p and div -ORIINAL https://codepen.io/tylersticka/pen/VwwLaBN  -MINE : https://codepen.io/mangadrawing123/pen/WNOzZoL
 -  fit text to rectangle first! -https://jsfiddle.net/mangadrawing123/quxkba4m/
->>>>>>>>>>>>>>
+---------->
 - can it be clip to rectangle the character image?
 - one balloon + text auto fit (one) -- jsfiddle: 
 - text outside the rectangle below on left - half ocapacity
