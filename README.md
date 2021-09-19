@@ -1,5 +1,4 @@
 # sketchWebtoon
-
 FINAL - seperaete action to big rectangle , dialog to balloon , with just typing text in goole docs
 *********************************************************
 1. Action to big rectangle
@@ -8,6 +7,8 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - rectangle webtoon display differnet  -- https://jsfiddle.net/mangadrawing123/quxkba4m/
 - excel sheet : reocgnized with text normla no Tab and put it in rectangle -- Table of word excel. When match full will be full 500px nad full width 600px?! then one/half left/right , will be 500/2 left or right align.. - https://docs.google.com/spreadsheets/d/18XXwl7pvd_IAcngbnrEhWIbzsLs4XLExRaX2nT3klOU/edit#gid=0
 - one balloon + text auto fit (one) -- jsfiddle: 
+
+
 
 - text outside the rectangle below on left - half ocapacity
 -making rectangle image selction or canvas to drawing?
