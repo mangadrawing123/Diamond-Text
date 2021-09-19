@@ -10,10 +10,15 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - example : wrap text insdie circle text wrap - https://codepen.io/thdoan/pen/rOPYxE
 - auto calculate the width and height and x+y position of of the circle depend how mnay character in a sentence.
 - example: circle wrapping insidse - fit text with hypen nad tag p and div -ORIINAL https://codepen.io/tylersticka/pen/VwwLaBN  -MINE : https://codepen.io/mangadrawing123/pen/WNOzZoL
--  fit text to rectangle first! -https://jsfiddle.net/mangadrawing123/quxkba4m/
--  text jsfidle heello world on canvas: https://codepen.io/SitePoint/pen/jItkJ
+-  fit text to rectangle first! - https://jsfiddle.net/mangadrawing123/quxkba4m/
+-  example: text jsfidle heello world on canvas: https://codepen.io/SitePoint/pen/jItkJ
+- write a div p circle rect website that look like a webtoon. then do the reverse add all those div (totoa with all the height y of balloon) with bottom border: 30px so it will extract the next panel/scnee. -- https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100
+- - problem : div balloon is not on top, and rectangle and move to position - z-index exmaple ORINGLA: https://codepen.io/ersonusaini/pen/YqQZXb  -  MINE: https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100
 ---------->
-- write a div p circle rect website that look like a webtoon. then do the reverse add all those div (totoa with all the height y of balloon) with bottom border: 30px so it will extract the next panel/scnee.
+- 2 balloon join?
+- rectangle text wrap avoid the balloon div to visible .
+- rectanble suggestion (panel type - angle character - / / moving panel)
+- create own ide text html to webtoon rectangl
 - circle text on top
 - can it be clip to rectangle the character image?
 - one balloon + text auto fit (one) -- jsfiddle: 
