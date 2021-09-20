@@ -14,15 +14,28 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 -  example: text jsfidle heello world on canvas: https://codepen.io/SitePoint/pen/jItkJ
 - write a div p circle rect website that look like a webtoon. then do the reverse add all those div (totoa with all the height y of balloon) with bottom border: 30px so it will extract the next panel/scnee. -- https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100
 - - problem : div balloon is not on top, and rectangle and move to position - z-index exmaple ORINGLA: https://codepen.io/ersonusaini/pen/YqQZXb  -  MINE: https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100
-- 2 balloon join? not complete:  https://codepen.io/pen/?editors=1100 - stackvoverlfow: https://stackoverflow.com/questions/39193276/how-can-i-merge-two-shapes-in-svg
----------->
-- css battle two circle join.
-- allow users to draw circle and rectangle!
+- how to use jqueryui? https://jqueryui.com/dialog/
+- allow users to draw circle and rectangle! - stackvoerflwo dragglbe resizeabl, dialog: https://stackoverflow.com/questions/39193276/how-can-i-merge-two-shapes-in-svg
+- exmpale codepen ballon speech bubble: https://codepen.io/timohausmann/pen/poywXzg
+- exmaple codpne actual comic reize: https://codepen.io/gwenananaelle/pen/OJRWZVm
+- 2 balloon join? not complete:  https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100 - stackvoverlfow: https://stackoverflow.com/questions/39193276/how-can-i-merge-two-shapes-in-svg
+- gogole docs typing in number : https://docs.google.com/document/d/1NsLrFeRPkhft5h3YAJd50pv8WfViOi7Oho2Of6m9qx8/edit
+- example gird side by side : https://codepen.io/manabox/pen/PREdQQ?editors=1100
+- exampel scroll snapchat, will be good for phone view when typing text editor: https://codepen.io/argyleink/pen/RwPWqKe
+- --------->
+- replace all line start with two enter with div rect and also add /div at the end as well.
+- replace two tab \t\t to div person or so character inside rectangle masking
+- repalce one tab \t to div ballong and div text inside
+- repalce normal start with single panel with differnet div panel half rectable left or right.
+- repalce none rectangle for no border rectangle
+- dispaly text on the one side of the gird rectangel
+- reaplce all enter \n at /div panel rectangle and put all the text inside first, thaen add padding for each panel.
+- character will just be a plain grey characteer non sexual orientaiton just the head.
 - live ide like on of the youtube text editor
 - rectangle text wrap avoid the balloon div to visible .
 - rectanble suggestion (panel type - angle character - / / moving panel)
+- paenl 1, 2, 3 number text editor
 - create own ide text html to webtoon rectangl
-- circle text on top
 - can it be clip to rectangle the character image?
 - one balloon + text auto fit (one) -- jsfiddle: 
 - text outside the rectangle below on left - half ocapacity
