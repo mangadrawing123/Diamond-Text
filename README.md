@@ -14,8 +14,11 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 -  example: text jsfidle heello world on canvas: https://codepen.io/SitePoint/pen/jItkJ
 - write a div p circle rect website that look like a webtoon. then do the reverse add all those div (totoa with all the height y of balloon) with bottom border: 30px so it will extract the next panel/scnee. -- https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100
 - - problem : div balloon is not on top, and rectangle and move to position - z-index exmaple ORINGLA: https://codepen.io/ersonusaini/pen/YqQZXb  -  MINE: https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100
+- 2 balloon join? not complete:  https://codepen.io/pen/?editors=1100 - stackvoverlfow: https://stackoverflow.com/questions/39193276/how-can-i-merge-two-shapes-in-svg
 ---------->
-- 2 balloon join?
+- css battle two circle join.
+- allow users to draw circle and rectangle!
+- live ide like on of the youtube text editor
 - rectangle text wrap avoid the balloon div to visible .
 - rectanble suggestion (panel type - angle character - / / moving panel)
 - create own ide text html to webtoon rectangl
