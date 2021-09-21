@@ -29,6 +29,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - align bototm and corner for character and balloon relative to retangle. - position abosolute , relative - real HTML only webtoon : https://codepen.io/mangadrawing123/pen/wvejLOv?editors=0110
 - --------->
 - have charcter and action iwth the balloon on top of hte ballong relative abosolute top -5px or so: https://codepen.io/mangadrawing123/pen/wvejLOv?editors=1100
+- have the reactable text be relative to the rectangle on top appear first. before ballong and hcaracter 
 - differnet place for balloon random x position: 
 - exampel scroll snapchat, will be good for phone view when typing text editor: https://codepen.io/argyleink/pen/RwPWqKe , https://css-tricks.com/almanac/properties/s/scroll-behavior/
 - repalce normal start with single panel with differnet div panel half rectable left or right.
