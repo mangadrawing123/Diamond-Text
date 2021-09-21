@@ -18,16 +18,17 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - allow users to draw circle and rectangle! - stackvoerflwo dragglbe resizeabl, dialog: https://stackoverflow.com/questions/39193276/how-can-i-merge-two-shapes-in-svg
 - exmpale codepen ballon speech bubble: https://codepen.io/timohausmann/pen/poywXzg
 - exmaple codpne actual comic reize: https://codepen.io/gwenananaelle/pen/OJRWZVm
-- 2 balloon join? not complete:  https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100 - stackvoverlfow: https://stackoverflow.com/questions/39193276/how-can-i-merge-two-shapes-in-svg
+- 2 balloon join? not complete: MINE lightblue***  https://codepen.io/mangadrawing123/pen/wvempoJ?editors=1100 - stackvoverlfow: https://stackoverflow.com/questions/39193276/how-can-i-merge-two-shapes-in-svg
 - gogole docs typing in number : https://docs.google.com/document/d/1NsLrFeRPkhft5h3YAJd50pv8WfViOi7Oho2Of6m9qx8/edit
-- example gird side by side : https://codepen.io/manabox/pen/PREdQQ?editors=1100
+- example gird side by side EXMAPLE: https://codepen.io/manabox/pen/PREdQQ?editors=1100
 - repalce one tab \t to div ballong and div text inside for css human so insdie rect so that the text can be reapcle. MINE: https://codepen.io/mangadrawing123/pen/rNwvmKa - insertBefore() example : https://stackoverflow.com/questions/4793604/how-to-insert-an-element-after-another-element-in-javascript-without-using-a-lib -- regex exmaple repalce ^ beginnign and $end didn't wokr https://stackoverflow.com/questions/50370641/append-string-to-start-and-end-of-line-regex-notepad -- sort through array,if teh strSent startwith \t\t put that array between <div ballong or text> </div> - kinda workd MINE: https://codepen.io/mangadrawing123/pen/rNwvmKa?editors=0110
 - replace two tab \t\t to div css person or so character inside rectangle masking. and add /div at the end - MINE https://codepen.io/mangadrawing123/pen/rNwvmKa?editors=0100
 - replace all line start with two enter with div rect and also add /div at the end as well.
 - multiple  balloons text padding fit width and heigth calculate - inserte aatrribute width for differnet balloon: https://stackoverflow.com/questions/1480588/input-size-vs-width - success add width style for differnet balllon: https://codepen.io/mangadrawing123/pen/MWoGLMW?editors=0010
 - rectangle in div rectangle, container is container, balloon is psoition relative to person <div> - succes: https://codepen.io/mangadrawing123/pen/rNwvmKa?editors=0110
+- align bototm and corner for character and balloon relative to retangle. - position abosolute , relative - real HTML only webtoon : https://codepen.io/mangadrawing123/pen/wvejLOv?editors=0110
 - --------->
-- align bototm and corner for character and balloon relative to retangle.
+- have charcter and action iwth the balloon on top of hte ballong relative abosolute top -5px or so: https://codepen.io/mangadrawing123/pen/wvejLOv?editors=1100
 - differnet place for balloon random x position: 
 - exampel scroll snapchat, will be good for phone view when typing text editor: https://codepen.io/argyleink/pen/RwPWqKe , https://css-tricks.com/almanac/properties/s/scroll-behavior/
 - repalce normal start with single panel with differnet div panel half rectable left or right.
