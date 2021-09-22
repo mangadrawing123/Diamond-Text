@@ -43,7 +43,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - nth child left right?  - now you can do whisher on the charcter (whiseper) - nth child only work for 2 dialog! -> https://codepen.io/mangadrawing123/pen/yLXqLYd?editors=0100
 - freecodecamp flexbox: https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/ 
 - watch build resposnive website 2 hour 6x : https://www.youtube.com/watch?v=p0bGHP-PXD4&t=512s
+- good textarea expand codepen: https://codepen.io/vsync/pen/frudD
 - -------------------------------------------------------------------------------------------------------------
+- watch create live editor; or code pen, let them be able to write with tab first! -codepne live text editor html textarea (ORINGAONGL): https://codepen.io/MKAbuMattar/pen/QWKOZqd?editors=0010  (MINE mine MESSING AROUND) : https://codepen.io/mangadrawing123/pen/xxrJLya -mine orinabal code messing: https://codepen.io/mangadrawing123/pen/MWoBvXv?editors=1000 - 
 - http://www.flexboxdefense.com/ copy this style for my app - hidden text input when copyand paste to clip studi oapitn copy eaachbutton hidden like hamburger menu 
 - with phone view for text editor:
 - character need to be bottom fit not halfway ; javascript: https://codepen.io/mangadrawing123/pen/yLXqLYd?editors=1100 ; 
