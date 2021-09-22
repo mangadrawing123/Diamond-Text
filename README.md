@@ -38,8 +38,13 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - nth odd even child ORINGLA: https://codepen.io/mornir0/pen/wENord - MINE TRIAAL mannually https://codepen.io/mangadrawing123/pen/YzQvRjv?editors=1100 - TRIAL CODPEN : https://codepen.io/mangadrawing123/pen/oNwyBqE?editors=1100
 - success javascript: https://codepen.io/mangadrawing123/pen/zYzamQx?editors=1000
 - ask stakcoverflow how to add differnet close tag for differnet line 3 types none , 2 tabs, and one tab : stackoverflwo: two textarea side by side: https://stackoverflow.com/questions/27833951/how-to-create-side-by-side-textareas - word to html: https://htmled.it/ - trial mine codepen: https://codepen.io/mangadrawing123/pen/zYzamQx?editors=0010 - codepne for stackoveflow: https://codepen.io/pen/?editors=1100
-- --------->
 - chracter div and spance for charcter and not add div to balloon.
+- no need rectangle div, just container , then no need character div jsut ballon idv.  mannually: https://codepen.io/mangadrawing123/pen/YzQvRjv?editors=1100 , then javascript: https://codepen.io/mangadrawing123/pen/NWgzVYY?editors=1100 - 
+- nth child left right?  - now you can do whisher on the charcter (whiseper) - nth child only work for 2 dialog! -> https://codepen.io/mangadrawing123/pen/yLXqLYd?editors=0100
+- ----------------------------------------------------------------------------------------------------------------------------------------------------
+- freecodecamp flexbox:
+- character need to be bottom fit not halfway ; javascript: https://codepen.io/mangadrawing123/pen/yLXqLYd?editors=1100 ; 
+- differnt rectangle size: focus , one right, one left, full, none.
 - use dom list to seaprest child to 2 grid? to flow left and right? exmaple 1 (working codpen): https://codepen.io/mangadrawing123/pen/oNwyBqE - stair (zigzag?) css nth child? webtoon mind codepen: https://codepen.io/mangadrawing123/pen/KKqerPE?editors=0010 - MANNUALLY: https://codepen.io/mangadrawing123/pen/wvejLOv?editors=1000 - AJVASCRITP  : https://codepen.io/mangadrawing123/pen/KKqerPE?editors=1000
  - random x for balloon? or radnome width for container ?
 - custome list order number list?
