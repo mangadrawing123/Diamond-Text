@@ -29,14 +29,17 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - cowboy example comic : https://codepen.io/gwenananaelle/pen/OJRWZVm?editors=1100
 - align bototm and corner for character and balloon relative to retangle. - position abosolute , relative - real MANUALLY HTML only webtoon : https://codepen.io/mangadrawing123/pen/wvejLOv?editors=0110
 - have charcter and action iwth the balloon on top of hte ballong relative abosolute top -5px or so: https://codepen.io/mangadrawing123/pen/wvejLOv?editors=1100
-- in order like word docs if rect come first hten rect come higher than character ballloong - balllon and character on top of balloon inside the rectangle? https://codepen.io/mangadrawing123/pen/jOwKEOM - warp text aroudn css? possible - https://codepen.io/mangadrawing123/pen/jOwKEOM?editors=1000
-- angle balloon? multiple balloon no need rigth only left . right is default: new: https://codepen.io/mangadrawing123/pen/OJgEVWx?editors=1000 - also sepearte thet rectangle to be ontop to be read.
+- in order like word docs if rect come first hten rect come higher than character ballloong - balllon and character on top of balloon inside the rectangle?- warp text aroudn css? possible - https://codepen.io/mangadrawing123/pen/jOwKEOM?editors=1000
+- angle balloon? multiple balloon no need rigth only left . right is default:- also sepearte thet rectangle to be ontop to be read.
 - texttohtml learn how to : sample suck: https://www.textfixer.com/html/convert-text-html.php 
 - break it normally line first! break text no need right or left float. done MINE: https://codepen.io/mangadrawing123/pen/LYLrxKr?editors=0010- why it doesn't work?
 - rectangle inside word javscrip break mine : https://codepen.io/mangadrawing123/pen/zYzamQx?editors=0010 
 - good exmpale staircase text: https://codepen.io/joeaugie/pen/moAez , another good case of stair text: https://codepen.io/SourabhPati/pen/rbpjLj - nth child for the rectangle as well?!
-- nth odd even child ORINGLA: https://codepen.io/mornir0/pen/wENord - MINE TRIAAL https://codepen.io/mangadrawing123/pen/YzQvRjv?editors=1100 - TRIAL CODPEN : https://codepen.io/mangadrawing123/pen/oNwyBqE?editors=1100
+- nth odd even child ORINGLA: https://codepen.io/mornir0/pen/wENord - MINE TRIAAL mannually https://codepen.io/mangadrawing123/pen/YzQvRjv?editors=1100 - TRIAL CODPEN : https://codepen.io/mangadrawing123/pen/oNwyBqE?editors=1100
+- success javascript: https://codepen.io/mangadrawing123/pen/zYzamQx?editors=1000
+- ask stakcoverflow how to add differnet close tag for differnet line 3 types none , 2 tabs, and one tab : stackoverflwo: two textarea side by side: https://stackoverflow.com/questions/27833951/how-to-create-side-by-side-textareas - word to html: https://htmled.it/ - trial mine codepen: https://codepen.io/mangadrawing123/pen/zYzamQx?editors=0010 - codepne for stackoveflow: https://codepen.io/pen/?editors=1100
 - --------->
+- chracter div and spance for charcter and not add div to balloon.
 - use dom list to seaprest child to 2 grid? to flow left and right? exmaple 1 (working codpen): https://codepen.io/mangadrawing123/pen/oNwyBqE - stair (zigzag?) css nth child? webtoon mind codepen: https://codepen.io/mangadrawing123/pen/KKqerPE?editors=0010 - MANNUALLY: https://codepen.io/mangadrawing123/pen/wvejLOv?editors=1000 - AJVASCRITP  : https://codepen.io/mangadrawing123/pen/KKqerPE?editors=1000
  - random x for balloon? or radnome width for container ?
 - custome list order number list?
