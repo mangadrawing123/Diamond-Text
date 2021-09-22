@@ -26,9 +26,23 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - replace all line start with two enter with div rect and also add /div at the end as well.
 - multiple  balloons text padding fit width and heigth calculate - inserte aatrribute width for differnet balloon: https://stackoverflow.com/questions/1480588/input-size-vs-width - success add width style for differnet balllon: https://codepen.io/mangadrawing123/pen/MWoGLMW?editors=0010
 - rectangle in div rectangle, container is container, balloon is psoition relative to person <div> - succes: https://codepen.io/mangadrawing123/pen/rNwvmKa?editors=0110
-- align bototm and corner for character and balloon relative to retangle. - position abosolute , relative - real HTML only webtoon : https://codepen.io/mangadrawing123/pen/wvejLOv?editors=0110
-- --------->
+- cowboy example comic : https://codepen.io/gwenananaelle/pen/OJRWZVm?editors=1100
+- align bototm and corner for character and balloon relative to retangle. - position abosolute , relative - real MANUALLY HTML only webtoon : https://codepen.io/mangadrawing123/pen/wvejLOv?editors=0110
 - have charcter and action iwth the balloon on top of hte ballong relative abosolute top -5px or so: https://codepen.io/mangadrawing123/pen/wvejLOv?editors=1100
+- in order like word docs if rect come first hten rect come higher than character ballloong - balllon and character on top of balloon inside the rectangle? https://codepen.io/mangadrawing123/pen/jOwKEOM - warp text aroudn css? possible - https://codepen.io/mangadrawing123/pen/jOwKEOM?editors=1000
+- angle balloon? multiple balloon no need rigth only left . right is default: new: https://codepen.io/mangadrawing123/pen/OJgEVWx?editors=1000 - also sepearte thet rectangle to be ontop to be read.
+- texttohtml learn how to : sample suck: https://www.textfixer.com/html/convert-text-html.php 
+- break it normally line first! break text no need right or left float. done MINE: https://codepen.io/mangadrawing123/pen/LYLrxKr?editors=0010- why it doesn't work?
+- rectangle inside word javscrip break mine : https://codepen.io/mangadrawing123/pen/zYzamQx?editors=0010 
+- good exmpale staircase text: https://codepen.io/joeaugie/pen/moAez , another good case of stair text: https://codepen.io/SourabhPati/pen/rbpjLj - nth child for the rectangle as well?!
+- nth odd even child ORINGLA: https://codepen.io/mornir0/pen/wENord - MINE TRIAAL https://codepen.io/mangadrawing123/pen/YzQvRjv?editors=1100 - TRIAL CODPEN : https://codepen.io/mangadrawing123/pen/oNwyBqE?editors=1100
+- --------->
+- use dom list to seaprest child to 2 grid? to flow left and right? exmaple 1 (working codpen): https://codepen.io/mangadrawing123/pen/oNwyBqE - stair (zigzag?) css nth child? webtoon mind codepen: https://codepen.io/mangadrawing123/pen/KKqerPE?editors=0010 - MANNUALLY: https://codepen.io/mangadrawing123/pen/wvejLOv?editors=1000 - AJVASCRITP  : https://codepen.io/mangadrawing123/pen/KKqerPE?editors=1000
+ - random x for balloon? or radnome width for container ?
+- custome list order number list?
+- counting like number list? 1 for panel, a for character , i.. for dialog
+- detect whisper with differnt css style with border cross or so!
+- maybe adding the triblne poitner of talk as well
 - have the reactable text be relative to the rectangle on top appear first. before ballong and hcaracter 
 - differnet place for balloon random x position: 
 - exampel scroll snapchat, will be good for phone view when typing text editor: https://codepen.io/argyleink/pen/RwPWqKe , https://css-tricks.com/almanac/properties/s/scroll-behavior/
