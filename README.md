@@ -42,6 +42,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - no need rectangle div, just container , then no need character div jsut ballon idv.  mannually: https://codepen.io/mangadrawing123/pen/YzQvRjv?editors=1100 , then javascript: https://codepen.io/mangadrawing123/pen/NWgzVYY?editors=1100 - 
 - nth child left right?  - now you can do whisher on the charcter (whiseper) - nth child only work for 2 dialog! -> https://codepen.io/mangadrawing123/pen/yLXqLYd?editors=0100
 - freecodecamp flexbox: https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/ 
+- watch build resposnive website 2 hour 6x : https://www.youtube.com/watch?v=p0bGHP-PXD4&t=512s
 - -------------------------------------------------------------------------------------------------------------
 - http://www.flexboxdefense.com/ copy this style for my app - hidden text input when copyand paste to clip studi oapitn copy eaachbutton hidden like hamburger menu 
 - with phone view for text editor:
