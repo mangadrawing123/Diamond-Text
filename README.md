@@ -46,8 +46,11 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - good textarea expand codepen: https://codepen.io/vsync/pen/frudD
 - watch create live editor, youtube: https://www.youtube.com/watch?v=jEeYPFFmMcs&t=493s -  jsfiddle exmaple orignla: https://jsfiddle.net/k49xta0n/; MINE mannually : https://codepen.io/mangadrawing123/pen/ExXpdeB --or code pen, let them be able to write with tab first! -codepne live text editor html textarea (ORINGAONGL): https://codepen.io/MKAbuMattar/pen/QWKOZqd?editors=0010  (MINE mine MESSING AROUND) : https://codepen.io/mangadrawing123/pen/xxrJLya -mine orinabal code messing: https://codepen.io/mangadrawing123/pen/MWoBvXv?editors=1000 - wrap text editor html default?! - editor setting option wrap text? (solved stackvoer flwo: https://stackoverflow.com/questions/38208984/how-to-disable-indentation-of-subsequent-lines-in-ace-editor-when-line-wrapping ) - ( auto indente tab setting:  ) 
 - ( enable auto-ident? mine codepen tow ork on : https://codepen.io/mangadrawing123/pen/rNwrQza?editors=1010) - (other code fr reddit: https://codepen.io/mangadrawing123/pen/mdwjNvN?editors=0010 mine ) (reddit oringial color: https://codepen.io/eisolo/pen/JjJBmLg )-  live editor wrap text p tag and /p closing tag as well https://codepen.io/JEE42/pen/ZredYq?editors=1010 - success live mine mine live editor : https://codepen.io/mangadrawing123/pen/rNwrQza?editors=1010
-- -------------------------------------------------------------------------------------------------------------
 - fork live editor contineu to repalce the 2 tabs or start at div container adn rectentg : https://codepen.io/mangadrawing123/pen/qBjMWmG?editors=1010   -
+- -------------------------------------------------------------------------------------------------------------
+- constantly replace docs /t/t? https://codepen.io/mangadrawing123/pen/rNwZVRR - waitting 3 second before run the replace? -  simpliset live text editor wrap p with end p : https://codepen.io/mangadrawing123/pen/WNOgeeR?editors=0010 - 
+- regex practice get line star twith character no specicla (). 
+- odin project - 
 - see how the live text to html code owrd (or Pug codepen owrkd with et just h2 and recginzed h2) (codepne orignal : https://codepen.io/JEE42/pen/ZredYq?editors=0010 )
 - help with ballon div adjustment and no position relative. (originla reddit: https://codepen.io/eisolo/pen/JjJBmLg)
 - ask reddit how they break the script and wrap with div
