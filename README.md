@@ -47,8 +47,17 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - watch create live editor, youtube: https://www.youtube.com/watch?v=jEeYPFFmMcs&t=493s -  jsfiddle exmaple orignla: https://jsfiddle.net/k49xta0n/; MINE mannually : https://codepen.io/mangadrawing123/pen/ExXpdeB --or code pen, let them be able to write with tab first! -codepne live text editor html textarea (ORINGAONGL): https://codepen.io/MKAbuMattar/pen/QWKOZqd?editors=0010  (MINE mine MESSING AROUND) : https://codepen.io/mangadrawing123/pen/xxrJLya -mine orinabal code messing: https://codepen.io/mangadrawing123/pen/MWoBvXv?editors=1000 - wrap text editor html default?! - editor setting option wrap text? (solved stackvoer flwo: https://stackoverflow.com/questions/38208984/how-to-disable-indentation-of-subsequent-lines-in-ace-editor-when-line-wrapping ) - ( auto indente tab setting:  ) 
 - ( enable auto-ident? mine codepen tow ork on : https://codepen.io/mangadrawing123/pen/rNwrQza?editors=1010) - (other code fr reddit: https://codepen.io/mangadrawing123/pen/mdwjNvN?editors=0010 mine ) (reddit oringial color: https://codepen.io/eisolo/pen/JjJBmLg )-  live editor wrap text p tag and /p closing tag as well https://codepen.io/JEE42/pen/ZredYq?editors=1010 - success live mine mine live editor : https://codepen.io/mangadrawing123/pen/rNwrQza?editors=1010
 - fork live editor contineu to repalce the 2 tabs or start at div container adn rectentg : https://codepen.io/mangadrawing123/pen/qBjMWmG?editors=1010   -
+- google docs two space for balllon and panel 1, 2, 3, : https://docs.google.com/document/d/1NsLrFeRPkhft5h3YAJd50pv8WfViOi7Oho2Of6m9qx8/edit --
+- ctrl enter for enter button so taht t will restart no live eidotr: https://codepen.io/Rio517/pen/HFnGf?editors=1010
+- enable tab in textarea: https://jsfiddle.net/2wAzx/13/ (oringal)) -- (mine ) https://codepen.io/mangadrawing123/pen/rNwZwME?editors=0100
 - -------------------------------------------------------------------------------------------------------------
+- really nee the panel thingy to work so that we can adjust left and rigth , repalce panel with </div><div class=container--right> right, focus ,left , differnt class. (new fork) https://codepen.io/mangadrawing123/pen/jOwvLjV?editors=0100
+- not scrolling: https://codepen.io/mangadrawing123/pen/wveEqbK?editors=0100
+- replace advanced repalce one tab , two tab iwth differnet div.: 
+- new break at panel and balloon double space: https://codepen.io/mangadrawing123/pen/rNwZwME -- https://codepen.io/mangadrawing123/pen/rNwZwME?editors=1100 (success break peanel 1 , 2, 3)
 - constantly replace docs /t/t? https://codepen.io/mangadrawing123/pen/rNwZVRR - waitting 3 second before run the replace? -  simpliset live text editor wrap p with end p : https://codepen.io/mangadrawing123/pen/WNOgeeR?editors=0010 - 
+- ballon 2n child center, 3rd child is left.
+- my own text editor where when it no tap will be PANEL 1  captialized and when two tabs will be capitcalized too.
 - regex practice get line star twith character no specicla (). 
 - odin project - 
 - see how the live text to html code owrd (or Pug codepen owrkd with et just h2 and recginzed h2) (codepne orignal : https://codepen.io/JEE42/pen/ZredYq?editors=0010 )
