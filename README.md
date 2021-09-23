@@ -44,8 +44,13 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - freecodecamp flexbox: https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/ 
 - watch build resposnive website 2 hour 6x : https://www.youtube.com/watch?v=p0bGHP-PXD4&t=512s
 - good textarea expand codepen: https://codepen.io/vsync/pen/frudD
+- watch create live editor, youtube: https://www.youtube.com/watch?v=jEeYPFFmMcs&t=493s -  jsfiddle exmaple orignla: https://jsfiddle.net/k49xta0n/; MINE mannually : https://codepen.io/mangadrawing123/pen/ExXpdeB --or code pen, let them be able to write with tab first! -codepne live text editor html textarea (ORINGAONGL): https://codepen.io/MKAbuMattar/pen/QWKOZqd?editors=0010  (MINE mine MESSING AROUND) : https://codepen.io/mangadrawing123/pen/xxrJLya -mine orinabal code messing: https://codepen.io/mangadrawing123/pen/MWoBvXv?editors=1000 - wrap text editor html default?! - editor setting option wrap text? (solved: https://stackoverflow.com/questions/38208984/how-to-disable-indentation-of-subsequent-lines-in-ace-editor-when-line-wrapping ) - ( auto indente tab setting:  ) 
 - -------------------------------------------------------------------------------------------------------------
-- watch create live editor; or code pen, let them be able to write with tab first! -codepne live text editor html textarea (ORINGAONGL): https://codepen.io/MKAbuMattar/pen/QWKOZqd?editors=0010  (MINE mine MESSING AROUND) : https://codepen.io/mangadrawing123/pen/xxrJLya -mine orinabal code messing: https://codepen.io/mangadrawing123/pen/MWoBvXv?editors=1000 - 
+- ( enable auto-ident? mine codepen tow ork on : https://codepen.io/mangadrawing123/pen/rNwrQza?editors=1010)
+- help with ballon div adjustment and no position relative. (originla reddit: https://codepen.io/eisolo/pen/JjJBmLg)
+- ask reddit how they break the script and wrap with div
+- just let them right (normal ) at hte beginng of rectangle. 
+- put (charcter doing something ) to the bottom of balloon.
 - http://www.flexboxdefense.com/ copy this style for my app - hidden text input when copyand paste to clip studi oapitn copy eaachbutton hidden like hamburger menu 
 - with phone view for text editor:
 - character need to be bottom fit not halfway ; javascript: https://codepen.io/mangadrawing123/pen/yLXqLYd?editors=1100 ; 
