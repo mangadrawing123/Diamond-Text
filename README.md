@@ -56,8 +56,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - wrap all PANEL until next PANEL ENTIRE: https://regexr.com/668at - google: https://forum.uipath.com/t/get-multiple-lines-between-two-strings-using-regex/192710 - (work) https://regexr.com/668k6 -
 - able to use regex wrap panel: https://regexr.com/668k6 -- need to use regex for all name and balloon as well: https://codepen.io/mangadrawing123/pen/OJgoqeo?editors=0010 - perfect reddit regex: https://regex101.com/r/ZDTjqz/2/ (orignal redidt) : https://www.reddit.com/r/regex/comments/pug61i/how_to_match_until_the_next_panel_occurence_regex/he38s4q/?context=8&depth=9 -
 - grid play game: 
-- -------------------------------------------------------------------------------------------------------------
 - add differnt class for panel: right focus left... - https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=0110 -- kinda wraping it: https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1101 -- using regex:https://regex101.com/r/zEc24U/1
+- -------------------------------------------------------------------------------------------------------------
+- github push, fit half of screen not scrolling fit on screen 
 - phone : https://codepen.io/phoenixzqy/pen/KNaGdp --
 - mannual wrap text : https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1000 --
 - not scrolling: https://codepen.io/mangadrawing123/pen/wveEqbK?editors=0100
