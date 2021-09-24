@@ -52,8 +52,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - enable tab in textarea: https://jsfiddle.net/2wAzx/13/ (oringal)) -- (mine ) https://codepen.io/mangadrawing123/pen/rNwZwME?editors=0100
 - really nee the panel thingy to work so that we can adjust left and rigth , repalce panel with </div><div class=container--right> right, focus ,left , differnt class. (new fork) https://codepen.io/mangadrawing123/pen/jOwvLjV?editors=0100
 - panel-right for div panel, learn how to use repalce group , one instance only: one panel to the next -- mine code pen : https://codepen.io/mangadrawing123/pen/jOwvLjV?editors=0100 - regex match character name div: https://regexr.com/667ut -
+- match all line not CAP action line : https://regexr.com/667vi (not done) : https://regexr.com/667vi -- reddit regex - non cap: 
 - -------------------------------------------------------------------------------------------------------------
-- match all line not CAP action line : https://regexr.com/667vi (not done) : https://regexr.com/667vi --
+- wrap all PANEL until next PANEL ENTIRE: https://regexr.com/668at 
 - not scrolling: https://codepen.io/mangadrawing123/pen/wveEqbK?editors=0100
 - replace advanced repalce one tab , two tab iwth differnet div.: 
 - new break at panel and balloon double space: https://codepen.io/mangadrawing123/pen/rNwZwME -- https://codepen.io/mangadrawing123/pen/rNwZwME?editors=1100 (success break peanel 1 , 2, 3)
