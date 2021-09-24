@@ -53,8 +53,11 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - really nee the panel thingy to work so that we can adjust left and rigth , repalce panel with </div><div class=container--right> right, focus ,left , differnt class. (new fork) https://codepen.io/mangadrawing123/pen/jOwvLjV?editors=0100
 - panel-right for div panel, learn how to use repalce group , one instance only: one panel to the next -- mine code pen : https://codepen.io/mangadrawing123/pen/jOwvLjV?editors=0100 - regex match character name div: https://regexr.com/667ut -
 - match all line not CAP action line : https://regexr.com/667vi (not done) : https://regexr.com/667vi -- reddit regex - non cap: 
+- wrap all PANEL until next PANEL ENTIRE: https://regexr.com/668at - google: https://forum.uipath.com/t/get-multiple-lines-between-two-strings-using-regex/192710 - (work) https://regexr.com/668k6 -
+- able to use regex wrap panel: https://regexr.com/668k6 -- need to use regex for all name and balloon as well: https://codepen.io/mangadrawing123/pen/OJgoqeo?editors=0010 - perfect reddit regex: https://regex101.com/r/ZDTjqz/2/ (orignal redidt) : https://www.reddit.com/r/regex/comments/pug61i/how_to_match_until_the_next_panel_occurence_regex/he38s4q/?context=8&depth=9 -
 - -------------------------------------------------------------------------------------------------------------
-- wrap all PANEL until next PANEL ENTIRE: https://regexr.com/668at 
+- add differnt class for panel: right focus left... - https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=0110 -- kinda wraping it: https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1101 -- using regex:https://regex101.com/r/zEc24U/1
+- mannual wrap text : https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1000 --
 - not scrolling: https://codepen.io/mangadrawing123/pen/wveEqbK?editors=0100
 - replace advanced repalce one tab , two tab iwth differnet div.: 
 - new break at panel and balloon double space: https://codepen.io/mangadrawing123/pen/rNwZwME -- https://codepen.io/mangadrawing123/pen/rNwZwME?editors=1100 (success break peanel 1 , 2, 3)
