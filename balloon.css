@@ -1,0 +1,73 @@
+html, body {
+    margin:0px;
+    padding:0px;
+  }
+  .grid {
+    display: grid;
+  /*   gap: 10px; */
+    grid-template-columns: auto 1fr;
+  /*   overflow: hidden; */
+  }
+  .main {
+    background: salmon;
+  }
+  .side {
+    background: white;
+    overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: hidden;
+  }
+  textarea{width: 100%;}
+  .PANEL {
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 10rem 0px 10rem 0px;
+  }
+  .NORMAL {width: 90%;}
+  .FULL {width: 90%;}
+  .LEFT {width: 50%;}
+  .RIGHT {width: 50%; self-align: flex-end;}
+  .FOCUS {width: 100%;}
+  .END {display: none;}
+  
+  .action {
+    background-color: white;
+      color: black;
+    padding: 0px 1rem 4rem 1rem;
+    hyphens: auto;
+  /*   width: 100%; */
+  /*    padding-top: 16/9; */
+  }
+  .character {
+  /*   position: absolute; */
+    bottom: 100%;
+    color: black;
+    hyphens: auto;
+    background-color: white;
+  }
+  .balloon {
+  /*   position: relative; */
+    padding: 30px;
+    width: 30%;
+    border-radius: 50%;
+    border: 2px dashed black;
+    background: salmon;
+    hyphens: auto;
+    color: black;
+    text-align: center;
+  }
+  
+  .balloon:nth-child(even) {
+    align-self: flex-start;
+  }
+  
+  
+  .balloon:nth-child(odd) {
+    align-self: flex-end;
+  }
+  
+  
+  

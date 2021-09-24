@@ -1,7 +1,7 @@
 function breakDiamondAtEnterShort() {
-    var txtInput1 = document.getElementById("txtInput").value
-    var txtInput = txtInput1.replace(/\n\n?/g, "\n")
-    let split1= txtInput.split("\n");
+    var textInput1 = document.getElementById("textInput").value
+    var textInput = textInput1.replace(/\n\n?/g, "\n")
+    let split1= textInput.split("\n");
     var result = [];
     for (sent of split1) {
         if (sent.split(" ").length <= 6) {
@@ -15,9 +15,9 @@ function breakDiamondAtEnterShort() {
 }
 
 function breakDiamondAtEnterTall() {
-    var txtInput1 = document.getElementById("txtInput").value
-    var txtInput = txtInput1.replace(/\n\n?/g, "\n")
-    let split1= txtInput.split("\n");
+    var textInput1 = document.getElementById("textInput").value
+    var textInput = textInput1.replace(/\n\n?/g, "\n")
+    let split1= textInput.split("\n");
     let result = [];
     for (sent of split1) {
         if (sent.split(" ").length <= 6) {
@@ -92,17 +92,17 @@ function breakDiamondMoreThan5Tall(str) {
 }
 
 function keepDialogOnly() {
-    var txtInputKeepDialog = document.getElementById("txtInput").value;
+    var textInputKeepDialog = document.getElementById("textInput").value;
     var regexKeepDialog = /^\t\S.*/gm
-    const a = txtInputKeepDialog
+    const a = textInputKeepDialog
         .match(regexKeepDialog)
         .flatMap((s) => s.split(/\t/))
         .filter(Boolean);
     var resultDialog = a.join("\n");
     document.getElementById("txtOutput").value=resultDialog;
-    var txtInputBreakLine, result;
-    txtInputBreakLine = document.getElementById("txtOutput").value;
-    resultH = txtInputBreakLine.replace(/\-\-\s/g, "--\n");
+    var textInputBreakLine, result;
+    textInputBreakLine = document.getElementById("txtOutput").value;
+    resultH = textInputBreakLine.replace(/\-\-\s/g, "--\n");
     resultG = resultH.replace(/\u2026|\.{3}/g, "...\n");
     resultF = resultG.replace(/\!\s/g, "!\n");
     resultE = resultF.replace(/\)\s/g, ")\n");
@@ -124,11 +124,11 @@ function keepDialogOnly() {
 }
 
 function sketchScript() {
-    var txtInputBreakLine, result;
-    //  txtInputBreakLine = document.getElementById("txtInput").value;
-    txtInputBreakLine = document.getElementById("txtInput").value;
+    var textInputBreakLine, result;
+    //  textInputBreakLine = document.getElementById("textInput").value;
+    textInputBreakLine = document.getElementById("textInput").value;
     // function replace /n with /n/n
-    resultH = txtInputBreakLine.replace(/\-\-\s/g, "--\n");
+    resultH = textInputBreakLine.replace(/\-\-\s/g, "--\n");
     resultG = resultH.replace(/\u2026|\.{3}/g, "...\n");
     resultF = resultG.replace(/\!\s/g, "!\n");
     resultE = resultF.replace(/\)\s/g, ")\n");
@@ -181,7 +181,7 @@ async function checkBox() {
 }
 
 async function paste() {
-    var textarea2 = document.getElementById("txtInput");
+    var textarea2 = document.getElementById("textInput");
     textarea2.select()
     const text = await navigator.clipboard.readText();
     textarea2.value = text;
@@ -189,7 +189,7 @@ async function paste() {
     }
 
 function copyInput() {
-    var textarea = document.getElementById('txtInput');
+    var textarea = document.getElementById('textInput');
     textarea.select();
     document.execCommand("copy");
     alert("INPUT copied!")
