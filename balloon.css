@@ -57,6 +57,7 @@ textarea{
     color: black;
     hyphens: auto;
     background-color: lightgoldenrodyellow;
+    text-transform: uppercase;
   }
 .balloon {
     flex-direction: column;
@@ -71,9 +72,9 @@ textarea{
 
   
   
-  .nameAndBalloon:nth-child(even) {
+  /* .nameAndBalloon:nth-child(even) {
     align-self: flex-start;
-  }
+  } */
   .nameAndBalloon:nth-child(odd) {
     align-self: flex-end;
   }
