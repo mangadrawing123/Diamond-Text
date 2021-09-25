@@ -1,11 +1,8 @@
-
-
 //enbale TAb key
 function enableTab(id) {
     var el = document.getElementById(id);
     el.onkeydown = function(e) {
         if (e.keyCode === 9) { // tab was pressed
-
             // get caret position/selection
             var val = this.value,
                 start = this.selectionStart,
@@ -19,12 +16,18 @@ function enableTab(id) {
 
             // prevent the focus lose
             return false;
-
         }
     };
 }
 enableTab('textInput');
 
+//Enter
+$('textarea').keydown(function (e) { 
+    if (e.keyCode == 10 || e.keyCode == 13) {
+        console.log("hello")
+      button();
+    }
+});
 
 function button() {
   var s = document.getElementById("textInput").value;
@@ -36,10 +39,3 @@ function button() {
 
 
 
-//ctrl + Enter
- $('textarea').keydown(function (e) { 
-    if ((e.keyCode == 10 || e.keyCode == 13) ) {
-      // $('body').append('g ');
-      button();
-    }
-  });

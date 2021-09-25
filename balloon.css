@@ -1,23 +1,29 @@
 html, body {
     margin:0px;
     padding:0px;
-  }
-  .grid {
+    height: 100%;
+}
+.grid {
     display: grid;
-  /*   gap: 10px; */
-    grid-template-columns: auto 1fr;
-  /*   overflow: hidden; */
-  }
-  .main {
-    background: salmon;
-  }
-  .side {
-    background: white;
+    grid-template-columns: 1fr 1fr;
+}
+.main {
+    padding: 1rem;
+    background:#4A90E2;
+}
+.side {
+    background: lightgray;
     overflow: hidden;
       overflow-x: hidden;
       overflow-y: hidden;
   }
-  textarea{width: 100%;}
+textarea{
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(black, .3);
+  border: 0;
+  }
   .PANEL {
     border: 2px solid black;
     background-color: white;
