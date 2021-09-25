@@ -1,7 +1,7 @@
 html, body {
     margin:0px;
     padding:0px;
-    height: 100%;
+    height: 100vh;
 }
 .grid {
     display: grid;
@@ -63,7 +63,6 @@ textarea{
     border: 2px dashed black;
     background: white;
     hyphens: auto;
-    color: black;
     text-align: center;
 }
 
