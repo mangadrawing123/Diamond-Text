@@ -23,8 +23,10 @@ $('#textInput').keydown(function (e) {
 function button() {
   var s = document.getElementById("textInput").value;
   let result = '';
-  let regex = /^(PANEL\s+\S+)(.*?)(?=PANEL|$(?!\n))/gms;
-  result = s.replace(regex, '<div class="$1">$2</div>');
+  let regexPanel = /^(PANEL\s+\S+)(.*?)(?=PANEL|$(?!\n))/gms;
+  let regexNameBalloon = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
+  resultPanel = s.replace(regexPanel, '<div class="$1">$2</div>');
+  result = resultPanel.replace(regexNameBalloon, '<div class="balloon">$1$2</div>');
   document.querySelector(".side").innerHTML = result;
 }
 

@@ -61,7 +61,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - github push, fit half of screen not scrolling fit on screen 
 - enable tab key agaoini: https://jsfiddle.net/2wAzx/13/ --
 - -------------------------------------------------------------------------------------------------------------
-- grab balloon both character name adn dialog
+- f***, text area didn't allow Ctrl+Z
+- grab balloon both character name adn dialog regex /t/t until /t/t or no ^/t : https://regex101.com/r/GGuNkT/1 --
+- multiple regex replace at once?
 - phone : https://codepen.io/phoenixzqy/pen/KNaGdp --
 - mannual wrap text : https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1000 --
 - not scrolling: https://codepen.io/mangadrawing123/pen/wveEqbK?editors=0100
