@@ -1,8 +1,7 @@
 //enter and tab
 $('#textInput').keydown(function (e) { 
     if (e.keyCode == 10 || e.keyCode == 13) {
-        console.log("hello")
-      button();
+        button();
     } else if (e.keyCode == 9) { // tab was pressed
         // get caret position/selection
         var val = this.value,
@@ -23,10 +22,20 @@ $('#textInput').keydown(function (e) {
 function button() {
   var s = document.getElementById("textInput").value;
   let result = '';
+  
+  let regexAction = /^(?!\t|^([A-Z\s]+)$)(\S.*)/gm;
   let regexPanel = /^(PANEL\s+\S+)(.*?)(?=PANEL|$(?!\n))/gms;
-  let regexNameBalloon = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
-  resultPanel = s.replace(regexPanel, '<div class="$1">$2</div>');
-  result = resultPanel.replace(regexNameBalloon, '<div class="balloon">$1$2</div>');
+  let regexNameAndDialog = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
+  let regexName = /(\t\t)(\S.*)/gm;
+  let regexDialog = /(^\t)(\S.*)/gm;
+
+  result = s.replace(regexAction, '<div class="action">$2</div>');
+  result = result.replace(regexPanel, '<div class="$1">$2</div>');
+  result = result.replace(regexNameAndDialog, '<div class="nameAndDialog">$1$2</div>');
+  result = result.replace(regexName, '<div class="name">$2</div>');
+  result = result.replace(regexDialog, '<div class="dialogBalloon">$2</div>');
+
+  console.log(result)
   document.querySelector(".side").innerHTML = result;
 }
 

@@ -24,14 +24,15 @@ textarea{
     box-shadow: 2px 2px 8px rgba(black, .3);
   border: 0;
   }
-  .PANEL {
+.PANEL {
     border: 2px solid black;
-    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     margin: 10rem 0px 10rem 0px;
+    background: lightblue;
   }
+  
   .NORMAL {width: 90%;}
   .FULL {width: 90%;}
   .LEFT {width: 50%;}
@@ -40,41 +41,44 @@ textarea{
   .END {display: none;}
   .CENTER {width: 80%;}
   
-  .action {
-    background-color: white;
-      color: black;
-    padding: 0px 1rem 4rem 1rem;
+.action {
     hyphens: auto;
-  /*   width: 100%; */
-  /*    padding-top: 16/9; */
+    background-color: lightpink;
+}
+
+.nameAndDialog {
+    padding: 10px;
+    width: 80%;
+    background: orange;
   }
-  .character {
-  /*   position: absolute; */
-    bottom: 100%;
+.name {
     color: black;
     hyphens: auto;
-    background-color: white;
+    background-color: lightgoldenrodyellow;
   }
-  .balloon {
-  /*   position: relative; */
-    padding: 30px;
-    width: 30%;
+.dialogBalloon {
+    width: 40%;
+    padding: 20px;
     border-radius: 50%;
     border: 2px dashed black;
-    background: salmon;
+    background: white;
     hyphens: auto;
     color: black;
     text-align: center;
-  }
+}
+
   
-  .balloon:nth-child(even) {
+  
+  .nameAndDialog:nth-child(even) {
     align-self: flex-start;
   }
-  
-  
-  .balloon:nth-child(odd) {
+  .nameAndDialog:nth-child(odd) {
     align-self: flex-end;
   }
-  
-  
-  
+
+  .dialogBalloon:nth-child(even) {
+    align-self: flex-start;
+  }
+  .dialogBalloon:nth-child(odd) {
+    align-self: flex-end;
+  }
