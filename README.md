@@ -66,6 +66,8 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - panel min-height : 500px , then auto , solution: https://codepen.io/Terizo/pen/MWYeMqX?editors=1100 : minheigh: 100px , height: auto
 - delete after NAME (whisper) to put insdie the balloon type div regex :  - ask reddit: https://www.reddit.com/r/regex/comments/pv5o5e/how_do_i_wrap_multiple_dialog_balloons_with_div/ -- regex101: https://regex101.com/r/VE6E20/1 --
 - -------------------------------------------------------------------------------------------------------------
+- prinout iamge div side? dataUR div side?: 
+- after dataurl image done , post on clip studio reddit
 - name action (what inside this is under the will be like name but not capitalize))  , so regex two tab with ( at beginngin
 - fixed height screen phone and let hte textarea always appear on the left side: 
 - cheatsheet how panel work, Image below textarea.
