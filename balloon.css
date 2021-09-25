@@ -36,7 +36,7 @@ textarea{
   .NORMAL {width: 90%;}
   .FULL {width: 90%;}
   .LEFT {width: 50%;}
-  .RIGHT {width: 50%; align-self: flex-end;}
+  .RIGHT {width: 50%; margin-left: auto;}
   .FOCUS {width: 100%;}
   .END {display: none;}
   .CENTER {width: 80%;}

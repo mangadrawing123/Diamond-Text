@@ -62,9 +62,11 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - enable tab key agaoini: https://jsfiddle.net/2wAzx/13/ --
 - ask reddit around align nth child- lefnat and right balloon : https://codepen.io/mangadrawing123/pen/MWoPVWB?editors=1100 - reddit jsfiddle ballong nth child odd flex self end: https://jsfiddle.net/tzxLmy8f/ -- 
 - change name to NAME uppercase
+- align right panel baloon didn't align right: check reddit: https://www.reddit.com/r/css/comments/pv34kc/ -how_can_align_these_balloon_left_and_right/he7e9aa/?context=3 : codepne for shairng: https://codepen.io/mangadrawing123/pen/NWgOMwV?editors=1100 -- worked reddit: https://www.reddit.com/r/css/comments/pv34kc/how_can_align_these_balloon_left_and_right/ margin-left: auto;
 - -------------------------------------------------------------------------------------------------------------
+- delete after NAME (whisper) to put insdie the balloon type div --
 - name action (what inside this is under the will be like name but not capitalize))  , so regex two tab with ( at beginngin
-- align right panel baloon didn't align right: check reddit: https://www.reddit.com/r/css/comments/pv34kc/how_can_align_these_balloon_left_and_right/he7e9aa/?context=3 : codepne for shairng: https://codepen.io/mangadrawing123/pen/NWgOMwV?editors=1100 --
+- panel min-height : 500px , then auto
 - cheatsheet how panel work, Image below textarea.
 - f***, text area didn't allow Ctrl+Z
 - grab balloon both character name adn dialog regex /t/t until /t/t or no ^/t : https://regex101.com/r/GGuNkT/1 --
