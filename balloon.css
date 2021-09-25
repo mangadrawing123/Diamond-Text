@@ -4,17 +4,17 @@ padding:0px;
 background: rgb(43, 43, 43);
 }
 .grid {
-display: grid;
-grid-template-columns: 40vw auto 56vh auto;
-justify-content: center;
+    grid-template-columns: 40vw auto 56vh auto;
+    display: grid;
+    justify-content: center;
 }
 .main {
     position: fixed;
     width: 40vw;
     height: 100vh;
+    background: rgb(43, 43, 43);
     /* background:#4A90E2; */
     justify-content: inherit;
-    align-items: inherit;
 }
 .side {
     grid-column-start: 3;
@@ -22,19 +22,34 @@ justify-content: center;
     /* background: lightgray; */
 }
 textarea{
-font-size: 15px;
+    font-size: 17px;
     width: 90%;
-    height: 70%;
-    margin: auto;
+    height: 100vh;
+    margin-left: 10%;
+    padding: 10px;
     border-radius: 6px;
+    border-color: rgba(255, 255, 255, 0.157);
+    background: rgb(43, 43, 43);
+    color: rgba(255, 255, 255, 0.699);
     box-shadow: 2px 2px 8px rgba(black, .3);
     border: 0;
 }
-.boxsizingBorder {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
+#textInput textarea::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+#textInput textarae::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  #textInput textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  #textInput textarea::-webkit-scrollbar-thumb {
+    background: #d2d2d2; 
+  }
+  
 button {
     background: none;
     color: rgba(255, 255, 255, 0.281);
@@ -44,12 +59,12 @@ button {
     border-radius: 0.8rem;
     font-size: 1.5rem;
     font-weight: 600;
-    
 }
 button:hover {
     /* color: #458efe; */
     color: white;
     border: 3px solid white;
+
 }
 
 .PANEL {
