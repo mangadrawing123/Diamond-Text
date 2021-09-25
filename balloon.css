@@ -55,23 +55,23 @@ textarea{
     width: 50%;
     background: orange;
   }
-.name {
-    color: black;
-    hyphens: auto;
-    background-color: lightgoldenrodyellow;
-    text-transform: uppercase;
-  }
-.balloon {
-    flex-direction: column;
-    width: 40%;
-    padding: 20px;
-    border-radius: 50%;
-    border: 2px dashed black;
-    background: white;
-    hyphens: auto;
-    text-align: center;
-}
-
+  .name {
+      color: black;
+      hyphens: auto;
+      background-color: lightgoldenrodyellow;
+      text-transform: uppercase;
+    }
+    .balloon {
+        flex-direction: column;
+        width: 40%;
+        padding: 20px;
+        border-radius: 50%;
+        border: 2px dashed black;
+        background: white;
+        hyphens: auto;
+        text-align: center;
+    }
+    
   
   
   /* .nameAndBalloon:nth-child(even) {
