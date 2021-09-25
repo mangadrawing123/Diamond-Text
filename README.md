@@ -60,8 +60,8 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - good textarea color and panel: https://codepen.io/vsync/pen/frudD?editors=1100
 - github push, fit half of screen not scrolling fit on screen 
 - enable tab key agaoini: https://jsfiddle.net/2wAzx/13/ --
-- -------------------------------------------------------------------------------------------------------------
 - ask reddit around align nth child- lefnat and right balloon : https://codepen.io/mangadrawing123/pen/MWoPVWB?editors=1100
+- -------------------------------------------------------------------------------------------------------------
 - cheatsheet how panel work, Image below textarea.
 - f***, text area didn't allow Ctrl+Z
 - grab balloon both character name adn dialog regex /t/t until /t/t or no ^/t : https://regex101.com/r/GGuNkT/1 --

@@ -22,18 +22,18 @@ $('#textInput').keydown(function (e) {
 function button() {
   var s = document.getElementById("textInput").value;
   let result = '';
-  
+
   let regexAction = /^(?!\t|^([A-Z\s]+)$)(\S.*)/gm;
   let regexPanel = /^(PANEL\s+\S+)(.*?)(?=PANEL|$(?!\n))/gms;
-  let regexNameAndDialog = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
+  let regexNameAndBalloon = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
   let regexName = /(\t\t)(\S.*)/gm;
-  let regexDialog = /(^\t)(\S.*)/gm;
+  let regexBalloon = /(^\t)(\S.*)/gm;
 
   result = s.replace(regexAction, '<div class="action">$2</div>');
   result = result.replace(regexPanel, '<div class="$1">$2</div>');
-  result = result.replace(regexNameAndDialog, '<div class="nameAndDialog">$1$2</div>');
+  result = result.replace(regexNameAndBalloon, '<div class="nameAndBalloon">$1$2</div>');
   result = result.replace(regexName, '<div class="name">$2</div>');
-  result = result.replace(regexDialog, '<div class="dialogBalloon">$2</div>');
+  result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
 
   console.log(result)
   document.querySelector(".side").innerHTML = result;
