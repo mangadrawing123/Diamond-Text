@@ -59,8 +59,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - add differnt class for panel: right focus left... - https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=0110 -- kinda wraping it: https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1101 -- using regex:https://regex101.com/r/zEc24U/1
 - good textarea color and panel: https://codepen.io/vsync/pen/frudD?editors=1100
 - github push, fit half of screen not scrolling fit on screen 
-- -------------------------------------------------------------------------------------------------------------
 - enable tab key agaoini: https://jsfiddle.net/2wAzx/13/ --
+- -------------------------------------------------------------------------------------------------------------
+- grab balloon both character name adn dialog
 - phone : https://codepen.io/phoenixzqy/pen/KNaGdp --
 - mannual wrap text : https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1000 --
 - not scrolling: https://codepen.io/mangadrawing123/pen/wveEqbK?editors=0100
