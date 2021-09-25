@@ -67,7 +67,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - delete after NAME (whisper) to put insdie the balloon type div regex :  - ask reddit: https://www.reddit.com/r/regex/comments/pv5o5e/how_do_i_wrap_multiple_dialog_balloons_with_div/ -- regex101: https://regex101.com/r/VE6E20/1 --
 - -------------------------------------------------------------------------------------------------------------
 - prinout iamge div side? dataUR div side?: 
+- aling all panel in center? 
 - link two page diamond tex and diamodn text layout. 
+- good enter button: https://codepen.io/ritchiejacobs/pen/qEJjBM?editors=1100 button 3 -- 
 - after dataurl image done , post on clip studio reddit
 - name action (what inside this is under the will be like name but not capitalize))  , so regex two tab with ( at beginngin
 - fixed height screen phone and let hte textarea always appear on the left side: 

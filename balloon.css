@@ -1,51 +1,73 @@
 html, body {
 margin:0px;
 padding:0px;
-height: 100vh;
 }
 .grid {
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1.6fr 1fr;
 }
 .main {
+height: 100%;
 padding: 1rem;
 background:#4A90E2;
 }
 .side {
-background: lightgray;
-overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    background: white;
+    /* background: lightgray; */
 }
 textarea{
-width: 100%;
-margin: 50px auto;
-border-radius: 6px;
-box-shadow: 2px 2px 8px rgba(black, .3);
-border: 0;
+font-size: 20px;
+    width: 100%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(black, .3);
+    border: 0;
 }
+button {
+    background: none;
+    color: rgba(255, 255, 255, 0.281);
+    border: 3px solid rgba(255, 255, 255, 0.383);
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+button:hover {
+    /* color: #458efe; */
+    color: white;
+    border: 3px solid white;
+}
+
 .PANEL {
+font-size: 20px;
 border: 2px solid black;
 display: flex;
 min-height: 300px;
 height: auto;
 flex-direction: column;
 padding: 1rem;
-margin: 10rem 0px 10rem 0px;
-background: lightblue;
+margin: 10rem 0 10rem 0;
+background: white;
+align-content: center;
+/* background: lightblue; */
 }
 
 .NORMAL {width: 90%;}
-.FULL {width: 90%;}
+.FULL {width: 90%; margin: 0;}
 .LEFT {width: 50%;}
 .RIGHT {width: 50%;  float: right;} /* margin-left: auto;*/
 .FOCUS {width: 100%;}
 .END {display: none;}
 .CENTER {width: 80%;}
+.NONE {border: 0;}
 
 .action {
 hyphens: auto;
-background-color: lightpink;
+color: rgba(0, 0, 0, 0.712);
+background: white;
+/* background-color: lightpink; */
 }
 
 .nameAndBalloon {
@@ -53,17 +75,19 @@ display: flex;
 flex-direction: column;
 padding: 10px;
 width: 50%;
-background: orange;
+background: white;
+/* background: orange; */
 }
 .name {
     color: black;
     hyphens: auto;
-    background-color: lightgoldenrodyellow;
+background: white;
+/* background-color: lightgoldenrodyellow; */
     text-transform: uppercase;
 }
 .balloon {
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     border: 2px solid black;
     padding: 20px;
     border-radius: 50%;
