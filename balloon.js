@@ -1,3 +1,6 @@
+var textarea = document.getElementById("textInput");
+tabOverride.set(textarea);
+
 //enbale TAb key
 function enableTab(id) {
     var el = document.getElementById(id);

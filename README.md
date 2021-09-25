@@ -56,19 +56,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - wrap all PANEL until next PANEL ENTIRE: https://regexr.com/668at - google: https://forum.uipath.com/t/get-multiple-lines-between-two-strings-using-regex/192710 - (work) https://regexr.com/668k6 -
 - able to use regex wrap panel: https://regexr.com/668k6 -- need to use regex for all name and balloon as well: https://codepen.io/mangadrawing123/pen/OJgoqeo?editors=0010 - perfect reddit regex: https://regex101.com/r/ZDTjqz/2/ (orignal redidt) : https://www.reddit.com/r/regex/comments/pug61i/how_to_match_until_the_next_panel_occurence_regex/he38s4q/?context=8&depth=9 -
 - grid play game: 
-<<<<<<< HEAD
 - add differnt class for panel: right focus left... - https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=0110 -- kinda wraping it: https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1101 -- using regex:https://regex101.com/r/zEc24U/1
 - good textarea color and panel: https://codepen.io/vsync/pen/frudD?editors=1100
-- -------------------------------------------------------------------------------------------------------------
 - github push, fit half of screen not scrolling fit on screen 
-- enable tab key agaoini: 
-- phone : https://codepen.io/phoenixzqy/pen/KNaGdp --
-=======
 - -------------------------------------------------------------------------------------------------------------
-- fixed desktop screen view 
-- add differnt class for panel: right focus left... - https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=0110 -- kinda wraping it: https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1101 -- using regex:https://regex101.com/r/zEc24U/1
-- phone oringal : https://codepen.io/phoenixzqy/pen/KNaGdp -- mine : https://codepen.io/mangadrawing123/pen/zYzmqxp
->>>>>>> 068f592f0c86c80d8e77b3c2a25bf30b2da1ff6a
+- enable tab key agaoini: https://jsfiddle.net/2wAzx/13/ --
+- phone : https://codepen.io/phoenixzqy/pen/KNaGdp --
 - mannual wrap text : https://codepen.io/mangadrawing123/pen/oNwavgQ?editors=1000 --
 - not scrolling: https://codepen.io/mangadrawing123/pen/wveEqbK?editors=0100
 - replace advanced repalce one tab , two tab iwth differnet div.: 
