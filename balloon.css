@@ -1,89 +1,91 @@
 html, body {
-    margin:0px;
-    padding:0px;
-    height: 100vh;
+margin:0px;
+padding:0px;
+height: 100vh;
 }
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 .main {
-    padding: 1rem;
-    background:#4A90E2;
+padding: 1rem;
+background:#4A90E2;
 }
 .side {
-    background: lightgray;
-    overflow: hidden;
-      overflow-x: hidden;
-      overflow-y: hidden;
-  }
+background: lightgray;
+overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 textarea{
-    width: 100%;
-    margin: 50px auto;
-    border-radius: 6px;
-    box-shadow: 2px 2px 8px rgba(black, .3);
-  border: 0;
-  }
+width: 100%;
+margin: 50px auto;
+border-radius: 6px;
+box-shadow: 2px 2px 8px rgba(black, .3);
+border: 0;
+}
 .PANEL {
-    border: 2px solid black;
-    display: flex;
-    min-height: 300px;
-    height: auto;
-    flex-direction: column;
-    padding: 1rem;
-    margin: 10rem 0px 10rem 0px;
-    background: lightblue;
-  }
-  
-  .NORMAL {width: 90%;}
-  .FULL {width: 90%;}
-  .LEFT {width: 50%;}
-  .RIGHT {width: 50%;  float: right;} /* margin-left: auto;*/
-  .FOCUS {width: 100%;}
-  .END {display: none;}
-  .CENTER {width: 80%;}
-  
+border: 2px solid black;
+display: flex;
+min-height: 300px;
+height: auto;
+flex-direction: column;
+padding: 1rem;
+margin: 10rem 0px 10rem 0px;
+background: lightblue;
+}
+
+.NORMAL {width: 90%;}
+.FULL {width: 90%;}
+.LEFT {width: 50%;}
+.RIGHT {width: 50%;  float: right;} /* margin-left: auto;*/
+.FOCUS {width: 100%;}
+.END {display: none;}
+.CENTER {width: 80%;}
+
 .action {
-    hyphens: auto;
-    background-color: lightpink;
+hyphens: auto;
+background-color: lightpink;
 }
 
 .nameAndBalloon {
-    display: flex;
+display: flex;
+flex-direction: column;
+padding: 10px;
+width: 50%;
+background: orange;
+}
+.name {
+    color: black;
+    hyphens: auto;
+    background-color: lightgoldenrodyellow;
+    text-transform: uppercase;
+}
+.balloon {
     flex-direction: column;
-    padding: 10px;
-    width: 50%;
-    background: orange;
-  }
-  .name {
-      color: black;
-      hyphens: auto;
-      background-color: lightgoldenrodyellow;
-      text-transform: uppercase;
-    }
-    .balloon {
-        flex-direction: column;
-        width: 40%;
-        padding: 20px;
-        border-radius: 50%;
-        border: 2px dashed black;
-        background: white;
-        hyphens: auto;
-        text-align: center;
-    }
-    
-  
-  
-  /* .nameAndBalloon:nth-child(even) {
-    align-self: flex-start;
-  } */
-  .nameAndBalloon:nth-child(odd) {
-    align-self: flex-end;
-  }
+    width: 40%;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    background: white;
+    hyphens: auto;
+    text-align: center;
+}
+.whisper {
+border: 2px dashed black;
+}
 
-  /* .balloon:nth-child(even) {
-    align-self: flex-start;
-  } */
-  .balloon:nth-child(odd) {
-    align-self: flex-end;
-  }
+
+/* .nameAndBalloon:nth-child(even) {
+align-self: flex-start;
+} */
+.nameAndBalloon:nth-child(odd) {
+align-self: flex-end;
+}
+
+/* .balloon:nth-child(even) {
+align-self: flex-start;
+} */
+.balloon:nth-child(odd) {
+align-self: flex-end;
+}
