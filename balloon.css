@@ -27,6 +27,8 @@ textarea{
 .PANEL {
     border: 2px solid black;
     display: flex;
+    min-height: 300px;
+    height: auto;
     flex-direction: column;
     padding: 1rem;
     margin: 10rem 0px 10rem 0px;
@@ -36,7 +38,7 @@ textarea{
   .NORMAL {width: 90%;}
   .FULL {width: 90%;}
   .LEFT {width: 50%;}
-  .RIGHT {width: 50%; margin-left: auto;}
+  .RIGHT {width: 50%;  float: right;} /* margin-left: auto;*/
   .FOCUS {width: 100%;}
   .END {display: none;}
   .CENTER {width: 80%;}
