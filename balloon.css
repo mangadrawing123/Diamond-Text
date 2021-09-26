@@ -58,7 +58,7 @@ button {
     grid-column-end: 2; 
     background: none;
     color: rgba(255, 255, 255, 0.089);
-    border: 3px solid rgba(255, 255, 255, 0.089);
+    border: 3px solid rgba(255, 255, 255, 0.383);
     padding: 1rem 1rem;
     border-radius: 0.8rem;
     font-size: 1.5rem;
