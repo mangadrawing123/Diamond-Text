@@ -56,4 +56,11 @@ function downloadWebtoonDesktop() {
 }
 
 
+function copyText() {
+    let textarea = document.querySelector("#textInput");
+    textarea.select();
+    document.execCommand("copy");
+    alert("INPUT copied!")
+}
+
 
