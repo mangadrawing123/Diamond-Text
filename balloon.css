@@ -57,7 +57,7 @@ textarea{
 /* .downloadWebtoonDesktop */
 button {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 2; 
     background: none;
     color: rgba(255, 255, 255, 0.281);
     border: 3px solid rgba(255, 255, 255, 0.383);
