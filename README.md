@@ -68,10 +68,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - sticky GRID cssonee hte side find on codepen , jsifdle: https://codepen.io/mangadrawing123/pen/xxryBwN (not owkring stciky) - codpen: https://codepen.io/joeaugie/pen/GvVgKL?editors=1100 --
 - darkcolor BLUE accent color  mode pallete like clip studiop apint: chnage ot dark black
 - textare fit inside grid codepen center:
+- prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row , downlaod button icon: https://codepen.io/fpecher/pen/MWgQZgL?editors=1100 - success - stackvoerflow: https://stackoverflow.com/questions/51767557/html2canvas-uncaught-in-promise-undefined  -- jsquery downlaod div image html2canvas: https://jsfiddle.net/Sq7hg/1913
 - -------------------------------------------------------------------------------------------------------------
-- prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row 
+- two or three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER
 - text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
 - 19:6 vw for the the div side: 
+- panel two and threee for one eor two action in the same panel
 - enalbe live editor vscode onthe right side, extension: 
 - padding top and bottom of page for extra webtoon thing
 - need to do some grid practice, youtbe code along 1 hour: 
