@@ -73,8 +73,14 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER: regex: https://regex101.com/r/plSSHa/2 (fnisendd updlaod test 3)
 - more spacing between panel
 - -------------------------------------------------------------------------------------------------------------
+- Copy text all button
 - regex after three enter put hte panel normal left and right to ht parent div.
+- whisper regex () after name
+- cheatsheett rexize textarea when open
 - flex with thre two or side by side when there are two or more Name and BAlon
+- textarea software wrap auto indent tab
+- also auto when enter three auto move to that panel. like a game for lottery.
+- scroll bar thingy, reddit: 
 - wheen one person sprea left and right?
 - text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
 - 19:6 vw for the the div side: 
