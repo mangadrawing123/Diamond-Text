@@ -69,8 +69,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - darkcolor BLUE accent color  mode pallete like clip studiop apint: chnage ot dark black
 - textare fit inside grid codepen center:
 - prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row , downlaod button icon: https://codepen.io/fpecher/pen/MWgQZgL?editors=1100 - success - stackvoerflow: https://stackoverflow.com/questions/51767557/html2canvas-uncaught-in-promise-undefined  -- jsquery downlaod div image html2canvas: https://jsfiddle.net/Sq7hg/1913
+- regex seraspte captialized word: https://stackoverflow.com/questions/34066157/regex-to-match-uppercase-expressions-and-words , find regex 3 tabs or above
+- three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER
+- more spacing between panel
 - -------------------------------------------------------------------------------------------------------------
-- two or three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER
+- regex after three enter put hte panel normal left and right to ht parent div.
+- wheen one person sprea left and right?
 - text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
 - 19:6 vw for the the div side: 
 - panel two and threee for one eor two action in the same panel
@@ -79,6 +83,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - need to do some grid practice, youtbe code along 1 hour: 
 - enter button on the middle?
 - darkmode:?
+- my own text editr that sepearte panel liek in clip studi when I pressed two enter, focus on writing only , center text editor
 - ctrl + enter in case:
 - NEXT PROJECT: timer like iphone and youtube on teh side
 - aling all panel in center? 
