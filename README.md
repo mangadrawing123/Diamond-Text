@@ -74,6 +74,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - more spacing between panel
 - -------------------------------------------------------------------------------------------------------------
 - regex after three enter put hte panel normal left and right to ht parent div.
+- flex with thre two or side by side when there are two or more Name and BAlon
 - wheen one person sprea left and right?
 - text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
 - 19:6 vw for the the div side: 
