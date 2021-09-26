@@ -73,10 +73,15 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER: regex: https://regex101.com/r/plSSHa/2 (fnisendd updlaod test 3)
 - more spacing between panel
 - -------------------------------------------------------------------------------------------------------------
+- change it to png. jpef transparent?
+- change size of cnavas image to 500px width only;
+- option to break canvas size to small chunk
 - Copy text all button
 - regex after three enter put hte panel normal left and right to ht parent div.
 - whisper regex () after name
+- skew rectnagle
 - cheatsheett rexize textarea when open
+- Enter button on the middle grid css
 - flex with thre two or side by side when there are two or more Name and BAlon
 - textarea software wrap auto indent tab
 - also auto when enter three auto move to that panel. like a game for lottery.
