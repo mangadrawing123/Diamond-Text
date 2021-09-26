@@ -36,7 +36,7 @@ function button() {
   result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
 
   console.log(result)
-  document.querySelector(".side").innerHTML = result;
+  document.querySelector(".webtoonImage").innerHTML = result;
 }
 
 

@@ -1,40 +1,48 @@
 html, body {
 margin:0px;
 padding:0px;
-background: rgb(43, 43, 43);
+background: black;
 }
 .grid {
-    grid-template-columns: 40vw auto 56vh auto;
     display: grid;
+    grid-template-columns: auto 40vw auto 56vh auto;
+    grid-template-rows: 1fr;
     justify-content: center;
 }
+
 .main {
     position: fixed;
     width: 40vw;
     height: 100vh;
-    background: rgb(43, 43, 43);
+    /* background: rgb(43, 43, 43); */
     /* background:#4A90E2; */
     justify-content: inherit;
 }
-.side {
-    grid-column-start: 3;
-    background: white;
-    /* background: lightgray; */
+
+.sidebar {
+    grid-column-start: 1 /2 ;
+    grid-row-start: 1;
+    align-self: flex-end;
 }
 textarea{
+    grid-column-start: 2;
     font-size: 17px;
     width: 90%;
     height: 100vh;
     margin-left: 10%;
     padding: 10px;
     border-radius: 6px;
-    border-color: rgba(255, 255, 255, 0.157);
-    background: rgb(43, 43, 43);
+    background: transparent;
     color: rgba(255, 255, 255, 0.699);
     box-shadow: 2px 2px 8px rgba(black, .3);
     border: 0;
 }
-#textInput textarea::-webkit-scrollbar {
+.webtoonImage {
+    grid-column-start: 4;
+    background: white;
+    /* background: lightgray; */
+}
+/* #textInput textarea::-webkit-scrollbar {
     width: 4px;
   }
   
@@ -48,8 +56,8 @@ textarea{
   
   #textInput textarea::-webkit-scrollbar-thumb {
     background: #d2d2d2; 
-  }
-  
+  } */
+
 button {
     background: none;
     color: rgba(255, 255, 255, 0.281);
@@ -76,7 +84,7 @@ height: auto;
 flex-direction: column;
 padding: 1rem;
 margin: 10rem 0 10rem 0;
-background: white;
+/* background: white; */
 align-content: center;
 /* background: lightblue; */
 }
@@ -93,7 +101,7 @@ align-content: center;
 .action {
 hyphens: auto;
 color: rgba(0, 0, 0, 0.712);
-background: white;
+/* background: white; */
 /* background-color: lightpink; */
 }
 
