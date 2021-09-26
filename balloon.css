@@ -12,8 +12,10 @@ background: black;
 
 .main {
     position: fixed;
+    padding: 1vh;
     width: 40vw;
     height: 100vh;
+    margin-left: 5%;
     /* background: rgb(43, 43, 43); */
     /* background:#4A90E2; */
     justify-content: inherit;
@@ -24,9 +26,9 @@ background: black;
 textarea{
     grid-column-start: 2;
     font-size: 17px;
-    width: 90%;
-    height: 90vh;
-    margin-left: 10%;
+    width: 80%;
+    height:85vh;
+    /* margin-left: 10%; */
     padding: 10px;
     border-radius: 6px;
     background: transparent;
@@ -90,11 +92,10 @@ align-content: center;
 .NORMAL {width: 90%;}
 .FULL {width: 90%; margin: 0;}
 .LEFT {width: 50%;}
-.RIGHT {width: 50%;  float: right;} /* margin-left: auto;*/
+.RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
 .FOCUS {width: 100%;}
-.END {display: none;}
 .CENTER {width: 80%;}
-.NONE {border: 0;}
+.NONE {width: 100%; border: 0;}
 
 .action {
 hyphens: auto;

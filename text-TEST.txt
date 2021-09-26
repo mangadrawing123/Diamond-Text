@@ -1,77 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="balloon.css">
-    <link rel="stylesheet" href="balloon.scss">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> 
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <title>Diamond Text Layout</title>
-</head>
-<body>
-    <div class="grid">
-        <div class="main">
-            <!-- <textarea id="textInput" cols="2" rows="50">
-                
-PANEL RIGHT
-Ghariel and Diana sitting near the park, they are having fun.
-		Gahriel
-	Waht would you do if I was you?---
-
-PANEL  NORMAL
-Sunndenly , a monster jump out right behind Diana. Gahriel scared, he talked to Diana.
-
-		Gharial (whisper)
-	Diana, no matter what you do?
-	Don’t--
-	--turn back!
-
-		Diana (confused)
-	What--
-	--are you talking about?
- 
-PANEL LEFT
-Gahriel signal diane to be quiet
-		Gharial (whisper)
-	Shh….
-
-
-PANEL  FOCUS
-The monster is running toward them quickly , right behind them
-		Gharial (whisper)
-	Shh….
-
-
-PANEL  FULL
-Diana is afraid for her own life. Her eyes wide open as the monster breathes through her.
-		Diana 
-	(holding her mouth with her hand)
-	Gasp
-
-PANEL RIGHT
-		Gahriel (whisper)
-	Everything will be okay!
-
-PANEL CENTER
-They both stand silently, not a single noise.,
-
-PANEL SMALL
-A sudden noise
-Crack
-
-PANEL  FULL
-The monster caught Diana and bit her head off. Gahriel in shock-terror, he can’t move.
-
-
-</textarea><br> -->
-<textarea name="" id="textInput" cols="30" rows="10">
-
-
-
 
 
 We see Diana look like a with her head wrap with blanket sitting on the bed working on a laptop. With pink hoody on, she either look like a “hacker” or She look… under the weather, running nose. Eyes bag under her eyes.
@@ -93,18 +19,17 @@ Diana showed us her laptop, where it display the Diamond Webtoon Layout she had 
 		Diana
 	I just made a website that will turn your comic script to Webtoon Layout
 	Sniff
-
+	
 
 
 LEFT
+    		Diana
+	You can copy and paste it from you Word or Google Docs
 		Diana
-You can copy and paste it from you Word or Google Docs
-		Diana
-	Or can type it out directly on the Website if you want it
+   	Or can type it out directly on the Website if you want it
 
 Show the website with the textarea typing in real time
 	
-
 
 PANEL RIGHT
 		Diana
@@ -113,18 +38,14 @@ PANEL RIGHT
 	And continue working on it..
 
 
-
-
 PANEL NONE
 Diana make to show people always Copy and Paste to save the document. She point out
-		Diana
+Diana
 	Remember to Save the script text,
 	Because the website will NOT save your document..
 
 
-
-
-NORMAL
+PANEL NORMAL
 Diana hold here desktop like a flashlight that look like those creepy ghost story camping. Looking down toward the reader.
 		Diana
 	And if you accidentally refresh it,
@@ -242,16 +163,3 @@ Panel show latop on the right side take up hlaf of panel, where they come sit at
 
 
 
-
-</textarea>            
-<button class="downloadWebtoonDesktop" onclick="downloadWebtoonDesktop()">Download</button>
-            <button onclick="button()">Enter </button>
-
-        </div> <!--main-->
-        
-        <div class="webtoonImage">
-        </div> <!--side display webtoon-->
-    </div><!--grid-->
-    <script src="balloon.js"></script>
-</body>
-</html>
