@@ -34,13 +34,9 @@ textarea{
     background: transparent;
     color: rgba(255, 255, 255, 0.699);
     box-shadow: 2px 2px 8px rgba(black, .3);
-    border: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.webtoonImage {
-    grid-column-start: 4;
-    background: white;
-    /* background: lightgray; */
-}
+
 /* #textInput textarea::-webkit-scrollbar {
     width: 4px;
   }
@@ -75,28 +71,34 @@ button:hover {
 
 }
 
-.PANEL {
-font-size: 20px;
-border: 2px solid black;
-display: flex;
-min-height: 30vh;
-max-height: 85vh;
-height: auto;
-flex-direction: column;
-padding: 1rem;
-margin: 40vh 1rem 40vh 1rem;
-/* background: white; */
-align-content: center;
-/* background: lightblue; */
+.webtoonImage {
+    grid-column-start: 4;
+    /* padding: 40vh 0 40vh 0; */
+    background: white;
+    /* background: lightgray; */
 }
-
-.NORMAL {width: 90%;}
+.PANEL {
+    font-size: 20px;
+    border: 2px solid black;
+    display: flex;
+    min-height: 30vh;
+    max-height: 85vh;
+    height: auto;
+    margin: 40vh 1vh 40vh 1vh;
+    padding: 3%;
+    flex-direction: column;
+    /* padding: 1rem; */
+    /* background: white; */
+    align-content: center;
+    /* background: lightblue; */
+}
 .FULL {width: 100%; margin: 0;}
 .LEFT {width: 50%;}
 .RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
-.FOCUS {width: 100%;}
+.FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
 .CENTER {width: 80%;}
 .NONE {width: 100%; border: 0;}
+.SKEW {}
 
 .action {
 hyphens: auto;
@@ -108,35 +110,35 @@ color: rgba(0, 0, 0, 0.712);
 .nameAndBalloon {
 display: flex;
 flex-direction: column;
-padding: 10px;
-width: 50%;
-background: white;
+margin-top: 1vh;
+width: 70%;
 /* background: orange; */
 }
 .name {
     color: black;
     hyphens: auto;
-background: white;
+/* background: white; */
 /* background-color: lightgoldenrodyellow; */
     text-transform: uppercase;
 }
 
+/* balloon and ballon types */
 .balloon {
     flex-direction: column;
-    width: 16vh;
+    width: 50%;
     border: 2px solid black;
     padding: 20px;
     border-radius: 50%;
-    /* background: white; */
+    background: white;
     hyphens: auto;
     text-align: center;
 }
-.whisper {
-border: 2px dashed black;
-}
+.whisper {border: 2px dashed black;}
+.yell {}
+.scared {}
 
 
-/* altenrative balloon */
+/*altenrative balloon */
 .nameAndBalloon:nth-child(odd) {
 align-self: flex-end;
 }

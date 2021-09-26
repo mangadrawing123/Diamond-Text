@@ -26,13 +26,13 @@ function button() {
   let regexAction = /^(?!\t|^([A-Z\s]+)$)(\S.*)/gm;
 //   let regexPanel = /^(PANEL\s+\S+)(.*?)(?=PANEL|$(?!\n))/gms;
 //   let regexPanelEnter = /(^\n{2,}|^PANEL\s+(\S+)|^(NORMAL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE))(.*?)(?=^\n{2,}|^PANEL\s+(\S+)|^(NORMAL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE)|$(?!\n))/gms;
-  let regexThreeEnter = /^(^\n{2,})(.*?)(?=^\n{2,}|$(?!\n))/gms;
+  let regexThreeEnter = /^\n{2,}(^PANEL\s+(\S+))?(^(NORMAL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE))?(.*?)(?=^\n{2,}|$(?!\n))/gms;
   let regexNameAndBalloon = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
   let regexName = /(\t\t)(\S.*)/gm;
   let regexBalloon = /(^\t)(\S.*)/gm;
 
   result = s.replace(regexAction, '<div class="action">$2</div>');
-  result = result.replace(regexThreeEnter, '<div class="PANEL ">\n$2</div>\n');
+  result = result.replace(regexThreeEnter, '<div class="PANEL $2$4">$5</div>\n');
   result = result.replace(regexNameAndBalloon, '<div class="nameAndBalloon">$1$2</div>');
   result = result.replace(regexName, '<div class="name">$2</div>');
   result = result.replace(regexBalloon, '<div class="balloon">$2</div>');

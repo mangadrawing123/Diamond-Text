@@ -1,0 +1,29 @@
+///PANEL types
+
+Press 3 enter to create new panel (default 19:6, autofit word)
+
+RIGHT
+LEFT
+FOCUS
+CENTER
+NONE
+SKEW
+
+//Size:
+SMALL
+FULL  (full phone view)
+
+
+//example combination
+CENTER SMALL
+SMALL RIGHT
+
+
+
+///Ballooon types  - putting after name character in paranthesis()
+
+(whisper)
+(yell)
+(scared)
+(square)
+(phone)/(robot)
