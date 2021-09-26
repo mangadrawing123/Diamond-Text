@@ -79,18 +79,19 @@ button:hover {
 font-size: 20px;
 border: 2px solid black;
 display: flex;
-min-height: 300px;
+min-height: 30vh;
+max-height: 85vh;
 height: auto;
 flex-direction: column;
 padding: 1rem;
-margin: 10rem 0 10rem 0;
+margin: 40vh 1rem 40vh 1rem;
 /* background: white; */
 align-content: center;
 /* background: lightblue; */
 }
 
 .NORMAL {width: 90%;}
-.FULL {width: 90%; margin: 0;}
+.FULL {width: 100%; margin: 0;}
 .LEFT {width: 50%;}
 .RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
 .FOCUS {width: 100%;}
@@ -119,13 +120,14 @@ background: white;
 /* background-color: lightgoldenrodyellow; */
     text-transform: uppercase;
 }
+
 .balloon {
     flex-direction: column;
-    width: 60%;
+    width: 16vh;
     border: 2px solid black;
     padding: 20px;
     border-radius: 50%;
-    background: white;
+    /* background: white; */
     hyphens: auto;
     text-align: center;
 }
@@ -134,16 +136,10 @@ border: 2px dashed black;
 }
 
 
-/* .nameAndBalloon:nth-child(even) {
-align-self: flex-start;
-} */
+/* altenrative balloon */
 .nameAndBalloon:nth-child(odd) {
 align-self: flex-end;
 }
-
-/* .balloon:nth-child(even) {
-align-self: flex-start;
-} */
 .balloon:nth-child(odd) {
 align-self: flex-end;
 }
