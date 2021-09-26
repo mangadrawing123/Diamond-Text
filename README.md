@@ -70,7 +70,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - textare fit inside grid codepen center:
 - prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row , downlaod button icon: https://codepen.io/fpecher/pen/MWgQZgL?editors=1100 - success - stackvoerflow: https://stackoverflow.com/questions/51767557/html2canvas-uncaught-in-promise-undefined  -- jsquery downlaod div image html2canvas: https://jsfiddle.net/Sq7hg/1913
 - regex seraspte captialized word: https://stackoverflow.com/questions/34066157/regex-to-match-uppercase-expressions-and-words , find regex 3 tabs or above
-- three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER
+- three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER: regex: https://regex101.com/r/plSSHa/2 (fnisendd updlaod test 3)
 - more spacing between panel
 - -------------------------------------------------------------------------------------------------------------
 - regex after three enter put hte panel normal left and right to ht parent div.
