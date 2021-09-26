@@ -35,9 +35,37 @@ function button() {
   result = result.replace(regexName, '<div class="name">$2</div>');
   result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
 
-  console.log(result)
   document.querySelector(".webtoonImage").innerHTML = result;
 }
 
+
+function downloadWebtoonDesktop() {
+    html2canvas(document.querySelector(".webtoonImage")).then(function(canvas) {
+        // document.body.appendChild(canvas);
+        console.log("hello")
+		var dataURL = canvas.toDataURL("image/png");
+        let downloadLink = document.createElement('a');
+      downloadLink.setAttribute('download', 'CanvasAsImage.png');
+      let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
+      downloadLink.setAttribute('href', url);
+      downloadLink.click();
+		// document.querySelector("#theimage9").src = theimage9; 
+	});
+}
+
+////////////////////able to downlaod image but just a section of it//////////////////////////////
+
+// function downloadWebtoonDesktop() {
+//     html2canvas(document.querySelector(".downloadWebtoonDesktop")).then(function(canvas) {
+//         console.log("hello")
+// 		var dataURL = canvas.toDataURL("image/png");
+//         let downloadLink = document.createElement('a');
+//       downloadLink.setAttribute('download', 'CanvasAsImage.png');
+//       let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
+//       downloadLink.setAttribute('href', url);
+//       downloadLink.click();
+// 		// document.querySelector("#theimage9").src = theimage9; 
+// 	});
+// }
 
 

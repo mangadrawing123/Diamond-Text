@@ -18,17 +18,14 @@ background: black;
     /* background:#4A90E2; */
     justify-content: inherit;
 }
-
-.sidebar {
-    grid-column-start: 1 /2 ;
-    grid-row-start: 1;
-    align-self: flex-end;
+.downloadImageDesktop {
+    grid-column-start: 1;
 }
 textarea{
     grid-column-start: 2;
     font-size: 17px;
     width: 90%;
-    height: 100vh;
+    height: 90vh;
     margin-left: 10%;
     padding: 10px;
     border-radius: 6px;
@@ -57,13 +54,14 @@ textarea{
   #textInput textarea::-webkit-scrollbar-thumb {
     background: #d2d2d2; 
   } */
-
+/* .downloadWebtoonDesktop */
 button {
+    grid-column-start: 1;
+    grid-column-end: 2;
     background: none;
     color: rgba(255, 255, 255, 0.281);
     border: 3px solid rgba(255, 255, 255, 0.383);
     padding: 1rem 1rem;
-    /* margin: 0.5rem; */
     border-radius: 0.8rem;
     font-size: 1.5rem;
     font-weight: 600;
