@@ -65,8 +65,20 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - align right panel baloon didn't align right: check reddit: https://www.reddit.com/r/css/comments/pv34kc/ -how_can_align_these_balloon_left_and_right/he7e9aa/?context=3 : codepne for shairng: https://codepen.io/mangadrawing123/pen/NWgOMwV?editors=1100 -- worked reddit: https://www.reddit.com/r/css/comments/pv34kc/how_can_align_these_balloon_left_and_right/ margin-left: auto;
 - panel min-height : 500px , then auto , solution: https://codepen.io/Terizo/pen/MWYeMqX?editors=1100 : minheigh: 100px , height: auto
 - delete after NAME (whisper) to put insdie the balloon type div regex :  - ask reddit: https://www.reddit.com/r/regex/comments/pv5o5e/how_do_i_wrap_multiple_dialog_balloons_with_div/ -- regex101: https://regex101.com/r/VE6E20/1 --
+- sticky GRID cssonee hte side find on codepen , jsifdle: https://codepen.io/mangadrawing123/pen/xxryBwN (not owkring stciky) - codpen: https://codepen.io/joeaugie/pen/GvVgKL?editors=1100 --
+- darkcolor BLUE accent color  mode pallete like clip studiop apint: chnage ot dark black
+- textare fit inside grid codepen center:
 - -------------------------------------------------------------------------------------------------------------
-- prinout iamge div side? dataUR div side?: 
+- prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row 
+- text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
+- 19:6 vw for the the div side: 
+- enalbe live editor vscode onthe right side, extension: 
+- padding top and bottom of page for extra webtoon thing
+- need to do some grid practice, youtbe code along 1 hour: 
+- enter button on the middle?
+- darkmode:?
+- ctrl + enter in case:
+- NEXT PROJECT: timer like iphone and youtube on teh side
 - aling all panel in center? 
 - link two page diamond tex and diamodn text layout. 
 - good enter button: https://codepen.io/ritchiejacobs/pen/qEJjBM?editors=1100 button 3 -- 
