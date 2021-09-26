@@ -69,12 +69,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - darkcolor BLUE accent color  mode pallete like clip studiop apint: chnage ot dark black
 - textare fit inside grid codepen center:
 - -------------------------------------------------------------------------------------------------------------
+- prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row 
 - text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
 - 19:6 vw for the the div side: 
 - enalbe live editor vscode onthe right side, extension: 
 - padding top and bottom of page for extra webtoon thing
 - need to do some grid practice, youtbe code along 1 hour: 
-- prinout iamge div side? dataUR div side?: 
 - enter button on the middle?
 - darkmode:?
 - ctrl + enter in case:
