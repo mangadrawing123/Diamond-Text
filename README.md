@@ -73,7 +73,11 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER: regex: https://regex101.com/r/plSSHa/2 (fnisendd updlaod test 3)
 - more spacing between panel
 - -------------------------------------------------------------------------------------------------------------
+- codepn radio button conitnue and combined function using : 
 - change it to png. jpef transparent?
+- work on diamond text break entire script rege sg grab only sentence start with one tab
+- rectangle smaller balloon will b display outisde so we have room to edraw
+- compalitn clip studio apint to auto scroll when click out of the canvas
 - change size of cnavas image to 500px width only;
 - option to break canvas size to small chunk
 - Copy text all button
