@@ -43,23 +43,23 @@
                 <br><br><br>
                 <input type="button" value="Enter" id="enterButton" onClick="checkBox()"><br><br>
                 
+                 <label for="html">
+                    <input type="radio" id="keepDialogOnlyRadioButton" name="fav_language" value="HTML" checked onClick="keepDialogOnly()">
+                    Dialog
+                </label><br><br>
+                 <input type="radio" id="TabRadioButton" name="fav_language" value="HTML" onclick = getDialogOneTabRegex()>
+                 <label for="html">Get Dialog Only</label><br><br>
+                
+
                 <label class="radio-inline">
-                    <input type="radio" id="rd5" name="optradio" checked onClick="breakDiamondAtEnterShort()">
+                    <input type="radio" id="ShortRadioButton" name="optradio" checked onClick="breakDiamondAtEnterShort()">
                     <img src="https://drive.google.com/uc?export=download&id=1_Ik3y06kNRJI7BzF4nGGf-ot6-zbX2Ke" width="50" height="30">
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" id="rd5" name="optradio" onClick="breakDiamondAtEnterTall()">
+                    <input type="radio" id="TallRadioButton" name="optradio" onClick="breakDiamondAtEnterTall()">
                     <img src="https://drive.google.com/uc?export=download&id=1Mna1dTMaahZrLIHNu-R2SrXrjx7vd2_8" width="30" height="50">
                 </label><br><br>
-                
-                 <label for="html">
-                    <input type="radio" id="rd1" name="fav_language" value="HTML" checked onClick="keepDialogOnly()">
-                    Dialog
-                </label><br><br>
-                 <input type="radio" id="rd2" name="fav_language" value="HTML" onClick="keepDialogOnly()">
-                 <label for="html">Dialog in (Action, Character, Dialog)</label><br><br>
-                <input type="radio" id="rd3" name="fav_language" value="HTML" onClick="sketchScript()">
-                 <label for="html">ENTIRE script</label><br><br>
+
             </div>
             <div class="child">
                 Output text:

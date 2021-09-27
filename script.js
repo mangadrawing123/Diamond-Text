@@ -1,3 +1,4 @@
+
 function breakDiamondAtEnterShort() {
     var textInput1 = document.getElementById("textInput").value
     var textInput = textInput1.replace(/\n\n?/g, "\n")
@@ -123,61 +124,41 @@ function keepDialogOnly() {
     document.getElementById("txtOutput").value=result;
 }
 
-function sketchScript() {
-    var textInputBreakLine, result;
-    //  textInputBreakLine = document.getElementById("textInput").value;
-    textInputBreakLine = document.getElementById("textInput").value;
-    // function replace /n with /n/n
-    resultH = textInputBreakLine.replace(/\-\-\s/g, "--\n");
-    resultG = resultH.replace(/\u2026|\.{3}/g, "...\n");
-    resultF = resultG.replace(/\!\s/g, "!\n");
-    resultE = resultF.replace(/\)\s/g, ")\n");
-    resultD = resultE.replace(/\,\s/g, ",\n");
-    resultC = resultD.replace(/\:/g, ":\n");
-    resultB = resultC.replace(/\.\s/g, ".\n");
-    resultA = resultB.replace(/\?\s/g, "?\n");
-    result1 = resultA.replace(/\n/g, "\n\n\n");
-    let split1= result1.split("\n\n\n");
-    var split2= [];
-    var result = [];
-    for (var i=0; i<split1.length; i++) {
-        let l =split1[i].split(" ").length;
-        let n=Math.floor(Math.sqrt(l));
-        split2 += split1[i].split(" ").reduce((a, e, j)=> a + e + (j%n === 0 ? '\n' : ' '), '')+"\n\n";
-    }
-    result = split2; 
-    document.getElementById("txtOutput").value=result;
-    // // //split lines better fit to ballon
-    // var n=Math.floor(Math.sqrt(result1.split(" ").length));
-    // var result = result1.split(" ").reduce(
-    //         (a, e, i)=> a + e + (i%n === 1 ? '\n' : ' '), '');
-    // //  //add Enter after two word or two space
-    // //  result = result1.replace(/(\S+\s*){1,2}/g, "$&\n");
-    //  document.getElementById("txtOutput").value=result;
+function getDialogOneTabRegex() {
+    var textInputKeepDialog = document.getElementById("textInput").value;
+    let regexGetDialogOneTab = /^\t{1}\S.*/gm
+    const a= textInputKeepDialog.match(regexGetDialogOneTab)
+        .flatMap((s) => s.split(/\t/))
+        // .filter(Boolean);
+    document.getElementById("txtOutput").value= a;
 }
 
 async function checkBox() {
-    var rd1 = document.getElementById("rd1");
-    var rd2 = document.getElementById("rd2");
-    var rd3 = document.getElementById("rd3");
-    var rd4 = document.getElementById("rd4")
-    var rd5 = document.getElementById("rd5")
-    if (rd1.checked == true && rd4.checked == true) {
+var textInput = document.getElementById("textInput").value;
+var textOutput = document.getElementById("txtOutput").value;
+let result = [];
+    
+    var keepDialogOnlyRadioButton = document.getElementById("keepDialogOnlyRadioButton");
+    var TabRadioButton = document.getElementById("TabRadioButton");
+    var ShortRadioButton = document.getElementById("ShortRadioButton")
+    var TallRadioButton = document.getElementById("TallRadioButton")
+    if (keepDialogOnlyRadioButton.checked == true && ShortRadioButton.checked == true) {
         let  myTable = populateTable(breakDiamondAtEnterShort());
         document.getElementById("myDiv").innerHTML = myTable;
         document.getElementById("txtOutput").value=breakDiamondAtEnterShort().join("\n\n\n");
-    } else if (rd1.checked == true && rd5.checked == true) {
+    } else if (keepDialogOnlyRadioButton.checked == true && TallRadioButton.checked == true) {
         let  myTable = populateTable(breakDiamondAtEnterTall());
         document.getElementById("myDiv").innerHTML = myTable;
         document.getElementById("txtOutput").value=breakDiamondAtEnterTall().join("\n\n\n");
-    } else if(rd2.checked == true) {
-        keepDialogOnly();
-    } else if (rd3.checked == true) { 
-        sketchScript();
+    } else if(TabRadioButton.checked == true && ShortRadioButton.checked == true) {
+        console.log(textInput)
+        textOutput = textInput
+        // textOutput =  getDialogOneTabRegex(textInput).join("\n\n\n")
     } else {
         return false;
     }
     copyEach()
+
 }
 
 async function paste() {
