@@ -1,10 +1,22 @@
+var textInput = document.getElementById("textInput").value;
+var textOutput = document.getElementById("textOutput").value;
 
-function breakDiamondAtEnterShort() {
-    var textInput1 = document.getElementById("textInput").value
-    var textInput = textInput1.replace(/\n\n?/g, "\n")
-    let split1= textInput.split("\n");
+function separateScriptDialogToArray(textInput) {
+    let regexGetDialogOneTab = /^\t{1}\S.*/gm
+    return array= textInput.match(regexGetDialogOneTab)
+    .map(s => s.replace("\t", ""))
+    .filter(Boolean);
+    console.log(array)
+
+}
+function splitDialogOnlyToArray(textInput) {
+    let str = textInput.replace(/\n{1,}/g, "\n")
+    return array = str.split("\n");
+}
+
+function turnArrayToBalloonShortToArray(array) {
     var result = [];
-    for (sent of split1) {
+    for (sent of array) {
         if (sent.split(" ").length <= 6) {
             result.push(breakDiamondAt5(sent))
         } else {
@@ -12,13 +24,15 @@ function breakDiamondAtEnterShort() {
         }
     }
     return result;
-    // document.getElementById("txtOutput").value=result.join("\n\n\n");
 }
 
+function scriptBreakAndBalloonToArray(textInput) {
+    let array = separateScriptDialogToArray(textInput)
+    console.log("break ")
+}
 function breakDiamondAtEnterTall() {
-    var textInput1 = document.getElementById("textInput").value
-    var textInput = textInput1.replace(/\n\n?/g, "\n")
-    let split1= textInput.split("\n");
+    var str = textInput.replace(/\n\n?/g, "\n")
+    let split1= str.split("\n");
     let result = [];
     for (sent of split1) {
         if (sent.split(" ").length <= 6) {
@@ -93,16 +107,16 @@ function breakDiamondMoreThan5Tall(str) {
 }
 
 function keepDialogOnly() {
-    var textInputKeepDialog = document.getElementById("textInput").value;
+    // var textInput = document.getElementById("textInput").value;
     var regexKeepDialog = /^\t\S.*/gm
-    const a = textInputKeepDialog
+    const a = textInput
         .match(regexKeepDialog)
         .flatMap((s) => s.split(/\t/))
         .filter(Boolean);
     var resultDialog = a.join("\n");
-    document.getElementById("txtOutput").value=resultDialog;
+    document.getElementById("textOutput").value=resultDialog;
     var textInputBreakLine, result;
-    textInputBreakLine = document.getElementById("txtOutput").value;
+    textInputBreakLine = document.getElementById("textOutput").value;
     resultH = textInputBreakLine.replace(/\-\-\s/g, "--\n");
     resultG = resultH.replace(/\u2026|\.{3}/g, "...\n");
     resultF = resultG.replace(/\!\s/g, "!\n");
@@ -121,44 +135,37 @@ function keepDialogOnly() {
         split2 += split1[i].split(" ").reduce((a, e, j)=> a + e + (j%n === 0 ? '\n' : ' '), '')+"\n\n\n";
     }
     result = split2; 
-    document.getElementById("txtOutput").value=result;
+    document.getElementById("textOutput").value=result;
 }
 
-function getDialogOneTabRegex() {
-    var textInputKeepDialog = document.getElementById("textInput").value;
-    let regexGetDialogOneTab = /^\t{1}\S.*/gm
-    const a= textInputKeepDialog.match(regexGetDialogOneTab)
-        .flatMap((s) => s.split(/\t/))
-        // .filter(Boolean);
-    document.getElementById("txtOutput").value= a;
-}
+
 
 async function checkBox() {
+var dialogFileRadioButton = document.getElementById("dialogFileRadioButton");
+var scriptDialogRadioButton = document.getElementById("scriptDialogRadioButton");
 var textInput = document.getElementById("textInput").value;
-var textOutput = document.getElementById("txtOutput").value;
-let result = [];
-    
-    var keepDialogOnlyRadioButton = document.getElementById("keepDialogOnlyRadioButton");
-    var TabRadioButton = document.getElementById("TabRadioButton");
-    var ShortRadioButton = document.getElementById("ShortRadioButton")
-    var TallRadioButton = document.getElementById("TallRadioButton")
-    if (keepDialogOnlyRadioButton.checked == true && ShortRadioButton.checked == true) {
-        let  myTable = populateTable(breakDiamondAtEnterShort());
-        document.getElementById("myDiv").innerHTML = myTable;
-        document.getElementById("txtOutput").value=breakDiamondAtEnterShort().join("\n\n\n");
-    } else if (keepDialogOnlyRadioButton.checked == true && TallRadioButton.checked == true) {
-        let  myTable = populateTable(breakDiamondAtEnterTall());
-        document.getElementById("myDiv").innerHTML = myTable;
-        document.getElementById("txtOutput").value=breakDiamondAtEnterTall().join("\n\n\n");
-    } else if(TabRadioButton.checked == true && ShortRadioButton.checked == true) {
-        console.log(textInput)
-        textOutput = textInput
-        // textOutput =  getDialogOneTabRegex(textInput).join("\n\n\n")
-    } else {
-        return false;
-    }
-    copyEach()
+var textOutput = document.getElementById("textOutput").value;
 
+if(scriptDialogRadioButton.checked == true) {
+        let array = separateScriptDialogToArray(textInput);
+        let result = turnArrayToBalloonShortToArray(array);
+        let  myTable = populateTable(result);
+        document.getElementById("myDiv").innerHTML = myTable;
+        document.getElementById("textOutput").value = result.join("\n\n\n");
+    } else if (dialogFileRadioButton.checked == true) {
+        console.log("Dialog ONLYclicked")
+        // textOutput = splitDialogOnlyToArray(textInput);
+        // let  myTable = populateTable(turnArrayToBalloonShortToArray(separateScriptDialogToArray(textInput)));
+        // document.getElementById("myDiv").innerHTML = myTable;
+        // if (dialogFileRadioButton.checked == true && ShortRadioButton.checked == true) {
+        //     let  myTable = populateTable(turnArrayToBalloonShortToArray());
+        //     document.getElementById("myDiv").innerHTML = myTable;
+        //     document.getElementById("textOutput").value=turnArrayToBalloonShortToArray().join("\n\n\n");
+        // } else if (dialogFileRadioButton.checked == true && TallRadioButton.checked == true) {
+        //     let  myTable = populateTable(breakDiamondAtEnterTall());
+        //     document.getElementById("myDiv").innerHTML = myTable;
+        //     document.getElementById("textOutput").value=breakDiamondAtEnterTall().join("\n\n\n");
+    }
 }
 
 async function paste() {
@@ -167,6 +174,7 @@ async function paste() {
     const text = await navigator.clipboard.readText();
     textarea2.value = text;
     checkBox();
+    console.log("Paste Button click")
     }
 
 function copyInput() {
@@ -177,7 +185,7 @@ function copyInput() {
 }
 
 function copyOutput() {
-    var textarea = document.getElementById("txtOutput");
+    var textarea = document.getElementById("textOutput");
     textarea.select();
     document.execCommand("copy");
     alert("ALL OUTPUT copied!")
@@ -247,9 +255,17 @@ $(document).ready(function() {
 
     // Document Ctrl + C/V 
     $(document).keydown(function(e) {
-        if (ctrlDown && (e.keyCode == cKey)) {console.log("Document catch Ctrl+C"); copyOutput()};
+        // if (ctrlDown && (e.keyCode == cKey)) {console.log("Document catch Ctrl+C"); copyOutput()};
         if (ctrlDown && (e.keyCode == vKey)) {console.log("Document catch Ctrl+V"); paste()};
-        if (ctrlDown && (e.keyCode == enterKey)) {console.log("Enter pressed with ctrl"); checkBox()};
+        if ((ctrlDown && (e.keyCode == enterKey)) || (e.keyCode == enterKey)) {console.log("Enter pressed"); checkBox()};
     });
 });
+
+
+//even elistenre button
+document.getElementById("enterButton").addEventListener("click", checkBox);
+document.getElementById("pasteButton").addEventListener("click", paste);
+document.getElementById("scriptDialogRadioButton").addEventListener("click", checkBox);
+document.getElementById("dialogFileRadioButton").addEventListener("click", checkBox);
+
 

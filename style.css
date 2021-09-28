@@ -13,11 +13,11 @@ h1,h6 {
 .parent {
     display: flex;
 }
-#txtInput {
+#textInput {
     word-wrap:break-word;
     font-family: monospace
 }
-#txtOutput {
+#textOutput {
     text-align: center;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
