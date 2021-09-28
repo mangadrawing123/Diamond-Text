@@ -72,7 +72,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - regex seraspte captialized word: https://stackoverflow.com/questions/34066157/regex-to-match-uppercase-expressions-and-words , find regex 3 tabs or above
 - three enter for Panel that will add Panel in class div and they can add RIGHT LEFT LATER: regex: https://regex101.com/r/plSSHa/2 (fnisendd updlaod test 3)
 - more spacing between panel
+- addevnetlistenr on lick work: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_addeventlistener2
 - -------------------------------------------------------------------------------------------------------------
+- copy each button ask reddit, code pen: https://codepen.io/mangadrawing123/pen/RwgEZWp?editors=0110 -- reddit: https://www.reddit.com/r/learnjavascript/comments/pwzjwu/how_to_have_a_copy_button_for_each_textarea/
 - codepn radio button conitnue and combined function using : 
 - change it to png. jpef transparent?
 - work on diamond text break entire script rege sg grab only sentence start with one tab
