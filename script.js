@@ -212,6 +212,7 @@ function populateTable(dataArray) {
     }
     myTable += "</table>";
     $(document).ready(function(){
+        copyEach();
         $( "button#jQueryColorChange" ).click(function() {
             $(this).toggleClass( "selected" );
           });
@@ -219,31 +220,23 @@ function populateTable(dataArray) {
     return myTable;
 }
 
+
+//COPY EACH BUTTON DIALOG TEXT AREA
 async function copyEach() {
-    alert("copy EACH button click")
 var a = document.getElementsByClassName('copyEachButton');
 for (var i = 0; i < a.length; i++) {
   a[i].addEventListener('click', function() {
       console.log("copy each button click")
-    var text = this.parentNode.parentNode.cells[0].textContent;
+    var text = this.parentNode.parentNode.cells[0].children[0];
     copyToClipboard(text);
 });
 }
 }
-
 function copyToClipboard(text) {
     text.select();
     document.execCommand("copy");
-    alert(text);
+    // alert(text);
   }
-// function copyToClipboard(text) {
-//   var dummy = document.createElement("textarea");
-//   document.body.appendChild(dummy);
-//   dummy.value = text;
-//   dummy.select();
-//   document.execCommand("copy");
-//   document.body.removeChild(dummy);
-// }
 
 //HOT KEY SHORTCUT CTRL ENTER ...
 $(document).ready(function() {
