@@ -152,6 +152,7 @@ if(scriptDialogRadioButton.checked == true) {
         let  myTable = populateTable(result);
         document.getElementById("myDiv").innerHTML = myTable;
         document.getElementById("textOutput").value = result.join("\n\n\n");
+        console.log(myTable)
     } else if (dialogFileRadioButton.checked == true) {
         console.log("Dialog ONLYclicked")
         // textOutput = splitDialogOnlyToArray(textInput);
@@ -184,7 +185,7 @@ function copyInput() {
     alert("INPUT copied!")
 }
 
-function copyOutput() {
+function copyOutput(array) {
     var textarea = document.getElementById("textOutput");
     textarea.select();
     document.execCommand("copy");
@@ -204,10 +205,10 @@ function populateTable(dataArray) {
         if (arrayCopy.length == 0) {
           myTable += "<td>" + "" + "</td>";
         } else {
-          myTable += '<td><textarea id="copyEach" cols="25" rows="3">' + arrayCopy.shift() + '</textarea></td>';
+          myTable += '<td><textarea id="textareaCopyEach" cols="25" rows="3">' + arrayCopy.shift() + '</textarea></td>';
         }
       }
-      myTable += '<td><button class="otherButton" id="jQueryColorChange">Copy</button></td></tr>';
+      myTable += '<td><button class="copyEachButton" id="jQueryColorChange">Copy</button></td></tr>';
     }
     myTable += "</table>";
     $(document).ready(function(){
@@ -219,25 +220,32 @@ function populateTable(dataArray) {
 }
 
 async function copyEach() {
-var a = document.getElementsByClassName('otherButton');
+    alert("copy EACH button click")
+var a = document.getElementsByClassName('copyEachButton');
 for (var i = 0; i < a.length; i++) {
   a[i].addEventListener('click', function() {
-    var b = this.parentNode.parentNode.cells[0].textContent;
-    copyToClipboard(b);
-    // alert(b);
-  });
+      console.log("copy each button click")
+    var text = this.parentNode.parentNode.cells[0].textContent;
+    copyToClipboard(text);
+});
 }
 }
 
 function copyToClipboard(text) {
-  var dummy = document.createElement("textarea");
-  document.body.appendChild(dummy);
-  dummy.value = text;
-  dummy.select();
-  document.execCommand("copy");
-  document.body.removeChild(dummy);
-}
+    text.select();
+    document.execCommand("copy");
+    alert(text);
+  }
+// function copyToClipboard(text) {
+//   var dummy = document.createElement("textarea");
+//   document.body.appendChild(dummy);
+//   dummy.value = text;
+//   dummy.select();
+//   document.execCommand("copy");
+//   document.body.removeChild(dummy);
+// }
 
+//HOT KEY SHORTCUT CTRL ENTER ...
 $(document).ready(function() {
     var ctrlDown = false,
         ctrlKey = 17,
@@ -267,5 +275,8 @@ document.getElementById("enterButton").addEventListener("click", checkBox);
 document.getElementById("pasteButton").addEventListener("click", paste);
 document.getElementById("scriptDialogRadioButton").addEventListener("click", checkBox);
 document.getElementById("dialogFileRadioButton").addEventListener("click", checkBox);
+document.getElementsByClassName("copyEachButton").addEventListener("click", copyEachButtonClick);
 
-
+function copyEachButtonClick() {
+    alert("copyEachButtonClick")
+}
