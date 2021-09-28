@@ -1,0 +1,147 @@
+html, body {
+margin:0px;
+padding:0px;
+background: black;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto 40vw auto 56vh auto;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.main {
+    position: fixed;
+    padding: 1vh;
+    width: 40vw;
+    height: 100vh;
+    margin-left: 5%;
+    /* background: rgb(43, 43, 43); */
+    /* background:#4A90E2; */
+    justify-content: inherit;
+}
+.downloadImageDesktop {
+    grid-column-start: 1;
+}
+textarea{
+    grid-column-start: 2;
+    font-size: 17px;
+    width: 80%;
+    height:85vh;
+    /* margin-left: 10%; */
+    padding: 10px;
+    border-radius: 6px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.699);
+    box-shadow: 2px 2px 8px rgba(black, .3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* #textInput textarea::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+#textInput textarae::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  #textInput textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  #textInput textarea::-webkit-scrollbar-thumb {
+    background: #d2d2d2; 
+  } */
+/* .downloadWebtoonDesktop */
+button {
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    background: none;
+    color: rgba(255, 255, 255, 0.123);
+    border: 3px solid rgba(255, 255, 255, 0.055);
+    padding: 1rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+button:hover {
+    /* color: #458efe; */
+    color: white;
+    border: 3px solid white;
+
+}
+
+.webtoonImage {
+    grid-column-start: 4;
+    /* padding: 40vh 0 40vh 0; */
+    background: white;
+    /* background: lightgray; */
+}
+.PANEL {
+    font-size: 20px;
+    border: 2px solid black;
+    display: flex;
+    min-height: 30vh;
+    max-height: 85vh;
+    height: auto;
+    margin: 40vh 1vh 40vh 1vh;
+    padding: 3%;
+    flex-direction: column;
+    /* padding: 1rem; */
+    /* background: white; */
+    align-content: center;
+    /* background: lightblue; */
+}
+.FULL {width: 100%; margin: 0;}
+.LEFT {width: 50%;}
+.RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
+.FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
+.CENTER {width: 80%;}
+.NONE {width: 100%; border: 0;}
+.SKEW {}
+
+.action {
+hyphens: auto;
+color: rgba(0, 0, 0, 0.712);
+/* background: white; */
+/* background-color: lightpink; */
+}
+
+.nameAndBalloon {
+display: flex;
+flex-direction: column;
+margin-top: 1vh;
+width: 70%;
+/* background: orange; */
+}
+.name {
+    color: black;
+    hyphens: auto;
+/* background: white; */
+/* background-color: lightgoldenrodyellow; */
+    text-transform: uppercase;
+}
+
+/* balloon and ballon types */
+.balloon {
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    background: white;
+    hyphens: auto;
+    text-align: center;
+}
+.whisper {border: 2px dashed black;}
+.yell {}
+.scared {}
+
+
+/*altenrative balloon */
+.nameAndBalloon:nth-child(odd) {
+align-self: flex-end;
+}
+.balloon:nth-child(odd) {
+align-self: flex-end;
+}

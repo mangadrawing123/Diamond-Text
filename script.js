@@ -1,9 +1,21 @@
-function breakDiamondAtEnterShort() {
-    var txtInput1 = document.getElementById("txtInput").value
-    var txtInput = txtInput1.replace(/\n\n?/g, "\n")
-    let split1= txtInput.split("\n");
+var textInput = document.getElementById("textInput").value;
+var textOutput = document.getElementById("textOutput").value;
+
+function separateScriptDialogToArray(textInput) {
+    let regexGetDialogOneTab = /^\t{1}\S.*/gm
+    return array= textInput.match(regexGetDialogOneTab)
+    .map(s => s.replace("\t", ""))
+    .filter(Boolean);
+}
+function splitDialogOnlyToArray(textInput) {
+    let str = textInput.replace(/\n{1,}/g, "\n")
+    return array = str.split("\n")
+        .map(s => s.replace(/^\t{1,}/gm, ""))
+}
+
+function turnArrayToBalloonShortToArray(array) {
     var result = [];
-    for (sent of split1) {
+    for (sent of array) {
         if (sent.split(" ").length <= 6) {
             result.push(breakDiamondAt5(sent))
         } else {
@@ -11,13 +23,15 @@ function breakDiamondAtEnterShort() {
         }
     }
     return result;
-    // document.getElementById("txtOutput").value=result.join("\n\n\n");
 }
 
+function scriptBreakAndBalloonToArray(textInput) {
+    let array = separateScriptDialogToArray(textInput)
+    console.log("break ")
+}
 function breakDiamondAtEnterTall() {
-    var txtInput1 = document.getElementById("txtInput").value
-    var txtInput = txtInput1.replace(/\n\n?/g, "\n")
-    let split1= txtInput.split("\n");
+    var str = textInput.replace(/\n\n?/g, "\n")
+    let split1= str.split("\n");
     let result = [];
     for (sent of split1) {
         if (sent.split(" ").length <= 6) {
@@ -92,17 +106,17 @@ function breakDiamondMoreThan5Tall(str) {
 }
 
 function keepDialogOnly() {
-    var txtInputKeepDialog = document.getElementById("txtInput").value;
+    // var textInput = document.getElementById("textInput").value;
     var regexKeepDialog = /^\t\S.*/gm
-    const a = txtInputKeepDialog
+    const a = textInput
         .match(regexKeepDialog)
         .flatMap((s) => s.split(/\t/))
         .filter(Boolean);
     var resultDialog = a.join("\n");
-    document.getElementById("txtOutput").value=resultDialog;
-    var txtInputBreakLine, result;
-    txtInputBreakLine = document.getElementById("txtOutput").value;
-    resultH = txtInputBreakLine.replace(/\-\-\s/g, "--\n");
+    document.getElementById("textOutput").value=resultDialog;
+    var textInputBreakLine, result;
+    textInputBreakLine = document.getElementById("textOutput").value;
+    resultH = textInputBreakLine.replace(/\-\-\s/g, "--\n");
     resultG = resultH.replace(/\u2026|\.{3}/g, "...\n");
     resultF = resultG.replace(/\!\s/g, "!\n");
     resultE = resultF.replace(/\)\s/g, ")\n");
@@ -120,83 +134,51 @@ function keepDialogOnly() {
         split2 += split1[i].split(" ").reduce((a, e, j)=> a + e + (j%n === 0 ? '\n' : ' '), '')+"\n\n\n";
     }
     result = split2; 
-    document.getElementById("txtOutput").value=result;
+    document.getElementById("textOutput").value=result;
 }
 
-function sketchScript() {
-    var txtInputBreakLine, result;
-    //  txtInputBreakLine = document.getElementById("txtInput").value;
-    txtInputBreakLine = document.getElementById("txtInput").value;
-    // function replace /n with /n/n
-    resultH = txtInputBreakLine.replace(/\-\-\s/g, "--\n");
-    resultG = resultH.replace(/\u2026|\.{3}/g, "...\n");
-    resultF = resultG.replace(/\!\s/g, "!\n");
-    resultE = resultF.replace(/\)\s/g, ")\n");
-    resultD = resultE.replace(/\,\s/g, ",\n");
-    resultC = resultD.replace(/\:/g, ":\n");
-    resultB = resultC.replace(/\.\s/g, ".\n");
-    resultA = resultB.replace(/\?\s/g, "?\n");
-    result1 = resultA.replace(/\n/g, "\n\n\n");
-    let split1= result1.split("\n\n\n");
-    var split2= [];
-    var result = [];
-    for (var i=0; i<split1.length; i++) {
-        let l =split1[i].split(" ").length;
-        let n=Math.floor(Math.sqrt(l));
-        split2 += split1[i].split(" ").reduce((a, e, j)=> a + e + (j%n === 0 ? '\n' : ' '), '')+"\n\n";
-    }
-    result = split2; 
-    document.getElementById("txtOutput").value=result;
-    // // //split lines better fit to ballon
-    // var n=Math.floor(Math.sqrt(result1.split(" ").length));
-    // var result = result1.split(" ").reduce(
-    //         (a, e, i)=> a + e + (i%n === 1 ? '\n' : ' '), '');
-    // //  //add Enter after two word or two space
-    // //  result = result1.replace(/(\S+\s*){1,2}/g, "$&\n");
-    //  document.getElementById("txtOutput").value=result;
-}
+
 
 async function checkBox() {
-    var rd1 = document.getElementById("rd1");
-    var rd2 = document.getElementById("rd2");
-    var rd3 = document.getElementById("rd3");
-    var rd4 = document.getElementById("rd4")
-    var rd5 = document.getElementById("rd5")
-    if (rd1.checked == true && rd4.checked == true) {
-        let  myTable = populateTable(breakDiamondAtEnterShort());
+var dialogFileRadioButton = document.getElementById("dialogFileRadioButton");
+var scriptDialogRadioButton = document.getElementById("scriptDialogRadioButton");
+var textInput = document.getElementById("textInput").value;
+var textOutput = document.getElementById("textOutput").value;
+
+if(scriptDialogRadioButton.checked == true) {
+        let array = separateScriptDialogToArray(textInput);
+        let result = turnArrayToBalloonShortToArray(array);
+        let  myTable = populateTable(result);
         document.getElementById("myDiv").innerHTML = myTable;
-        document.getElementById("txtOutput").value=breakDiamondAtEnterShort().join("\n\n\n");
-    } else if (rd1.checked == true && rd5.checked == true) {
-        let  myTable = populateTable(breakDiamondAtEnterTall());
+        document.getElementById("textOutput").value = result.join("\n\n\n");
+        console.log(myTable)
+    } else if (dialogFileRadioButton.checked == true) {
+        let array = splitDialogOnlyToArray(textInput)
+        let result = turnArrayToBalloonShortToArray(array)
+        let  myTable = populateTable(result);
         document.getElementById("myDiv").innerHTML = myTable;
-        document.getElementById("txtOutput").value=breakDiamondAtEnterTall().join("\n\n\n");
-    } else if(rd2.checked == true) {
-        keepDialogOnly();
-    } else if (rd3.checked == true) { 
-        sketchScript();
-    } else {
-        return false;
+        document.getElementById("textOutput").value = result.join("\n\n\n");
     }
-    copyEach()
 }
 
 async function paste() {
-    var textarea2 = document.getElementById("txtInput");
+    var textarea2 = document.getElementById("textInput");
     textarea2.select()
     const text = await navigator.clipboard.readText();
     textarea2.value = text;
     checkBox();
+    console.log("Paste Button click")
     }
 
 function copyInput() {
-    var textarea = document.getElementById('txtInput');
+    var textarea = document.getElementById('textInput');
     textarea.select();
     document.execCommand("copy");
     alert("INPUT copied!")
 }
 
-function copyOutput() {
-    var textarea = document.getElementById("txtOutput");
+function copyOutput(array) {
+    var textarea = document.getElementById("textOutput");
     textarea.select();
     document.execCommand("copy");
     alert("ALL OUTPUT copied!")
@@ -215,13 +197,14 @@ function populateTable(dataArray) {
         if (arrayCopy.length == 0) {
           myTable += "<td>" + "" + "</td>";
         } else {
-          myTable += '<td><textarea id="copyEach" cols="25" rows="3">' + arrayCopy.shift() + '</textarea></td>';
+          myTable += '<td><textarea id="textareaCopyEach" cols="25" rows="3">' + arrayCopy.shift() + '</textarea></td>';
         }
       }
-      myTable += '<td><button class="otherButton" id="jQueryColorChange">Copy</button></td></tr>';
+      myTable += '<td><button class="copyEachButton" id="jQueryColorChange">Copy</button></td></tr>';
     }
     myTable += "</table>";
     $(document).ready(function(){
+        copyEach();
         $( "button#jQueryColorChange" ).click(function() {
             $(this).toggleClass( "selected" );
           });
@@ -229,26 +212,24 @@ function populateTable(dataArray) {
     return myTable;
 }
 
+//COPY EACH BUTTON DIALOG TEXT AREA
 async function copyEach() {
-var a = document.getElementsByClassName('otherButton');
+var a = document.getElementsByClassName('copyEachButton');
 for (var i = 0; i < a.length; i++) {
   a[i].addEventListener('click', function() {
-    var b = this.parentNode.parentNode.cells[0].textContent;
-    copyToClipboard(b);
-    // alert(b);
-  });
+      console.log("copy each button click")
+    var text = this.parentNode.parentNode.cells[0].children[0];
+    copyToClipboard(text);
+});
 }
 }
-
 function copyToClipboard(text) {
-  var dummy = document.createElement("textarea");
-  document.body.appendChild(dummy);
-  dummy.value = text;
-  dummy.select();
-  document.execCommand("copy");
-  document.body.removeChild(dummy);
-}
+    text.select();
+    document.execCommand("copy");
+    // alert(text);
+  }
 
+//HOT KEY SHORTCUT CTRL ENTER ...
 $(document).ready(function() {
     var ctrlDown = false,
         ctrlKey = 17,
@@ -266,9 +247,41 @@ $(document).ready(function() {
 
     // Document Ctrl + C/V 
     $(document).keydown(function(e) {
-        if (ctrlDown && (e.keyCode == cKey)) {console.log("Document catch Ctrl+C"); copyOutput()};
+        // if (ctrlDown && (e.keyCode == cKey)) {console.log("Document catch Ctrl+C"); copyOutput()};
         if (ctrlDown && (e.keyCode == vKey)) {console.log("Document catch Ctrl+V"); paste()};
-        if (ctrlDown && (e.keyCode == enterKey)) {console.log("Enter pressed with ctrl"); checkBox()};
+        if ((ctrlDown && (e.keyCode == enterKey)) || (e.keyCode == enterKey)) {console.log("Enter pressed"); checkBox()};
     });
 });
 
+
+//Enable TAb key in textare input
+$('#textInput').keydown(function (e) { 
+    if (e.keyCode == 10 || e.keyCode == 13) {
+        checkBox();
+    } else if (e.keyCode == 9) { // tab was pressed
+        // get caret position/selection
+        var val = this.value,
+            start = this.selectionStart,
+            end = this.selectionEnd;
+
+        // set textarea value to: text before caret + tab + text after caret
+        this.value = val.substring(0, start) + '\t' + val.substring(end);
+
+        // put caret at right position again
+        this.selectionStart = this.selectionEnd = start + 1;
+
+        // prevent the focus lose
+        return false;
+    }
+});
+
+//even elistenre button
+document.getElementById("enterButton").addEventListener("click", checkBox);
+document.getElementById("pasteButton").addEventListener("click", paste);
+document.getElementById("scriptDialogRadioButton").addEventListener("click", checkBox);
+document.getElementById("dialogFileRadioButton").addEventListener("click", checkBox);
+document.getElementsByClassName("copyEachButton").addEventListener("click", copyEachButtonClick);
+
+function copyEachButtonClick() {
+    alert("copyEachButtonClick")
+}

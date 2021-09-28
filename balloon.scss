@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+
+.button-download {
+    $bem-block: &;
+    
+    outline: none;
+    border: none;
+    background: red;
+    padding: 15px 25px;
+    // position: relative;
+    // display: inline-block;
+    text-decoration: none;
+    // overflow: hidden;
+    
+    &::before {
+      content: '';
+      width: 5px;
+      height: 100%;
+      background: #1770B8;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: .5s;
+    }
+    
+    &:hover::before {
+      width: 100%;
+      z-index: 0;
+    }
+    
+    &__icon {
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: bottom;
+      position: relative;
+      z-index: 1;
+      transition: .3s;
+    }
+    
+    &__label {
+      font-family: 'Viga';
+      color: #fff;
+      font-size: 1rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      position: relative;
+      z-index: 1;
+      transition: .6s ease-in-out;
+      letter-spacing: .8px;
+    }
+    
+    &:hover #{$bem-block}__label {
+      transform: translateX(1px);
+    }
+    
+    &:hover #{$bem-block}__icon {
+      opacity: 0;
+      animation: move;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-delay: .5s;
+      animation-fill-mode: backwards;
+    }
+  }
