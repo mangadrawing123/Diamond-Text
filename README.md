@@ -1,10 +1,11 @@
 
 # sketchWebtoon
 
-For Diamond Text - Break Dialog: 
+For Diamond Text - Break Dialog Ballon:
 
-https://mangadrawing123.github.io/Diamond-Text/balloon.html
+https://mangadrawing123.github.io/Diamond-Text/index.html
 
 
-diamond webtoon layout
+For Diamond webtoon layout: 
+
 https://mangadrawing123.github.io/Diamond-Text/balloon.html
