@@ -6,12 +6,11 @@ function separateScriptDialogToArray(textInput) {
     return array= textInput.match(regexGetDialogOneTab)
     .map(s => s.replace("\t", ""))
     .filter(Boolean);
-    console.log(array)
-
 }
 function splitDialogOnlyToArray(textInput) {
     let str = textInput.replace(/\n{1,}/g, "\n")
-    return array = str.split("\n");
+    return array = str.split("\n")
+        .map(s => s.replace(/^\t{1,}/gm, ""))
 }
 
 function turnArrayToBalloonShortToArray(array) {
@@ -154,18 +153,11 @@ if(scriptDialogRadioButton.checked == true) {
         document.getElementById("textOutput").value = result.join("\n\n\n");
         console.log(myTable)
     } else if (dialogFileRadioButton.checked == true) {
-        console.log("Dialog ONLYclicked")
-        // textOutput = splitDialogOnlyToArray(textInput);
-        // let  myTable = populateTable(turnArrayToBalloonShortToArray(separateScriptDialogToArray(textInput)));
-        // document.getElementById("myDiv").innerHTML = myTable;
-        // if (dialogFileRadioButton.checked == true && ShortRadioButton.checked == true) {
-        //     let  myTable = populateTable(turnArrayToBalloonShortToArray());
-        //     document.getElementById("myDiv").innerHTML = myTable;
-        //     document.getElementById("textOutput").value=turnArrayToBalloonShortToArray().join("\n\n\n");
-        // } else if (dialogFileRadioButton.checked == true && TallRadioButton.checked == true) {
-        //     let  myTable = populateTable(breakDiamondAtEnterTall());
-        //     document.getElementById("myDiv").innerHTML = myTable;
-        //     document.getElementById("textOutput").value=breakDiamondAtEnterTall().join("\n\n\n");
+        let array = splitDialogOnlyToArray(textInput)
+        let result = turnArrayToBalloonShortToArray(array)
+        let  myTable = populateTable(result);
+        document.getElementById("myDiv").innerHTML = myTable;
+        document.getElementById("textOutput").value = result.join("\n\n\n");
     }
 }
 
@@ -220,7 +212,6 @@ function populateTable(dataArray) {
     return myTable;
 }
 
-
 //COPY EACH BUTTON DIALOG TEXT AREA
 async function copyEach() {
 var a = document.getElementsByClassName('copyEachButton');
@@ -262,6 +253,27 @@ $(document).ready(function() {
     });
 });
 
+
+//Enable TAb key in textare input
+$('#textInput').keydown(function (e) { 
+    if (e.keyCode == 10 || e.keyCode == 13) {
+        checkBox();
+    } else if (e.keyCode == 9) { // tab was pressed
+        // get caret position/selection
+        var val = this.value,
+            start = this.selectionStart,
+            end = this.selectionEnd;
+
+        // set textarea value to: text before caret + tab + text after caret
+        this.value = val.substring(0, start) + '\t' + val.substring(end);
+
+        // put caret at right position again
+        this.selectionStart = this.selectionEnd = start + 1;
+
+        // prevent the focus lose
+        return false;
+    }
+});
 
 //even elistenre button
 document.getElementById("enterButton").addEventListener("click", checkBox);
