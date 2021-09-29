@@ -69,6 +69,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - darkcolor BLUE accent color  mode pallete like clip studiop apint: chnage ot dark black
 - textare fit inside grid codepen center:
 - -------------------------------------------------------------------------------------------------------------
+- learngrid vscode youtube: 
+- learn grid for wbetoon div layout so i can easily control and changing the panel as I wish, wish a mask only appear in teh div
+- save image at png, so the background for div webtoon image need to be transparent.
+- stya in one place and switch javascript form lautou to diamodn text
+- darkmode nad light mode(blue) for diaomdn layout.
+- database local storgae for saving text file, reddit comment.
 - prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row 
 - text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
 - 19:6 vw for the the div side: 
