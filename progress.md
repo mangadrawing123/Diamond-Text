@@ -68,8 +68,15 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - sticky GRID cssonee hte side find on codepen , jsifdle: https://codepen.io/mangadrawing123/pen/xxryBwN (not owkring stciky) - codpen: https://codepen.io/joeaugie/pen/GvVgKL?editors=1100 --
 - darkcolor BLUE accent color  mode pallete like clip studiop apint: chnage ot dark black
 - textare fit inside grid codepen center:
+- vscode live view insdie vscode
+- yank all https://stackoverflow.com/questions/1620018/copy-all-the-lines-to-clipboard
+- learngrid vscode youtube: https://www.youtube.com/watch?v=jV8B24rSN5o&t=19s   
 - -------------------------------------------------------------------------------------------------------------
-- learngrid vscode youtube: 
+- another grid youtube video: 
+- clock like restream chat
+- esasy custom bar : https://www.youtube.com/watch?v=lvKK2fs6h4I
+- reddit ask change vim vscode esc equal capslock (iwth iamge)
+- udnerstnat rem, em, youtube, practice:
 - learn grid for wbetoon div layout so i can easily control and changing the panel as I wish, wish a mask only appear in teh div
 - save image at png, so the background for div webtoon image need to be transparent.
 - stya in one place and switch javascript form lautou to diamodn text
