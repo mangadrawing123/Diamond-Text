@@ -71,7 +71,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - vscode live view insdie vscode
 - yank all https://stackoverflow.com/questions/1620018/copy-all-the-lines-to-clipboard
 - learngrid vscode youtube: https://www.youtube.com/watch?v=jV8B24rSN5o&t=19s   
+- clockc house simalri to restarem chat feature , codpen: https://codepen.io/vaughnantonyan/pen/baypWZ ; , youtbe: https://www.youtube.com/watch?v=WyAFGsY_fPw , horizontal defatul, or veritcal optional red bar
 - -------------------------------------------------------------------------------------------------------------
+- clock problem wont' run when not present html.
+- sound timer: https://codepen.io/gabrieleromanato/pen/frczh?editors=1000
+- codepn comic: https://codepen.io/tutsplus/pen/pNgZpj
+- codpen good skew angle ocmic : https://codepen.io/rrenula/pen/LzLXYJ?editors=1100
 - another grid youtube video: 
 - clock like restream chat
 - esasy custom bar : https://www.youtube.com/watch?v=lvKK2fs6h4I
