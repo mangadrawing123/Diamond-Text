@@ -73,6 +73,8 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - learngrid vscode youtube: https://www.youtube.com/watch?v=jV8B24rSN5o&t=19s   
 - clockc house simalri to restarem chat feature , codpen: https://codepen.io/vaughnantonyan/pen/baypWZ ; , youtbe: https://www.youtube.com/watch?v=WyAFGsY_fPw , horizontal defatul, or veritcal optional red bar
 - -------------------------------------------------------------------------------------------------------------
+- momentum inspried focus note , save local storage?!
+- autofiltext : http://jquery-textfill.github.io/example/
 - clock problem wont' run when not present html.
 - sound timer: https://codepen.io/gabrieleromanato/pen/frczh?editors=1000
 - codepn comic: https://codepen.io/tutsplus/pen/pNgZpj
