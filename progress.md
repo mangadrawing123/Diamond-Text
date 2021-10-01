@@ -72,7 +72,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - yank all https://stackoverflow.com/questions/1620018/copy-all-the-lines-to-clipboard
 - learngrid vscode youtube: https://www.youtube.com/watch?v=jV8B24rSN5o&t=19s   
 - clockc house simalri to restarem chat feature , codpen: https://codepen.io/vaughnantonyan/pen/baypWZ ; , youtbe: https://www.youtube.com/watch?v=WyAFGsY_fPw , horizontal defatul, or veritcal optional red bar
+- coidepen tribute page: https://codepen.io/mangadrawing123/pen/KKqEjvM?editors=1100
 - -------------------------------------------------------------------------------------------------------------
+- timer bar codepn: slow: https://codepen.io/mangadrawing123/pen/KKqEjJW?editors=1100 , center div: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text , auto expand textarea: https://codepen.io/mangadrawing123/pen/OJgqKzp?editors=0100
 - momentum inspried focus note , save local storage?!
 - autofiltext : http://jquery-textfill.github.io/example/
 - clock problem wont' run when not present html.
