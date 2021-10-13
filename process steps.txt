@@ -76,6 +76,8 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - -------------------------------------------------------------------------------------------------------------
 - circle upper and lower, overlay, yotube: https://www.youtube.com/watch?v=HFG3BKOqOlE -- grid order : 
 - auto surround css balloon, avoid center, start from center css div, auto fit to panel 1000x500, panel auto expand. https://codepen.io/mangadrawing123/pen/OJjVzPp?editors=1100
+- 1 , 2 , 3 for three panel in one page
+- skew css
 - prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row 
 
 - text area differnt scroll bar black near: https://codepen.io/alexander-kotov-dx/pen/MZBqjR -- ask reddit css: -- codepen: https://codepen.io/mangadrawing123/pen/ExXdJyK -- reddit: https://www.reddit.com/r/css/comments/pvfocc/why_i_cant_use_the_webkitscrollbar_for_my/ --
