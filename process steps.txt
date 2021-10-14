@@ -80,11 +80,13 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - make balloon closer: overlap balloon: condense, zigzag - ballon overalptop fcc: https://www.freecodecamp.org/news/z-axis-html-css-z-index-layout-adventures-2419cefdc2ed/ --reddit asl : https://www.reddit.com/r/css/comments/q7u286/is_it_possible_to_have_the_same_class_overlap/
 - change font cogle comic 
 - random width action panel css: jsfiddle: http://jsfiddle.net/qaF24/5/ -- jquearey randome widh t ,height --- radnomde within rnage javascrip: https://www.codegrepper.com/code-examples/javascript/javascript+get+random+number+in+range --random choose from range for panel
+- ballon marign-top -10px https://codepen.io/mangadrawing123/pen/XWambqj?editors=1100
 - -------------------------------------------------------------------------------------------------------------
 - skew css
 - overlay webtoon page white mask clip
 - 1 , 2 , 3 for three panel in one page - automate (desire) --- steps :
 - auto break long balloon at . dot
+- calculate sentence in balloon ot ift javascript
 - afte last child balloon rectangel : https://codingislove.com/css-speech-bubbles/
 - prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row 
 - blue backgorund layout website
