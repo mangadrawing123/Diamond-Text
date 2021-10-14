@@ -5,7 +5,7 @@ background: black;
 }
 .grid {
     display: grid;
-    grid-template-columns: auto 40vw auto 56vh auto;
+    grid-template-columns: auto 40vw auto 50vh auto;
     grid-template-rows: 1fr;
     justify-content: center;
 }
@@ -72,10 +72,11 @@ button:hover {
 }
 
 .webtoonImage {
-    grid-column-start: 4;
+    
+    grid-column: 4/5;
     /* padding: 40vh 0 40vh 0; */
     background: white;
-    /* background: lightgray; */
+    background: lightblue;
 }
 .PANEL {
     display: grid;
@@ -132,7 +133,7 @@ background: orange;
     background: white;
     hyphens: auto;
     text-align: center;
-    margin: 0px;
+    /* right: -10px; */
 background: greenyellow;
 
 }
