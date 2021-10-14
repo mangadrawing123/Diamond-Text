@@ -100,7 +100,7 @@ hyphens: auto;
 
 .nameAndBalloon {
 display:grid;
-width: 70%;
+width: 80%;
 /* background: orange; */
 }
 .name {
@@ -116,7 +116,7 @@ width: 70%;
 }
 /* balloon and ballon types */
 .balloon {
-    width: 100px;
+    max-width: 50%;
     border: 2px solid black;
     padding: 20px;
     /* margin: -3vh; */
