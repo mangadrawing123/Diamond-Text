@@ -78,19 +78,18 @@ button:hover {
     /* background: lightgray; */
 }
 .PANEL {
+    display: grid;
     font-size: 20px;
-    border: 2px solid black;
-    display: flex;
-    min-height: 30vh;
-    max-height: 85vh;
-    height: auto;
+    /* border: 2px solid black; */
+    /* min-height: 30vh; */
+    /* max-height: 85vh; */
+    /* height: auto; */
     margin: 40vh 1vh 40vh 1vh;
-    padding: 3%;
-    flex-direction: column;
-    /* padding: 1rem; */
-    /* background: white; */
-    align-content: center;
-    /* background: lightblue; */
+    /* padding: 3%; */
+    /* flex-direction: column; */
+    /* align-content: center; */
+background: peru;
+
 }
 .FULL {width: 100%; margin: 0;}
 .LEFT {width: 50%;}
@@ -101,18 +100,20 @@ button:hover {
 .SKEW {}
 
 .action {
+    grid-row: 2/3;
+    min-height : 200px;
+    margin: 0 10px;
+    border: 2px solid black;
+font-size: 15px;
 hyphens: auto;
-color: rgba(0, 0, 0, 0.712);
 /* background: white; */
-/* background-color: lightpink; */
+background-color: lightpink;
 }
 
 .nameAndBalloon {
-display: flex;
-flex-direction: column;
-margin-top: 1vh;
+display:grid;
 width: 70%;
-/* background: orange; */
+background: orange;
 }
 .name {
     color: black;
@@ -124,14 +125,16 @@ width: 70%;
 
 /* balloon and ballon types */
 .balloon {
-    flex-direction: column;
-    width: 50%;
+    width: 100px;
     border: 2px solid black;
     padding: 20px;
     border-radius: 50%;
     background: white;
     hyphens: auto;
     text-align: center;
+    margin: 0px;
+background: greenyellow;
+
 }
 .whisper {border: 2px dashed black;}
 .yell {}
@@ -140,8 +143,8 @@ width: 70%;
 
 /*altenrative balloon */
 .nameAndBalloon:nth-child(odd) {
-align-self: flex-end;
+justify-self: end;
 }
 .balloon:nth-child(odd) {
-align-self: flex-end;
+justify-self: end;
 }
