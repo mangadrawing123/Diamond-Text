@@ -73,8 +73,10 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - sketchup delet all extension all at once
 - set paypal for free and try to get $1
 - overlay: https://codepen.io/mangadrawing123/pen/OJjVzbj
-- -------------------------------------------------------------------------------------------------------------
 - circle upper and lower, overlay, yotube: https://www.youtube.com/watch?v=HFG3BKOqOlE -- grid order : 
+- -------------------------------------------------------------------------------------------------------------
+- github merge main gbnahc
+- main change order middle panel
 - auto surround css balloon, avoid center, start from center css div, auto fit to panel 1000x500, panel auto expand. https://codepen.io/mangadrawing123/pen/OJjVzPp?editors=1100
 - 1 , 2 , 3 for three panel in one page
 - skew css
