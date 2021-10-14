@@ -83,6 +83,8 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - ballon marign-top -10px https://codepen.io/mangadrawing123/pen/XWambqj?editors=1100
 - -------------------------------------------------------------------------------------------------------------
 - skew css
+- rnadom width js + random position grid?
+- all thing must have panel solid black, includ just ballon only
 - overlay webtoon page white mask clip
 - 1 , 2 , 3 for three panel in one page - automate (desire) --- steps :
 - auto break long balloon at . dot
