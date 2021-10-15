@@ -81,8 +81,21 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - change font cogle comic 
 - random width action panel css: jsfiddle: http://jsfiddle.net/qaF24/5/ -- jquearey randome widh t ,height --- radnomde within rnage javascrip: https://www.codegrepper.com/code-examples/javascript/javascript+get+random+number+in+range --random choose from range for panel
 - ballon marign-top -10px https://codepen.io/mangadrawing123/pen/XWambqj?editors=1100
+- each PANEL at line enter : reddit: regex101: https://regex101.com/r/rrb56y/1 - reddit: https://www.reddit.com/r/regex/comments/q8fd3z/how_do_i_advoid_the_extra_group_when_using/ - solved:  https://regex101.com/r/fle0T4/1  
+- turn (action) to have action div or none balloon middle css. - or turn it to mini panel ontop overlay - action mini : codepen worked: https://codepen.io/mangadrawing123/pen/OJjyrOp?editors=1100
 - -------------------------------------------------------------------------------------------------------------
+- radom panel array
+- *SOUND noise skew
+- EPISODE : number display -12- ; TITLE : pino code (captialized-)
+- 3 long pages in one day
+- balloon tail alwyas poitn toward panel action
+- reddit complaint aisan, tired(must) can't avoid rant --
 - skew css
+
+-
+- mini grab look aorund for next regex tab()
+- rnadom width js + random position grid?
+- all thing must have panel solid black, includ just ballon only
 - overlay webtoon page white mask clip
 - 1 , 2 , 3 for three panel in one page - automate (desire) --- steps :
 - auto break long balloon at . dot
