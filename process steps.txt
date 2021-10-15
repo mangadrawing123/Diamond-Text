@@ -86,9 +86,14 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - regex at start of line for panel - loop panel and action: https://regex101.com/r/knSRpd/3 -- redit: https://www.reddit.com/r/regex/comments/q8igd4/how_can_i_group_the_second_green_group_end_of/
 - combine balloon border div ; codpen: https://codepen.io/pen/?editors=1100 -- fcc: https://www.freecodecamp.org/news/z-axis-html-css-z-index-layout-adventures-2419cefdc2ed/ -- reedit: https://www.reddit.com/r/css/comments/q8ld7q/how_to_have_my_circles_to_share_the_same_border/
 - replace all /n/n or above {2,} with one\n
-- inehrrit whisper : redit: https://www.reddit.com/r/css/comments/q8mete/how_to_make_the_class_balloon_inherit_from_the/ -- codpen: https://codepen.io/mangadrawing123/pen/OJjyrOp?editors=1100
+- inehrrit whisper : redit: https://www.reddit.com/r/css/comments/q8mete/how_to_make_the_class_balloon_inherit_from_the/ -- codpen: https://codepen.io/mangadrawing123/pen/OJjyrOp?editors=1100 --- jsfiddle: https://jsfiddle.net/2yhtvwf4/
+- wavy balloon outline - reddiet: https://www.reddit.com/user/mangadrawing123/posts -- codepne : https://codepen.io/mangadrawing123/pen/OJjyrOp?editors=1100 -- gogole image : https://www.google.com/search?q=css+border+type&tbm=isch&ved=2ahUKEwiI9uTJ08zzAhVIbJQKHcZKBWAQ2-cCegQIABAA&oq=css+border+type&gs_lcp=CgNpbWcQAzIFCAAQgAQ6BwgjEO8DECc6BggAEAgQHjoECAAQGDoGCAAQChAYUOczWJQ4YNg5aABwAHgAgAGyAogB9QqSAQcwLjIuMy4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=ppNpYYiLJsjY0QTGlZWABg&bih=729&biw=1423&rlz=1C1CHBF_enVN956VN956#imgrc=wR_5Rd3KLuXKdM  
 - -------------------------------------------------------------------------------------------------------------
+- background prinitng ghariel house
+- shadow for all?!
+- soudn effect: https://googlecreativelab.github.io/coder-projects/projects/comic_creator/
 - diana (yell)  differnet regex : add to name and BAlloon, then inherrit only when it's class balloon. codepne is it possible?
+- skew css panel 
 - yell balloon css ,wavy
 - mini action one or 2 tab \t{1,2}
 - radom panel array
@@ -98,7 +103,6 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - 3 long pages in one day
 - balloon tail alwyas poitn toward panel action
 - reddit complaint aisan, tired(must) can't avoid rant --
-- skew css
 
 -
 - mini grab look aorund for next regex tab()
