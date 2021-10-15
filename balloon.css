@@ -67,6 +67,7 @@ button:hover {
 .PANEL {
     display: grid;
     font-size: 20px;
+    min-height: 100vh;
     /* border: 2px solid black; */
     /* min-height: 30vh; */
     /* max-height: 85vh; */
@@ -97,10 +98,22 @@ hyphens: auto;
 /* background: white; */
 /* background-color: lightpink; */
 }
+.mini {
+    border: 2px solid black;
+    min-width: 50%;
+    min-height: 100px;
+    /* margin: 10px 0; */
+font-size: 15px;
+
+    /* background: lightgreen; */
+  }
+  .mini + .balloon {
+    margin-top: -30px;
+  }
 
 .nameAndBalloon {
 display:grid;
-width: 80%;
+width: 70%;
 /* background: orange; */
 }
 .name {
@@ -145,5 +158,8 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 justify-self: end;
 }
 .balloon:nth-child(odd) {
+justify-self: end;
+}
+.mini:nth-child(odd) {
 justify-self: end;
 }
