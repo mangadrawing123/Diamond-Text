@@ -24,8 +24,6 @@ function button() {
   let result = '';
 
   let regexAction = /^(?!\t|^([A-Z\s]+)$)(\S.*)/gm;
-//   let regexPanel = /^(PANEL\s+\S+)(.*?)(?=PANEL|$(?!\n))/gms;
-//   let regexPanelEnter = /(^\n{2,}|^PANEL\s+(\S+)|^(NORMAL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE))(.*?)(?=^\n{2,}|^PANEL\s+(\S+)|^(NORMAL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE)|$(?!\n))/gms;
   let regexThreeEnter = /^\n{2,}(^PANEL\s+(\S+))?(^(NORMAL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE))?(.*?)(?=^\n{2,}|$(?!\n))/gms;
   let regexNameAndBalloon = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
   let regexName = /(\t\t)(\S.*)/gm;
@@ -39,7 +37,7 @@ function button() {
   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
   result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
 
-  console.log(result)
+//   console.log(result)
   document.querySelector(".webtoonImage").innerHTML = result;
 }
 
