@@ -83,8 +83,16 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - ballon marign-top -10px https://codepen.io/mangadrawing123/pen/XWambqj?editors=1100
 - each PANEL at line enter : reddit: regex101: https://regex101.com/r/rrb56y/1 - reddit: https://www.reddit.com/r/regex/comments/q8fd3z/how_do_i_advoid_the_extra_group_when_using/ - solved:  https://regex101.com/r/fle0T4/1  
 - turn (action) to have action div or none balloon middle css. - or turn it to mini panel ontop overlay - action mini : codepen worked: https://codepen.io/mangadrawing123/pen/OJjyrOp?editors=1100
+- regex at start of line for panel - loop panel and action: https://regex101.com/r/knSRpd/3 -- redit: https://www.reddit.com/r/regex/comments/q8igd4/how_can_i_group_the_second_green_group_end_of/
+- combine balloon border div ; codpen: https://codepen.io/pen/?editors=1100 -- fcc: https://www.freecodecamp.org/news/z-axis-html-css-z-index-layout-adventures-2419cefdc2ed/ -- reedit: https://www.reddit.com/r/css/comments/q8ld7q/how_to_have_my_circles_to_share_the_same_border/
+- replace all /n/n or above {2,} with one\n
+- inehrrit whisper : redit: https://www.reddit.com/r/css/comments/q8mete/how_to_make_the_class_balloon_inherit_from_the/ -- codpen: https://codepen.io/mangadrawing123/pen/OJjyrOp?editors=1100
 - -------------------------------------------------------------------------------------------------------------
+- diana (yell)  differnet regex : add to name and BAlloon, then inherrit only when it's class balloon. codepne is it possible?
+- yell balloon css ,wavy
+- mini action one or 2 tab \t{1,2}
 - radom panel array
+- rergex end of parargraph javascript not ?!\n
 - *SOUND noise skew
 - EPISODE : number display -12- ; TITLE : pino code (captialized-)
 - 3 long pages in one day
