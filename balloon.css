@@ -76,7 +76,7 @@ button:hover {
     /* padding: 3%; */
     /* flex-direction: column; */
     /* align-content: center; */
-background: peru;
+/* background: peru; */
 
 }
 
@@ -107,7 +107,7 @@ font-size: 15px;
 .nameAndBalloon {
 display:grid;
 width: 70%;
-background: orange;
+/* background: orange; */
 }
 .name {
     color: black;
@@ -133,7 +133,7 @@ background: orange;
     line-height: 0.9;
     font-size: 15px;
     /* right: -10px; */
-background: greenyellow;
+/* background: greenyellow; */
 
 }
 
@@ -161,11 +161,8 @@ background: greenyellow;
 }
 .yell .balloon{
     border-radius: 10%;
-    -moz-transform: rotate(339deg);
--webkit-transform: rotate(339deg);
--o-transform: rotate(339deg);
--ms-transform: rotate(339deg);
-transform: rotate(339deg);
+
+transform: rotate(-10deg);
 }
 
 
