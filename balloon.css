@@ -72,20 +72,14 @@ button:hover {
     /* min-height: 30vh; */
     /* max-height: 85vh; */
     /* height: auto; */
-    margin: 40vh 1vh 40vh 1vh;
+    margin: 40vh 0;
     /* padding: 3%; */
     /* flex-direction: column; */
     /* align-content: center; */
-/* background: peru; */
+background: peru;
 
 }
-.FULL {width: 100%; margin: 0;}
-.LEFT {width: 50%;}
-.RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
-.FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
-.CENTER {width: 80%;}
-.NONE {width: 100%; border: 0;}
-.SKEW {}
+
 
 .action {
     grid-row: 2/3;
@@ -93,7 +87,6 @@ button:hover {
     margin: 0 10px;
     border: 2px solid black;
 font-size: 15px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 hyphens: auto;
 /* background: white; */
 /* background-color: lightpink; */
@@ -114,7 +107,7 @@ font-size: 15px;
 .nameAndBalloon {
 display:grid;
 width: 70%;
-/* background: orange; */
+background: orange;
 }
 .name {
     color: black;
@@ -130,25 +123,25 @@ width: 70%;
 /* balloon and ballon types */
 .balloon {
     max-width: 50%;
-    border: 2px solid black;
     padding: 20px;
     /* margin: -3vh; */
     border-radius: 50%;
     background: white;
     hyphens: auto;
     text-align: center;
-    /* font-family: "Architects Daughter", serif;
-     */
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    border: 2px solid black;
     line-height: 0.9;
     font-size: 15px;
     /* right: -10px; */
-/* background: greenyellow; */
+background: greenyellow;
 
 }
 
-.whisper {border: 2px dashed black;}
+.whisper .balloon{
+    border: 2px dashed black; 
+    background: lightpink;
+    margin: 0;
+}
 .yell {}
 .scared {}
 
@@ -163,3 +156,11 @@ justify-self: end;
 .mini:nth-child(odd) {
 justify-self: end;
 }
+
+.FULL > .action {width: 100%; margin: 0; border-left: 0; border-right: 0;}
+.LEFT {width: 50%;}
+.RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
+.FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
+.CENTER {width: 80%;}
+.NONE {width: 100%; border: 0;}
+.SKEW {}
