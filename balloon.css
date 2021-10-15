@@ -137,17 +137,36 @@ background: greenyellow;
 
 }
 
-.whisper .balloon{
-    border: 2px dashed black; 
-    background: lightpink;
-    margin: 0;
+.whisper .balloon {
+  border: 3px dashed black;
 }
-.yell {}
-.scared .balloon{
+.dotted .balloon {
+  border: 4px dotted black;
+}
+.narrate .balloon {
+  border-radius: 1px;
+}
+.thought .balloon {
+  border-radius: 20px;
+}
+.double .balloon {
+  border: 5px double black;
+}
+.scared .balloon {
+/*   border: 5px double black; */
     border-width: 3px 4px 3px 5px;
-    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
-    transform: rotate(2deg);
-  }
+  border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+/*   border-radius: 50%; */
+  transform: rotate(2deg);
+}
+.yell .balloon{
+    border-radius: 10%;
+    -moz-transform: rotate(339deg);
+-webkit-transform: rotate(339deg);
+-o-transform: rotate(339deg);
+-ms-transform: rotate(339deg);
+transform: rotate(339deg);
+}
 
 
 /*altenrative balloon */
@@ -161,7 +180,7 @@ justify-self: end;
 justify-self: end;
 }
 
-.FULL > .action {width: 100%; margin: 0; border-left: 0; border-right: 0;}
+.FULL .action {width: 100%; margin: 0; border-left: 0; border-right: 0;}
 .LEFT {width: 50%;}
 .RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
 .FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}

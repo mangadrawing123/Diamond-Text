@@ -35,13 +35,13 @@ function button() {
 
   result = s.replace(regexTwoThreeEnter, '\n');
 //   result = result.replace(regexAction, '<div class="action">$2</div>');
-  result = result.replace(regexNoThreeEnter, '<div class="PANEL $2">\n<div class="action">$4</div>\n$5</div>\n\n');
+  result = result.replace(regexNoThreeEnter, '<div class="PANEL $2">\n<div class="action">$4</div>$5</div>\n\n');
 //   result = result.replace(regexThreeEnter, '<div class="PANEL $2$4">\n$5</div>\n\n');
-  result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="$3">\n$4</div></div>');
+  result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon $3">\n<div class="name">$1</div>\n$4</div>');
 //   result = result.replace(regexNameAndBalloon, '<div class="nameAndBalloon">$1$2</div>');
 //   result = result.replace(regexName, '<div class="name">$2</div>');
+result = result.replace(regexActionMini, '<div class="mini">$1</div>');
 result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
-    result = result.replace(regexActionMini, '<div class="mini">$1</div>');
 
   console.log(result)
   document.querySelector(".webtoonImage").innerHTML = result;
