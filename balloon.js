@@ -25,7 +25,7 @@ function button() {
 
   let regexTwoThreeEnter = /\n{2,}/gms;
 //   let regexAction = /^(?!\t|^([A-Z\s]+)$)(\S.*)/gm;
-  let regexNoThreeEnter = /^(?!\t)(^PANEL\s+(\S+))?(?:(NORMAL|SMALL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE)\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|$(?!\n))/gms;
+  let regexNoThreeEnter = /^(?!\t)(^PANEL\s+(\S+))?(?:(NORMAL|SMALL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE|SKEW)\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|$(?!\n))/gms;
 //   let regexThreeEnter = /^\n{2,}(^PANEL\s+(\S+))?(^(NORMAL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE))?(.*?)(?=^\n{2,}|$(?!\n))/gms;
   let regexNameBalloonType = /^\t{2,}(\w+\s+?)(\((\w+)\)\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms;
 //   let regexNameAndBalloon = /^(\t\t)(.*?)(?=\t\t|^(?!\t|$).*)/gms;
@@ -35,9 +35,9 @@ function button() {
 
   result = s.replace(regexTwoThreeEnter, '\n');
 //   result = result.replace(regexAction, '<div class="action">$2</div>');
-  result = result.replace(regexNoThreeEnter, '<div class="PANEL $2">\n<div class="action">$4</div>$5</div>\n\n');
+  result = result.replace(regexNoThreeEnter, '<div class="PANEL ">\n<div class="action $3">$4</div>$5</div>\n\n');
 //   result = result.replace(regexThreeEnter, '<div class="PANEL $2$4">\n$5</div>\n\n');
-  result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon $3">\n<div class="name">$1</div>\n$4</div>');
+  result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>');
 //   result = result.replace(regexNameAndBalloon, '<div class="nameAndBalloon">$1$2</div>');
 //   result = result.replace(regexName, '<div class="name">$2</div>');
 result = result.replace(regexActionMini, '<div class="mini">$1</div>');
