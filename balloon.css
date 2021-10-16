@@ -66,7 +66,7 @@ button:hover {
 .PANEL {
     display: grid;
     min-height: 100vh;
-    margin: 40vh 0;
+    margin: 20vh 0;
     font-size: 1.3em;
 /* background: peru; */
 }
@@ -126,7 +126,7 @@ margin: 0px;padding: 0px;
 }
 
 .whisper .balloon {
-  border: 2px dashed black;
+  border: 0.2rem dashed black;
 }
 .dotted .balloon {
   border: 4px dotted black;
