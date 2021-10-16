@@ -66,7 +66,7 @@ button:hover {
 }
 .PANEL {
     display: grid;
-    font-size: 20px;
+    font-size: 24px;
     min-height: 100vh;
     /* border: 2px solid black; */
     /* min-height: 30vh; */
