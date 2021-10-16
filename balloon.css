@@ -3,7 +3,6 @@ margin:0px;
 padding:0px;
 background: black;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 .grid {
     display: grid;
@@ -18,7 +17,6 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 40vw;
     height: 100vh;
     margin-left: 5%;
-    /* background: rgb(43, 43, 43); */
     /* background:#4A90E2; */
     justify-content: inherit;
 }
@@ -52,7 +50,6 @@ button {
     font-weight: 600;
 }
 button:hover {
-    /* color: #458efe; */
     color: white;
     border: 3px solid white;
 
@@ -60,40 +57,33 @@ button:hover {
 
 .webtoonImage {
     grid-column: 4/5;
-    /* padding: 40vh 0 40vh 0; */
     background: white;
     /* background: lightblue; */
 }
+
+
+
 .PANEL {
     display: grid;
-    font-size: 20px;
     min-height: 100vh;
-    /* border: 2px solid black; */
-    /* min-height: 30vh; */
-    /* max-height: 85vh; */
-    /* height: auto; */
     margin: 40vh 0;
+    font-size: 1.3em;
 /* background: peru; */
-
 }
-
 
 .action {
     grid-row: 2/3;
-    min-height : 200px;
+    min-height : 30vh;
     margin: 0 10px;
     border: 2px solid black;
-/* font-size: 15px; */
 hyphens: auto;
-/* background: white; */
+background: white;
 /* background-color: lightpink; */
 }
 .mini {
     border: 2px solid black;
-    min-width: 50%;
-    min-height: 100px;
-    /* margin: 10px 0; */
-/* font-size: 15px; */
+    /* min-width: 50%; */
+    /* min-height: 100px; */
     background: white;
     /* background: lightgreen; */
   }
@@ -104,15 +94,19 @@ hyphens: auto;
 .nameAndBalloon {
 display:grid;
 z-index: 100;
+margin: 1vh;
 width: 70%;
 /* background: orange; */
 }
 .name {
-    color: black;
-    hyphens: auto;
-/* background: white; */
-/* background-color: lightgoldenrodyellow; */
-    text-transform: uppercase;
+text-transform: uppercase;
+filter: drop-shadow(1px 0px 0px white) 
+drop-shadow(-1px 0px 0px white)
+drop-shadow(0px 1px 0px white) 
+drop-shadow(0px -1px 0px white)
+drop-shadow(1px 1px 0px white);
+margin: 0px;padding: 0px;
+/* background-color: grey; */
 }
 
 .balloon + .balloon{
@@ -122,16 +116,11 @@ width: 70%;
 .balloon {
     max-width: 50%;
     padding: 30px 20px;
-    /* margin: -3vh; */
     border-radius: 50%;
     background: white;
     hyphens: auto;
     text-align: center;
-    /* border: 2px solid black; */
-    /* border: inherit; */
-    clip-path: inherit;
     line-height: 0.9;
-    /* font-size: 15px; */
 /* background: greenyellow; */
 }
 
@@ -151,13 +140,10 @@ width: 70%;
   border: 5px double black;
 }
 .squarePen .balloon {
-/*   border: 5px double black; */
     border-width: 3px 4px 3px 5px;
   border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
-/*   border-radius: 50%; */
   transform: rotate(2deg);
 }
-
 .scared .balloon{
     clip-path: polygon(10% 7%, 25% 13%, 39% 7%, 56% 9%, 72% 15%, 86% 14%, 93% 29%, 96% 44%, 95% 60%, 100% 71%, 94% 87%, 95% 94%, 92% 100%, 70% 100%, 51% 91%, 41% 98%, 17% 98%, 16% 93%, 9% 84%, 1% 74%, 1% 62%, 0% 51%, 5% 35%, 2% 28%, 1% 20%);
 }
@@ -170,17 +156,14 @@ width: 70%;
 }
 
 .container {
-/*   width: 100%; */
+  /* width: 100%; */
   filter: drop-shadow(1px 0px 0px black) 
     drop-shadow(-1px 0px 0px black)
     drop-shadow(0px 1px 0px black) 
     drop-shadow(0px -1px 0px black)
     drop-shadow(1px 1px 0px black);
+    /* background: turquoise; */
 }
-
-/* .container .mini {
-    filter : drop-shadow(0px 0px);
-} */
 
 /*altenrative balloon */
 .nameAndBalloon:nth-child(odd) {
@@ -193,7 +176,7 @@ justify-self: end;
 justify-self: end;
 }
 
-.FULL .action {width: 100%; margin: 0; border-left: 0; border-right: 0;}
+.FULL {width: 100%; margin: 0; border-left: 0; border-right: 0;}
 .LEFT {width: 50%;}
 .RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
 .FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
