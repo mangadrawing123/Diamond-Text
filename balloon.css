@@ -25,7 +25,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 textarea{
     grid-column-start: 2;
-    font-size: 17px;
+    font-size: 1rem;
     width: 80%;
     height:85vh;
     /* margin-left: 10%; */
@@ -46,7 +46,7 @@ button {
     border: 3px solid rgba(255, 255, 255, 0.055);
     padding: 1rem 1rem;
     border-radius: 0.8rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 button:hover {
@@ -96,7 +96,7 @@ display:grid;
 z-index: 100;
 margin: 1rem ;
 width: 70%;
-background: orange;
+/* background: orange; */
 }
 .name {
 text-transform: uppercase;
@@ -106,15 +106,11 @@ drop-shadow(0px 1px 0px white)
 drop-shadow(0px -1px 0px white)
 drop-shadow(1px 1px 0px white);
 margin: 0px;padding: 0px;
-background-color: grey;
+/* background-color: grey; */
 }
 
-.balloon + .balloon{
-    margin-top: -3rem;
-    border-top: none;
-}
-/* balloon and ballon types */
 .balloon {
+    font-size: 1.2rem;
     max-width: 50%;
     padding: 2rem 1rem;
     border-radius: 50%;
@@ -124,6 +120,11 @@ background-color: grey;
     background: white;
 /* background: greenyellow; */
 }
+.balloon + .balloon{
+    margin-top: -3rem;
+    border-top: none;
+}
+/* balloon and ballon types */
 
 .whisper .balloon {
   border: 0.2rem dashed black;
