@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ccWildWords";
-  src:url("/fonts/CC_Wild_Words_Roman.tff") format("tff");
+  src:url("/fonts/CC_Wild_Words_Roman.ttf") format("truetype");
 }
 html, body {
   margin:0px;
@@ -10,11 +10,8 @@ html, body {
 }
 
 .balloon {
-    font-family: 'CC Wild Words';
-    font-weight: normal;
-    font-style: normal;
-
-  /* font-family: ccWildWords; */
+  font-family: ccWildWords;
+    /* font-family: 'CC Wild Words'; */
     /* font-family: "Bangers"; */
   /* font-family: "Comic Neue"; */
   /* font-family: "Kalam"; */
@@ -129,9 +126,7 @@ margin: 0px;padding: 0px;
 }
 
 .balloon {
-    font-size: 1.2rem;
-    /* font-family: ccWildWords; */
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-size: 1rem; */
     max-width: 50%;
     padding: 2rem 1rem;
     border-radius: 50%;
