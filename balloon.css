@@ -2,7 +2,7 @@ html, body {
   margin:0px;
   padding:0px;
   background: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 @font-face {
@@ -10,7 +10,9 @@ html, body {
   src:url('/fonts/CC_Wild_Words_Roman.tff');
 }
 .balloon {
-  font-family: ccWildWords;
+    /* font-family: "Bangers"; */
+
+  /* font-family: ccWildWords; */
   /* font-family:'Courier New', Courier, monospace; */
 }
 .grid {
