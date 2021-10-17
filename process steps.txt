@@ -103,6 +103,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - ligh, blue layout : reddit: https://www.reddit.com/r/css/comments/q9u28s/why_my_button_in_buttons_div_is_not_spacebetween/
 - -------------------------------------------------------------------------------------------------------------
 - ahdow balllon didn't capture hwen downalod
+- folder ctrl e display vidoe latest on top
 - auto reformat html code invs code like codpen io
 - good filter function: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function
 - skew css panel -- https://www.educba.com/css-matrix/ --https://codepen.io/mangadrawing123/pen/WNErrrp -- youtube https://www.youtube.com/watch?v=hso-nm9cWmM  - good diamodn shape : https://codemyui.com/jquery-button-hover-click-animation/ -- - redit : https://www.reddit.com/r/css/comments/q92p95/is_it_possible_to_have_the_diamond_shape_border/ -- codepn : https://codepen.io/mangadrawing123/pen/ExvPWLM?editors=1100 -- good css shape triangle : https://css-tricks.com/the-shapes-of-css/  -- cutcorner: https://www.oreilly.com/library/view/css-secrets/9781449372736/ch04.html
