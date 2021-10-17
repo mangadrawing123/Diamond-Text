@@ -98,9 +98,9 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - balloon nth child doesn't work
 - name outline white
 -rem em font
-- change font cc wildword for dialog - reddit ; https://www.reddit.com/r/css/comments/q9oo54/how_to_add_and_use_local_fontfamily_not_sure_how/ -- stackvoeflwo: https://stackoverflow.com/questions/38086083/to-use-local-font-in-html-using-font-face - imgur: https://imgur.com/gallery/FGPhYAR -- google font imagur : https://imgur.com/gallery/Z20r0sW - tranfonrter : font genrator : font website : https://transfonter.org/
+- change font cc wildword for dialog - reddit ; https://www.reddit.com/r/css/comments/q9oo54/how_to_add_and_use_local_fontfamily_not_sure_how/ -- stackvoeflwo: https://stackoverflow.com/questions/38086083/to-use-local-font-in-html-using-font-face - imgur: https://imgur.com/gallery/FGPhYAR -- google font imagur : https://imgur.com/gallery/Z20r0sW - tranfonrter : font genrator : font website : https://transfonter.org/ -- ormate trutetyp :https://imgur.com/gallery/DMVNUlt
 - -------------------------------------------------------------------------------------------------------------
-- backflash start end or BLACK START END
+- backflash start end or BLACK START END ; regex: https://regex101.com/r/W2sFPR/1 
 - ligh, blue layout
 - good filter function: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function
 - skew css panel -- https://www.educba.com/css-matrix/ --https://codepen.io/mangadrawing123/pen/WNErrrp -- youtube https://www.youtube.com/watch?v=hso-nm9cWmM  - good diamodn shape : https://codemyui.com/jquery-button-hover-click-animation/ -- - redit : https://www.reddit.com/r/css/comments/q92p95/is_it_possible_to_have_the_diamond_shape_border/ -- codepn : https://codepen.io/mangadrawing123/pen/ExvPWLM?editors=1100 -- good css shape triangle : https://css-tricks.com/the-shapes-of-css/  -- cutcorner: https://www.oreilly.com/library/view/css-secrets/9781449372736/ch04.html
