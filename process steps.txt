@@ -94,11 +94,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - extreme (yell) clip-path
 - scared balloon :codepn [ME] : https://codepen.io/mangadrawing123/pen/mdMVwWa?editors=0100 -- 
 - clippy path website gnerator : https://bennettfeely.com/clippy/
-- -------------------------------------------------------------------------------------------------------------
 - weird padding balloon 
+- balloon nth child doesn't work
 - name outline white
-- change font cc wildword for dialog
 -rem em font
+- -------------------------------------------------------------------------------------------------------------
+- change font cc wildword for dialog
 - ligh, blue layout
 - good filter function: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function
 - skew css panel -- https://www.educba.com/css-matrix/ --https://codepen.io/mangadrawing123/pen/WNErrrp -- youtube https://www.youtube.com/watch?v=hso-nm9cWmM  - good diamodn shape : https://codemyui.com/jquery-button-hover-click-animation/ -- - redit : https://www.reddit.com/r/css/comments/q92p95/is_it_possible_to_have_the_diamond_shape_border/ -- codepn : https://codepen.io/mangadrawing123/pen/ExvPWLM?editors=1100 -- good css shape triangle : https://css-tricks.com/the-shapes-of-css/  -- cutcorner: https://www.oreilly.com/library/view/css-secrets/9781449372736/ch04.html
