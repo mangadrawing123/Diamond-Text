@@ -1,21 +1,25 @@
+@font-face {
+  font-family: "ccWildWords";
+  src:url("/fonts/CC_Wild_Words_Roman.tff") format("tff");
+}
 html, body {
   margin:0px;
   padding:0px;
   background: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
-@font-face {
-  font-family: ccWildWords;
-  src:url('/fonts/CC_Wild_Words_Roman.tff');
-}
 .balloon {
+    font-family: 'CC Wild Words';
+    font-weight: normal;
+    font-style: normal;
+
+  /* font-family: ccWildWords; */
     /* font-family: "Bangers"; */
   /* font-family: "Comic Neue"; */
-  font-family: "Kalam";
+  /* font-family: "Kalam"; */
   /* text-transform: uppercase; */
   /* font-family: "Acme"; */
-  /* font-family: ccWildWords; */
   /* font-family:'Courier New', Courier, monospace; */
 }
 .grid {
