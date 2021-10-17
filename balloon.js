@@ -39,7 +39,7 @@ result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
   document.querySelector(".webtoonImage").innerHTML = result;
 }
 
-
+                
 function downloadWebtoonDesktop() {
     html2canvas(document.querySelector(".webtoonImage")).then(function(canvas) {
         // document.body.appendChild(canvas);
