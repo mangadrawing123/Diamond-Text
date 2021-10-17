@@ -81,6 +81,7 @@ button:hover {
     min-height : 30vh;
     margin: 0 10px;
     border: 2px solid black;
+    line-height: 0.9rem;
 hyphens: auto;
 background: white;
 /* background-color: lightpink; */
@@ -160,7 +161,7 @@ margin: 0px;padding: 0px;
 }
 .scared .balloon{
   /* font-family: "Chilanka"; */
-    clip-path: polygon(10% 7%, 25% 13%, 39% 7%, 56% 9%, 72% 15%, 86% 14%, 93% 29%, 96% 44%, 95% 60%, 100% 71%, 94% 87%, 95% 94%, 92% 100%, 70% 100%, 51% 91%, 41% 98%, 17% 98%, 16% 93%, 9% 84%, 1% 74%, 1% 62%, 0% 51%, 5% 35%, 2% 28%, 1% 20%);
+   clip-path: polygon(10% 7%, 25% 13%, 39% 7%, 56% 9%, 72% 15%, 86% 14%, 93% 29%, 96% 44%, 95% 60%, 100% 71%, 94% 87%, 95% 94%, 92% 100%, 70% 100%, 51% 91%, 41% 98%, 17% 98%, 16% 93%, 9% 84%, 1% 74%, 1% 62%, 0% 51%, 5% 35%, 2% 28%, 1% 20%);
 }
 .yell .balloon{
   font-family: "Bangers";
