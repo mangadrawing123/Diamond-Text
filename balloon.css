@@ -2,53 +2,78 @@
   font-family: "ccWildWords";
   src:url("/fonts/CC_Wild_Words_Roman.ttf") format("truetype");
 }
+:root {
+  --background: white;
+  --blue-color: #3E8CEC;
+
+
+  --main-width: 50vw;
+  --left-side-width: 50vw;
+
+  --text-area: 40vw;
+  --webtoon-width: 50vh;
+}
 html, body {
   margin:0px;
   padding:0px;
-  background: black;
+  background: var(--background);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: auto 40vw auto 50vh auto;
-    grid-template-rows: 1fr;
-    justify-content: center;
+    grid-template-areas: 
+    "main . webtoon ."
+    ;
+    grid-template-columns: var(--main-width) auto var(--webtoon-width) auto;
 }
 
-.main {
-    position: fixed;
-    padding: 1vh;
-    width: 40vw;
+.main, .side {
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas: 
+  "buttons textarea ."
+  ;
+  justify-content: center;
+  align-items: center;
+  width: var(--main-width);
     height: 100vh;
-    margin-left: 5%;
-    /* background:#4A90E2; */
-    justify-content: inherit;
+    background: var(--blue-color);
+    -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
+box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.34);
 }
-.downloadImageDesktop {
-    grid-column-start: 1;
-}
+
+
 textarea{
-    grid-column-start: 2;
-    font-size: 1rem;
-    width: 80%;
+  grid-area: textarea;
+  /* width: var(--text-area); */
+  font-size: 1rem;
     height:85vh;
-    /* margin-left: 10%; */
+    align-self: center;
+    margin-right: 1rem;
+    margin-right: 1rem;
     padding: 10px;
     border-radius: 6px;
-    background: transparent;
-    color: rgba(255, 255, 255, 0.699);
+    /* background: transparent; */
+    /* color: rgba(255, 255, 255, 0.699); */
     box-shadow: 2px 2px 8px rgba(black, .3);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    color: black;
+    background: white;
 }
 
+.buttons {
+  grid-area: buttons;
+  align-content: space-around;
+}
 
 button {
-    grid-column-start: 1;
-    grid-column-end: 2; 
     background: none;
-    color: rgba(255, 255, 255, 0.123);
-    border: 3px solid rgba(255, 255, 255, 0.055);
+    color: var(--background);
+    /* color: rgba(255, 255, 255, 0.123); */
+    border: 3px solid;
+    /* border: 3px solid rgba(255, 255, 255, 0.055); */
     padding: 1rem 1rem;
     border-radius: 0.8rem;
     font-size: 1rem;
@@ -61,9 +86,11 @@ button:hover {
 }
 
 .webtoonImage {
-    grid-column: 4/5;
+  grid-area: webtoon;
     background: white;
-    /* background: lightblue; */
+    -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
+box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.09);
+    /* background: red; */
 }
 
 
@@ -129,7 +156,7 @@ margin: 0px;padding: 0px;
 /* background: greenyellow; */
 }
 .balloon + .balloon{
-    margin-top: -3rem;
+    margin-top: -2rem;
 }
 /* balloon and ballon types */
 
@@ -140,10 +167,10 @@ margin: 0px;padding: 0px;
 .dotted .balloon {
   border: 4px dotted black;
 }
-.narrate .balloon {
+.narrate .balloon, .narrator .balloon{
   font-style: italic;
-  /* font-family: "Patrick Hand"; */
-  border-radius: 1px;
+  border: none;
+  border-radius: 0;
 }
 .thought .balloon {
   font-style: italic;
@@ -164,11 +191,11 @@ margin: 0px;padding: 0px;
    clip-path: polygon(10% 7%, 25% 13%, 39% 7%, 56% 9%, 72% 15%, 86% 14%, 93% 29%, 96% 44%, 95% 60%, 100% 71%, 94% 87%, 95% 94%, 92% 100%, 70% 100%, 51% 91%, 41% 98%, 17% 98%, 16% 93%, 9% 84%, 1% 74%, 1% 62%, 0% 51%, 5% 35%, 2% 28%, 1% 20%);
 }
 .yell .balloon{
-  font-family: "Bangers";
+  /* font-family: "Bangers"; */
     border-radius: 0;
     clip-path: polygon(8% 6%, 24% 19%, 28% 1%, 36% 16%, 45% 0%, 46% 15%, 64% 4%, 66% 18%, 84% 5%, 81% 26%, 100% 19%, 89% 37%, 97% 45%, 100% 49%, 88% 62%, 100% 83%, 81% 81%, 87% 100%, 68% 86%, 64% 100%, 47% 84%, 39% 98%, 31% 83%, 15% 98%, 15% 78%, 1% 88%, 10% 66%, 1% 67%, 11% 54%, 1% 43%, 10% 34%, 2% 18%, 17% 23%);
 }
-.narrate .balloon {
+.weird .balloon {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 .sound {
@@ -207,14 +234,15 @@ justify-self: end;
 .CENTER {width: 80%;}
 .NONE {width: 100%; border: 0;}
 .SKEW {
-    margin: -2px;
+    margin: -1px;
+    border-left: none; border-right: none;
     -ms-transform: matrix(1, -0.4, 0, 1, 1, 0); /* It is is used for internet explorer 9 */
     -webkit-transform: matrix(1, -0.4, 0, 1, 1, 0); /* It is is used for Safari */
     transform: matrix(1, -0.4, 0, 1, 1, 0); /* This is standard syntax */
     }
     .BACKFLASH {
       /* width: 30vw; */
-      padding: 20vw 0;
+      padding: 10vh 0;
       background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(252,176,69,0) 100%);
     }

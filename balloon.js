@@ -35,7 +35,7 @@ function button() {
   result = result.replace(regexBackflashStart, '<div class="$1 $2">');
   result = result.replace(regexBackflashEnd, '</div>\n');
   result = result.replace(regexNoThreeEnter, '<div class="PANEL ">\n<div class="action $3">$4</div>$5</div>\n\n');
-  result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">$4</div></div>');
+  result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>');
   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
   result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
   
