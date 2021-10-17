@@ -209,6 +209,7 @@ function populateTable(dataArray) {
             $(this).toggleClass( "selected" );
           });
         });
+        console.log(myTable);
     return myTable;
 }
 
