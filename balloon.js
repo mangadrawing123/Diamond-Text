@@ -46,15 +46,12 @@ function button() {
 
 function downloadWebtoonDesktop() {
     html2canvas(document.querySelector(".webtoonImage")).then(function(canvas) {
-        // document.body.appendChild(canvas);
-        console.log("hello")
 		var dataURL = canvas.toDataURL("image/png");
         let downloadLink = document.createElement('a');
       downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
       let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
       downloadLink.setAttribute('href', url);
       downloadLink.click();
-		// document.querySelector("#theimage9").src = theimage9; 
 	});
 }
 
