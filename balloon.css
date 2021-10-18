@@ -19,6 +19,7 @@
 html, body {
   margin:0px;
   padding:0px;
+  font-size: 1.15rem;
   background: var(--background);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -163,8 +164,8 @@ margin: 0px;padding: 0px;
 }
 
 .selected {
-    color: white;	
-    background:var(--blue-color);
+  color: white;	
+  background:var(--blue-color);
 }
 
 /* balloon and ballon types */

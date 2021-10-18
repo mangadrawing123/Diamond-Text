@@ -21,7 +21,14 @@ $('#textInput').keydown(function (e) {
     }
 });
 
-function button() {
+function copyText() {
+    let textarea = document.querySelector("#textInput");
+    textarea.select();
+    document.execCommand("copy");
+    alert("INPUT copied!")
+}
+
+function button() { //ENTER BUTTON
   var s = document.getElementById("textInput").value;
   let result = '';
 
@@ -39,7 +46,7 @@ function button() {
   result = result.replace(regexNoThreeEnter, '<div class="PANEL ">\n<div class="action $3">$4</div>$5</div>\n\n');
   result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>');
   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
-  result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
+  result = result.replace(regexBalloon, '<div class="balloon" class="balloon">$2</div>');
   
   console.log(result);
   document.querySelector(".webtoonImage").innerHTML = result;
@@ -55,20 +62,13 @@ function button() {
         var selector = document.querySelector('#temp_element')
         selector.select();
         document.execCommand('copy');
-        alert(copyText)
-        ;
         document.body.removeChild(textarea);
         $(this).toggleClass("selected");
       });
     });
 }
 
-function copyText() {
-    let textarea = document.querySelector("#textInput");
-    textarea.select();
-    document.execCommand("copy");
-    alert("INPUT copied!")
-}
+
 
 
 // function downloadWebtoonDesktop() {
@@ -84,8 +84,9 @@ function copyText() {
 
 
 function downloadWebtoonDesktop() {
+    // document.getElementById('balloon').classList.remove("selected");
+    console.log("hello");
     let node = document.querySelector(".webtoonImage");
-        console.log("hello")
         domtoimage.toPng(node)
         .then(function (dataUrl) {
             let downloadLink = document.createElement('a');
