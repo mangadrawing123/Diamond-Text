@@ -68,6 +68,8 @@ textarea{
   align-content: space-around;
 }
 
+p, #count {color: white;}
+
 button {
     background: none;
     color: var(--background);

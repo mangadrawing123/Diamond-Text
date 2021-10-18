@@ -32,6 +32,18 @@ character doing someting
                     <button onclick="button()">Enter</button>
                     <button class="downloadWebtoonDesktop" onclick="downloadWebtoonDesktop()">Download Image</button>
                     <button onclick="copyText()">Save Text</button>
+                            <p> <span id="count">0</span> views <p>
+        <script>
+            var countEl=document.getElementById("count");
+
+            updateVisitCount();
+
+            function updateVisitCount() {
+            fetch('https://api.countapi.xyz/update/alex/webpage/?amount=1')
+                .then(res => res.json())
+                .then(data => {countEl.innerHTML = data.value;});
+            }
+        </script>
                 </div>
         </div> <!--main-->
         

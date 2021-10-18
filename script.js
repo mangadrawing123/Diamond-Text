@@ -260,7 +260,7 @@ $('#textInput').keydown(function (e) {
     if (e.keyCode == 10 || e.keyCode == 13) {
         checkBox();
     } else if (e.keyCode == 9) { // tab was pressed
-        // get caret position/selection
+        // get caret position/selecti//on
         var val = this.value,
             start = this.selectionStart,
             end = this.selectionEnd;
