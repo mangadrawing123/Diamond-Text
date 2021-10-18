@@ -12,6 +12,9 @@
 
   --text-area: 40vw;
   --webtoon-width: 50vh;
+
+  --padding-top-bottom: 10vh;
+  --padding-top-bottom-panel: 10vh;
 }
 html, body {
   margin:0px;
@@ -90,12 +93,15 @@ button:hover {
   grid-area: webtoon;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
     background: white;
+    padding-top: var(--padding-top-bottom);
+    padding-bottom: var(--padding-top-bottom);
 }
 
 .PANEL {
     display: grid;
     /* min-height: 100vh; */
-    padding: 20vh 0 20vh 0;
+    padding-top: var(--padding-top-bottom-panel);
+    padding-bottom: var(--padding-top-bottom-panel);
     /* font-size: 1.3em; */
 /* background: peru; */
 }
