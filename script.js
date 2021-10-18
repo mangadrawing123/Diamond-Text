@@ -21,15 +21,12 @@ function divAddBrTagBalloonDiv(divInput) {
           if (sentence.startsWith("\t")) {
             if (sentence.split(" ").length <= 6) {
                 result += breakDiamondAt5(sentence) + '\n'
-                // result += '<div class="balloon">' + breakDiamondAt5(sentence) + '</div>\n'
             } else {
                 result +=  breakDiamondMoreThan5Short(sentence) + '\n'
-                // result += '<div class="balloon">' + breakDiamondMoreThan5Short(sentence) + '</div>\n'
             }
           } else {
                   result += sentence + "\n";
-      }
-        })
+      }})
         return result;
 }
 
