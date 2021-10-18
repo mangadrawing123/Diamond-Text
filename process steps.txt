@@ -91,6 +91,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - css shape tou side swebsite: https://www.freecodecamp.org/news/mastering-css-series-shape-outside-44d626270b25/ : stackvoer flow cutconrer: https://stackoverflow.com/questions/7324722/cut-corners-using-css : coepne cutconer: https://codepen.io/mangadrawing123/pen/KKvVWOx?editors=1100 -- codpen work well : https://codepen.io/mangadrawing123/pen/GRvomRm?editors=1100  -- stackvoer lfow work well: https://stackoverflow.com/questions/43366827/border-radius-without-rounding  -- clippath-genrator : https://bennettfeely.com/clippy/
 - box-shadow for clip-path:  -- shaodw gneraetor: https://cssgenerator.org/box-shadow-css-generator.html -- nend ot find filter drop shadow -- mdn dropshaodw filter: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow() - follow reddit instruction: regex duplicate balloon bg with whipser  -- codepne: https://codepen.io/mangadrawing123/pen/mdMVwWa?editors=1100 --redit: https://www.reddit.com/r/css/comments/q95t80/how_to_have_filter_dropshadow_of_container/ -- codepn dive double[ME]: https://codepen.io/mangadrawing123/pen/vYJLZZV?editors=1100
 - double hte balloon regex group $1 for .balloon .bg and using reddit solution .cotnainer 
+- ctrl + enter in case:
 - extreme (yell) clip-path
 - scared balloon :codepn [ME] : https://codepen.io/mangadrawing123/pen/mdMVwWa?editors=0100 -- 
 - clippy path website gnerator : https://bennettfeely.com/clippy/
@@ -101,7 +102,28 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - change font cc wildword for dialog - reddit ; https://www.reddit.com/r/css/comments/q9oo54/how_to_add_and_use_local_fontfamily_not_sure_how/ -- stackvoeflwo: https://stackoverflow.com/questions/38086083/to-use-local-font-in-html-using-font-face - imgur: https://imgur.com/gallery/FGPhYAR -- google font imagur : https://imgur.com/gallery/Z20r0sW - tranfonrter : font genrator : font website : https://transfonter.org/ -- ormate trutetyp :https://imgur.com/gallery/DMVNUlt
 - backflash start end or BLACK START END ; regex: https://regex101.com/r/W2sFPR/1 - ignore : https://stackoverflow.com/questions/2078915/a-regular-expression-to-exclude-a-word-string - ignore any line container backflash keyword -- regex erddit: https://regex101.com/r/OMmGNl/8 -- imgur : https://imgur.com/gallery/PmJOMwb solve -  regex101 slve: https://regex101.com/r/JaZlf1/1 -- reddit solve: https://www.reddit.com/r/regex/comments/q9rvat/how_do_i_made_it_ignore_the_first_div_that_start/ -- reddit backfalsh: https://www.reddit.com/r/css/comments/q9sas2/how_do_i_made_the_gradient_backflash_appear_longer/ -- https://cssgradient.io/ - codepn backflash : https://codepen.io/mangadrawing123/pen/abydEBQ?editors=1100 - solve codepen: https://codepen.io/mangadrawing123/pen/abydEBQ?editors=1100
 - ligh, blue layout : reddit: https://www.reddit.com/r/css/comments/q9u28s/why_my_button_in_buttons_div_is_not_spacebetween/
-- -------------------------------------------------------------------------------------------------------------
+- copyEach not copy button: https://codepen.io/mangadrawing123/pen/VwzaLEb?editors=0110 -- oringal https://www.reddit.com/r/learnjavascript/comments/pwzjwu/how_to_have_a_copy_button_for_each_textarea/ -- https://stackoverflow.com/questions/51966085/how-to-copy-contents-of-a-button-to-clipboard-js/51966222 -- FAIL1 https://codepen.io/mangadrawing123/pen/PoKNPwd?editors=1111 -- button display allow enter \n? -- https://www.reddit.com/r/learnjavascript/comments/qa53wl/is_it_possible_to_copy_each_text_without_copy/ new redidt - unsolved textarea https://jsfiddle.net/mangadrawing123/7cmzfhk6/14/ -- https://www.bestcssbuttongenerator.com/#/0 -js success balloon. -- reddit solved : https://www.reddit.com/r/learnjavascript/comments/qa53wl/is_it_possible_to_copy_each_text_without_copy/
+- html2canvas with drp-sahdow : https://jsfiddle.net/mangadrawing123/o52bzfr4/1/ -- 
+- result lcip path balloon to two container clip path on top of each other. -- one black one white backgroudn, white backgournd on top, black bg container bottom z-index :-1, but it had to be relative to each other?exact same palce - css challenge -- html2canvas save clippath didn't recognized -- https://jsfiddle.net/mangadrawing123/xfbavo53/6/ -- dom to image  https://github.com/tsayen/dom-to-image - dom to image egithub https://github.com/tsayen/dom-to-image -- change left and div webtoon div left with shadow - weird balck top? -  https://www.reddit.com/r/learnjavascript/comments/q9vdi7/how_to_use_dataurl_to_save_div_image_with/
+- switch to balloon button each. - div balloon on click copy content on webtoon page work (no need break yet) - https://www.reddit.com/r/learnjavascript/comments/qa53wl/is_it_possible_to_copy_each_text_without_copy/  
+- onclick rotate to switch to balloon idamong text -- https://www.bestcssbuttongenerator.com/ -- full jsfiddle : https://jsfiddle.net/mangadrawing123/y0j27g1t/
+- ctrl enter or enter before download - queryselctor all remove selected classlist https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll -- reddit : 
+- balloon add br https://www.reddit.com/r/learnjavascript/comments/qatt0g/how_to_count_length_of_sentence_that_doesnt_start/ - https://jsfiddle.net/mangadrawing123/xn1sk9rf/   solvevd: https://jsfiddle.net/mangadrawing123/7jqngp1w/1/ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- auto save text to local desktop after downlaod image .txt file.
+- figma phone design simple - emssgaer : 
+- corner main blue radiue border
+- js break balloon and read to the script with tab. add <br> not \n -- reddit: https://www.reddit.com/r/learnjavascript/comments/qan77d/how_can_i_copy_the_text_that_are_breaklike_in_the/      
+- remove all selected class when click donwlaod 
+- ballon backwhite (black) backgorund: black, color hwite)
+- align-item : space between buttons
+- change font size larger for al : 
+- donwlaod image right away display? dataURL.
+- name donwlaod image file differntely when downloand , so don't overlapping save
+- rotate webtoon to ballon break like this: https://www.bestcssbuttongenerator.com/#/0 -js solved button
+- donaod iamge shotcut ctrl D
+- csp tips - new video tips at top
+-   change js from \n to <br> - using regex , discard teh prevsou function - https://jsfiddle.net/mangadrawing123/y0j27g1t/30/
 - ahdow balllon didn't capture hwen downalod - https://www.reddit.com/r/learnjavascript/comments/q9vdi7/how_to_use_dataurl_to_save_div_image_with/ - dataURL - https://imgur.com/gallery/Gvf0VKP -- https://stackoverflow.com/questions/69603114/how-to-use-dataurl-to-save-div-image-with-drop-shadow-outline-codepen-link-in
 - change font size larger like zoomin 200%
 - folder ctrl e display vidoe latest on top
@@ -139,6 +161,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - prinout iamge div side? dataUR div side?: downlaod icon auto fit on the efirst row 
 - blue backgorund layout website
 - BLACK FLASH , black gradient
+- maybe button in hte webtoon page as well? balloon button click but using the js cutting at a result, then change color
 - balloon thourhg - SQUARE
 - LEFT + RIGHT panel same PAGE
 
@@ -149,7 +172,6 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - need to do some grid practice, youtbe code along 1 hour: 
 - enter button on the middle?
 - darkmode:?
-- ctrl + enter in case:
 - NEXT PROJECT: timer like iphone and youtube on teh side
 - aling all panel in center? 
 - link two page diamond tex and diamodn text layout. 
