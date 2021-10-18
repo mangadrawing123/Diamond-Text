@@ -16,7 +16,6 @@ function splitDialogOnlyToArray(textInput) {
 function divAddBrTagBalloonDiv(divInput) {
         let result = "";
         let sentenceArray = divInput.split("\n");
-      
         sentenceArray.forEach(sentence => {
           if (sentence.startsWith("\t")) {
             if (sentence.split(" ").length <= 6) {
