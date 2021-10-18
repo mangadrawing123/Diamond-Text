@@ -13,15 +13,24 @@ function splitDialogOnlyToArray(textInput) {
         .map(s => s.replace(/^\t{1,}/gm, ""))
 }
 
-function sentenceBreakDivBalloon(sent) {
-    console.log('This is result: '+sent);
-    // let result = '';
-    //     if (sent.split(" ").length <= 6) {
-    //         result = breakDiamondAt5(sent)
-    //     } else {
-    //         result = breakDiamondMoreThan5Short(sent)
-    //     }
-    // return '<div class="balloon">${result}</div>';
+function divAddBrTagBalloonDiv(divInput) {
+        let result = "";
+        let sentenceArray = divInput.split("\n");
+      
+        sentenceArray.forEach(sentence => {
+          if (sentence.startsWith("\t")) {
+            if (sentence.split(" ").length <= 6) {
+                result += breakDiamondAt5(sentence) + '\n'
+                // result += '<div class="balloon">' + breakDiamondAt5(sentence) + '</div>\n'
+            } else {
+                result +=  breakDiamondMoreThan5Short(sentence) + '\n'
+                // result += '<div class="balloon">' + breakDiamondMoreThan5Short(sentence) + '</div>\n'
+            }
+          } else {
+                  result += sentence + "\n";
+      }
+        })
+        return result;
 }
 
 function turnArrayToBalloonShortToArray(array) {
@@ -57,7 +66,7 @@ function breakDiamondAtEnterTall() {
 function breakDiamondAt5(str) {
     let word =str.split(" ");
     let n=Math.round(Math.sqrt(word.length));
-    return word.reduce((a, e, j)=> a + e + (j%n === 0 ? '\n' : ' '), '');
+    return word.reduce((a, e, j)=> a + e + (j%n === 0 ? '<br>' : ' '), '');
 }
 
 function breakDiamondMoreThan5Short(str) {
@@ -84,7 +93,7 @@ function breakDiamondMoreThan5Short(str) {
         finalResult.push(res[i]);    
     }
     finalResult.push(res[res.length - 1]);
-    finalResult = finalResult.join('\n').replace(/\s\s+/g, " ")
+    finalResult = finalResult.join('<br>').replace(/\s\s+/g, " ")
     return finalResult;
 }
 

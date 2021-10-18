@@ -151,8 +151,8 @@ margin: 0px;padding: 0px;
 .balloon {
   font-family: ccWildWords;
   font-size: 0.8rem;
-    max-width: 50%;
-    padding: 2rem 1rem;
+    /* max-width: 50%; */
+    padding: 2rem 2rem;
     border-radius: 50%;
     hyphens: auto;
     text-align: center;
@@ -228,6 +228,9 @@ margin: 0px;padding: 0px;
 /*altenrative balloon */
 .nameAndBalloon:nth-child(odd) {
 justify-self: end;
+}
+.balloon:nth-child(odd) {
+justify-self: start;
 }
 .balloon:nth-child(even) {
 justify-self: end;
