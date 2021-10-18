@@ -19,9 +19,9 @@ function divAddBrTagBalloonDiv(divInput) {
         sentenceArray.forEach(sentence => {
           if (sentence.startsWith("\t")) {
             if (sentence.split(" ").length <= 6) {
-                result += breakDiamondAt5(sentence) + '\n'
+                result += breakDiamondAt5(sentence) + '\n';
             } else {
-                result +=  breakDiamondMoreThan5Short(sentence) + '\n'
+                result +=  breakDiamondMoreThan5Short(sentence) + '\n';
             }
           } else {
                   result += sentence + "\n";

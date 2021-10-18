@@ -152,11 +152,11 @@ margin: 0px;padding: 0px;
   font-family: ccWildWords;
   font-size: 0.8rem;
     /* max-width: 50%; */
+    /* line-height: 0.9; */
     padding: 2rem 2rem;
     border-radius: 50%;
     hyphens: auto;
     text-align: center;
-    line-height: 0.9;
     background: white;
 /* background: greenyellow; */
 }
@@ -229,9 +229,9 @@ margin: 0px;padding: 0px;
 .nameAndBalloon:nth-child(odd) {
 justify-self: end;
 }
-.balloon:nth-child(odd) {
+/* .balloon:nth-child(odd) {
 justify-self: start;
-}
+} */
 .balloon:nth-child(even) {
 justify-self: end;
 }
