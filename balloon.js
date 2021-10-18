@@ -43,6 +43,24 @@ function button() {
   
   console.log(result);
   document.querySelector(".webtoonImage").innerHTML = result;
+  ///copy each balloon
+  $(document).ready(function() {
+      $('.balloon').on('click', function() {
+        var copyText = this.innerText;
+        var textarea = document.createElement('textarea');
+        textarea.id = 'temp_element';
+        textarea.style.height = 0;
+        document.body.appendChild(textarea);
+        textarea.value = copyText;
+        var selector = document.querySelector('#temp_element')
+        selector.select();
+        document.execCommand('copy');
+        alert(copyText)
+        ;
+        document.body.removeChild(textarea);
+        $(this).toggleClass("selected");
+      });
+    });
 }
 
 function copyText() {
@@ -51,6 +69,7 @@ function copyText() {
     document.execCommand("copy");
     alert("INPUT copied!")
 }
+
 
 // function downloadWebtoonDesktop() {
 //     html2canvas(document.querySelector(".webtoonImage")).then(function(canvas) {

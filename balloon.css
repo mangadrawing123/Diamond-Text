@@ -161,6 +161,12 @@ margin: 0px;padding: 0px;
 .balloon + .balloon{
     margin-top: -2rem;
 }
+
+.selected {
+    color: white;	
+    background:var(--blue-color);
+}
+
 /* balloon and ballon types */
 
 .whisper .balloon {
