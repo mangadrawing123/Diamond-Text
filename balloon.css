@@ -86,16 +86,11 @@ button:hover {
     border: 3px solid white;
 
 }
-
 .webtoonImage {
   grid-area: webtoon;
-    background: white;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.09);
-    /* background: red; */
+    background: white;
 }
-
-
 
 .PANEL {
     display: grid;
