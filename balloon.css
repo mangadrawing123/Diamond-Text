@@ -95,7 +95,7 @@ button:hover {
 .PANEL {
     display: grid;
     /* min-height: 100vh; */
-    margin: 20vh 0;
+    padding: 20vh 0 20vh 0;
     /* font-size: 1.3em; */
 /* background: peru; */
 }
