@@ -13,6 +13,17 @@ function splitDialogOnlyToArray(textInput) {
         .map(s => s.replace(/^\t{1,}/gm, ""))
 }
 
+function sentenceBreakDivBalloon(sent) {
+    console.log('This is result: '+sent);
+    // let result = '';
+    //     if (sent.split(" ").length <= 6) {
+    //         result = breakDiamondAt5(sent)
+    //     } else {
+    //         result = breakDiamondMoreThan5Short(sent)
+    //     }
+    // return '<div class="balloon">${result}</div>';
+}
+
 function turnArrayToBalloonShortToArray(array) {
     var result = [];
     for (sent of array) {

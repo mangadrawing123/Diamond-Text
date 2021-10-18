@@ -46,7 +46,8 @@ function button() { //ENTER BUTTON
   result = result.replace(regexNoThreeEnter, '<div class="PANEL ">\n<div class="action $3">$4</div>$5</div>\n\n');
   result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>');
   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
-  result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
+//   result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
+    result = sentenceBreakDivBalloon(result);
   
   console.log(result);
   document.querySelector(".webtoonImage").innerHTML = result;
@@ -74,7 +75,6 @@ function downloadWebtoonDesktop() {
 
         balloon.classList.remove("selected");
     })
-    console.log("hello");
     let node = document.querySelector(".webtoonImage");
         domtoimage.toPng(node)
         .then(function (dataUrl) {
