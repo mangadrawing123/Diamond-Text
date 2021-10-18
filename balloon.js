@@ -68,23 +68,8 @@ function button() { //ENTER BUTTON
     });
 }
 
-
-
-
-// function downloadWebtoonDesktop() {
-//     html2canvas(document.querySelector(".webtoonImage")).then(function(canvas) {
-// 		var dataURL = canvas.toDataURL("image/png");
-//         let downloadLink = document.createElement('a');
-//       downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
-//       let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
-//       downloadLink.setAttribute('href', url);
-//       downloadLink.click();
-// 	});
-// }
-
-
 function downloadWebtoonDesktop() {
-    // document.getElementById('balloon').classList.remove("selected");
+    document.querySelector('.balloon').classList.remove("selected");
     console.log("hello");
     let node = document.querySelector(".webtoonImage");
         domtoimage.toPng(node)
@@ -96,16 +81,3 @@ function downloadWebtoonDesktop() {
                   downloadLink.click();
         })
 }
-
-
-// function downloadWebtoonDesktop() {
-//     let node = document.querySelector(".webtoonImage");
-//     console.log("hello")
-//     domtoimage.toJpeg(node, { quality: 0.95 })
-//     .then(function (dataUrl) {
-//         var link = document.createElement('a');
-//         link.download = 'DiamondText-WebtoonLayout.jpeg';
-//         link.href = dataUrl;
-//         link.click();
-//     })
-// }
