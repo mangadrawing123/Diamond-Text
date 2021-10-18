@@ -90,7 +90,7 @@ function breakDiamondMoreThan5Short(str) {
     }
     finalResult.push(res[res.length - 1]);
     finalResult = finalResult.join('<br>').replace(/\s\s+/g, " ")
-    return finalResult;
+    return "\t" + finalResult;
 }
 
 
