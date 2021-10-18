@@ -47,8 +47,8 @@ function button() { //ENTER BUTTON
   result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
   result = divAddBrTagBalloonDiv(result);
-  result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
   console.log(result);
+  result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
   
   document.querySelector(".webtoonImage").innerHTML = result;
   ///copy each balloon
