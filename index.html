@@ -1,22 +1,47 @@
-    <!DOCTYPE html>
-    <head>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head> 
-    
-    <body>
-        <h1>
-            <img src='https://drive.google.com/uc?export=download&id=1ee2zPl3heR8SoPyZNJU3jdqApcYN5xPY'width="50" height="60">
-            <b>Diamond Text-Break Comic Dialog canvas</b>
-        </h1>
-        <h6>Find me @ Youtube, Reddit:   mangadrawing.123</h6>
-        <a href="balloon.html" class="DiamondLayout">Diamond Webtoon Layout</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="balloon.css">
+    <!-- FONT TYPE -->
+  <link rel="preload" href="CCWildWordsRoman.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wild+And+Crazy|Bangers|Comic+Neue|Acme|Chilanka|Coming+Soon|Neucha|Kalam|Patrick+Hand|AudioWide"> -->
 
-        <p> <span id="count">0</span> views <p>
+  <script src="html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> 
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <title>Diamond Text Layout</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="side main">
+<textarea name="" id="textInput" cols="30" rows="10">
+BACKFLASH START
+Diana is so excited that she had successfully made a website that layout like a webtoon
+		Diana (yell)
+	Look at this!
+	this is what I had been working on!
+	A really long sentence like this!
+
+Diana smiling her eyes
+		Ghariel (whisper)
+	waht's new?
+Will you believe me?
+	Is there anything new?
+	Could you show me and other people to see as well?
+
+</textarea>            
+<br>
+                <div class="buttons">
+                    <button onclick="button()">Ctrl+Enter</button>
+                    <button class="downloadWebtoonDesktop" onclick="downloadWebtoonDesktop()">Download Image</button>
+                    <button onclick="copyText()">Save Text</button>
+                            <p> <span id="count">0</span> views <p>
         <script>
             var countEl=document.getElementById("count");
 
@@ -28,64 +53,14 @@
                 .then(data => {countEl.innerHTML = data.value;});
             }
         </script>
-
-        <div class="parent">
-            <div class="child">
-                Insert Text:
-                <input type="button" value="Paste Text" id="pasteButton" ><br>
-
-<textarea  name="text input" id="textInput" cols="50" rows="30">
-
-FULL: The living room has SOFA and a table. On the table have CUPCAKE and a NOTE at the bottom (or somewhere that doesn’t present the first time we see it.)  Gahriel is walking to the kitchen calling out his mom.
-		Gahriel
-	Make yourself at home!
-		Diana 
-	okay!
-		Gahriel
-	(calling out his mom)
-	Mom?
-	Where is she?
-
-
-
-</textarea><br>
-                <input type="button" id="copyInput" value="Copy Input Above for Google Docs Saving and Check and spelling" id="copyInput" onClick="copyInput()"><br>
-
-            </div>
-            <div class="child">
-                <br><br><br>
-                <input type="button" value="Enter" id="enterButton" ><br><br>
-                
-                 <input type="radio" id="scriptDialogRadioButton" name="fav_language" value="HTML" checked>
-                 <label for="html">SCRIPT to Dialog</label><br><br>
-
-                 <label for="html">
-                    <input type="radio" id="dialogFileRadioButton" name="fav_language" value="HTML" >
-                    Dialog to Dialog
-                </label><br><br>
-
-                <!-- <label class="radio-inline">
-                    <input type="radio" id="ShortRadioButton" name="optradio" checked onClick="breakDiamondAtEnterShort()">
-                    <img src="https://drive.google.com/uc?export=download&id=1_Ik3y06kNRJI7BzF4nGGf-ot6-zbX2Ke" width="50" height="30">
-                </label> -->
-                <!-- <label class="radio-inline">
-                    <input type="radio" id="TallRadioButton" name="optradio" onClick="breakDiamondAtEnterTall()">
-                    <img src="https://drive.google.com/uc?export=download&id=1Mna1dTMaahZrLIHNu-R2SrXrjx7vd2_8" width="30" height="50">
-                </label><br><br> -->
-
-            </div>
-            <div class="child">
-                Output text:
-                <input type="button" value="Copy ALL" id="copyButton" onClick="copyOutput()"><br>
-                <textarea name="text output" id="textOutput" cols="30" rows="30"></textarea>
-            </div><br><br>
-
-            <div id="myDiv"></div>
-        </div>
-        <script src="script.js"></script>
+                </div>
+        </div> <!--main-->
+       l 
+        <div class="webtoonImage">
+        </div> <!--side display webtoon-->
+    </div><!--grid-->
     
-    </body>
-    
+    <script src="balloon.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
-
-
