@@ -29,7 +29,9 @@ html, body {
 }
 
 .main, .side {
+  position: absolute;
   position: fixed;
+  width: var(--main-width);
   display: grid;
   grid-template-columns: auto 80% auto;
   grid-template-areas: 
@@ -37,11 +39,27 @@ html, body {
   ;
   justify-content: center;
   align-items: center;
-  width: var(--main-width);
     height: 100vh;
     background: var(--blue-color);
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
 box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.34);
+/* transition: all 300ms linear; */
+}
+.active {
+  left: calc(var(--main-width) * -1);
+}
+.toggle-btn {
+  position: absolute;
+  z-index: -1;
+  margin: 0;
+  width: 1vw;
+  left: calc(var(--main-width) - 5vh);
+  top: -3vh;
+  /* height: 0.5vh; */
+  border-radius: 40%;
+  padding: 5vh;
+background: var(--blue-color);
+  cursor: pointer;
 }
 
 
