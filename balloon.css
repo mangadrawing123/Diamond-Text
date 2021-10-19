@@ -31,6 +31,7 @@ html, body {
 .main, .side {
   position: absolute;
   position: fixed;
+  z-index: 1000;
   width: var(--main-width);
   display: grid;
   grid-template-columns: auto 80% auto;
@@ -90,7 +91,13 @@ textarea{
 }
 
 p, #count {color: white;}
-
+p.button.old-version:hover {
+  cursor: pointer;
+  align-self: end;
+}
+a:visited {
+  color: white;
+}
 button {
     background: none;
     color: var(--background);
@@ -104,6 +111,7 @@ button {
     /* color: white; */
     color: rgba(255, 255, 255, 0.123);
     
+    cursor: pointer;
     border: 3px solid white;
     border-color: rgba(255, 255, 255, 0.123);
 

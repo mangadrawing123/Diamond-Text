@@ -75,6 +75,7 @@ $(document).ready(function() {
         // console.log("hello")
         $('.side').toggleClass("active");
     })
+    $('.button.old-version').on('click', function() { console.log("hello")})
 })
 
 function downloadWebtoonDesktop() {
