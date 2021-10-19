@@ -128,6 +128,7 @@ $(document).ready(function() {
     $('.toggle-btn').on('click', function() { 
         // console.log("hello")
         $('.side').toggleClass("active");
+        $('.grid').toggleClass("gridToggle")
     })
     $('.button.old-version').on('click', function() { console.log("hello")})
 })
