@@ -70,6 +70,14 @@ function button() { //ENTER BUTTON
     });
 }
 
+$(document).ready(function() {
+    $('.toggle-btn').on('click', function() { 
+        // console.log("hello")
+        $('.side').toggleClass("active");
+    })
+    $('.button.old-version').on('click', function() { console.log("hello")})
+})
+
 function downloadWebtoonDesktop() {
     const balloons = document.querySelectorAll('.balloon')
     balloons.forEach(function(balloon) { 
@@ -86,3 +94,10 @@ function downloadWebtoonDesktop() {
                   downloadLink.click();
         })
 }
+
+
+//togglebutton hide textarea
+// function toggleSidebar(ref) {
+//     document.getElementsByClassName('toggle-btn').classList.toggle('active');
+// //   document.getElementById("sidebar").classList.toggle('active');
+// }
