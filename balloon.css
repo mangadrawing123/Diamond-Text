@@ -174,7 +174,7 @@ margin: 0px;padding: 0px;
   /* font-style: italic; */
   border: 0.2rem dashed black;
 }
-.dotted .balloon {
+.cute .balloon {
   border: 4px dotted black;
 }
 .narrate .balloon, .narrator .balloon{
@@ -183,13 +183,22 @@ margin: 0px;padding: 0px;
   padding: 1.7rem;
   border-radius: 0;
 }
-.thought .balloon {
+.inner .balloon{
   font-style: italic;
-  border-radius: 20px;
+  border-radius: 0;
 }
 .double .balloon {
   /* font-family: "Neucha"; */
   border: 5px double black;
+}
+.dark .balloon {
+  background: black;
+  color: white;
+}
+.phone .balloon {
+  /* border: 0.3rem double black; */
+  border-radius: 0;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 .squarePen .balloon {
   font-family: "Coming Soon";
@@ -222,8 +231,16 @@ margin: 0px;padding: 0px;
     drop-shadow(1px 1px 0px black);
 }
 
-.container.whisper {
+.container.whisper, .container.cute {
     filter : none;
+}
+.container.dark {
+  
+  filter: drop-shadow(1px 0px 0px white) 
+    drop-shadow(-1px 0px 0px white)
+    drop-shadow(0px 1px 0px white) 
+    drop-shadow(0px -1px 0px white)
+    drop-shadow(1px 1px 0px white);
 }
 /*altenrative balloon */
 .nameAndBalloon:nth-child(odd) {
@@ -239,12 +256,13 @@ justify-self: end;
 justify-self: end;
 }
 
-.FULL {width: 100%; margin: 0; border-left: 0; border-right: 0;}
+.FULL {height: 80vh;}
+.FULL.FULL {height: 80vh; margin: 0; border-left: none; border-right: none;}
 .LEFT {width: 50%;}
 .RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
 .FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
-.CENTER {width: 80%;}
-.NONE {width: 100%; border: 0;}
+.CENTER {width: 50%; justify-self: center;}
+.NONE {margin: none; border: none;}
 .SKEW {
     margin: -1px;
     border-left: none; border-right: none;
