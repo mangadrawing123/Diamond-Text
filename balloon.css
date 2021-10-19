@@ -65,6 +65,9 @@ textarea{
 
 .buttons {
   grid-area: buttons;
+  height: 100vh;
+  padding: 0.5rem;
+  display: grid;
   align-content: space-around;
 }
 
@@ -73,17 +76,18 @@ p, #count {color: white;}
 button {
     background: none;
     color: var(--background);
-    /* color: rgba(255, 255, 255, 0.123); */
-    border: 3px solid;
-    /* border: 3px solid rgba(255, 255, 255, 0.055); */
-    padding: 1rem 1rem;
-    border-radius: 0.8rem;
     font-size: 1rem;
+    border: 3px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.8rem;
     font-weight: 600;
-}
-button:hover {
-    color: white;
+  }
+  button:hover {
+    /* color: white; */
+    color: rgba(255, 255, 255, 0.123);
+    
     border: 3px solid white;
+    border-color: rgba(255, 255, 255, 0.123);
 
 }
 .webtoonImage {
