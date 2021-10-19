@@ -123,28 +123,29 @@ button {
 }
 .webtoonImage {
   grid-area: webtoon;
-  justify-self: center;
+  /* justify-self: center; */
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
     background: white;
     padding-top: var(--padding-top-bottom);
     padding-bottom: var(--padding-top-bottom);
-}
-
-.PANEL {
+  }
+  
+  .PANEL {
     display: grid;
     padding-top: var(--padding-top-bottom-panel);
     padding-bottom: var(--padding-top-bottom-panel);
     /* font-size: 1.3em; */
-}
-
-.action {
+  }
+  
+  .action {
     grid-row: 2/3;
     min-height : 30vh;
     margin: 0 10px;
     border: 2px solid black;
     font-size: 1rem;
     line-height: 0.9rem;
-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
 background: white;
 /* background-color: lightpink; */
 }
