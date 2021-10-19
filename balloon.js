@@ -35,19 +35,20 @@ function button() { //ENTER BUTTON
   let regexTwoThreeEnter = /\n{2,}/gms;
   let regexBackflashStart = /^(BACKFLASH)\s+?(START)/gm;
   let regexBackflashEnd = /^(BACKFLASH)\s+?(END)/gm;
+  let regexSkewDown = /^(?!\t|<)(?:(^[A-Z\s]+)?\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
   let regexNoThreeEnter = /^(?!\t|<\/?div)(^PANEL\s+(\S+))?(?:(^NORMAL|SMALL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE|SKEW)\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
   let regexBalloon = /(^\t)(\S.*)/gm;
   let regexActionMini = /^\t{1,}\((\S.*)\)/gm;
 
   result = s.replace(regexTwoThreeEnter, '\n');
-  result = result.replace(regexBackflashStart, '<div class="$1 $2">');
-  result = result.replace(regexBackflashEnd, '</div>\n');
-  result = result.replace(regexNoThreeEnter, '<div class="PANEL ">\n<div class="action $3">$4</div>$5</div>\n\n');
+  result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
+  result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
+  console.log(result);
+  result = result.replace(regexSkewDown, '<div class="PANEL">\n<div class="action $1">$2</div>$3</div>\n\n');
   result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
   result = divAddBrTagBalloonDiv(result);
-  console.log(result);
   result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
   
   document.querySelector(".webtoonImage").innerHTML = result;

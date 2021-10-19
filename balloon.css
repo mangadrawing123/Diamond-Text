@@ -99,7 +99,6 @@ button:hover {
     padding-top: var(--padding-top-bottom-panel);
     padding-bottom: var(--padding-top-bottom-panel);
     /* font-size: 1.3em; */
-/* background: peru; */
 }
 
 .action {
@@ -177,6 +176,7 @@ margin: 0px;padding: 0px;
 .narrate .balloon, .narrator .balloon{
   font-style: italic;
   border: none;
+  padding: 1.7rem;
   border-radius: 0;
 }
 .thought .balloon {
@@ -248,6 +248,13 @@ justify-self: end;
     -webkit-transform: matrix(1, -0.4, 0, 1, 1, 0); /* It is is used for Safari */
     transform: matrix(1, -0.4, 0, 1, 1, 0); /* This is standard syntax */
     }
+.SKEW.DOWN {
+    margin: 0px;
+    border-left: none; border-right: none;
+    transform:matrix(1.00,0.30,0.00,1.00,0,0);
+    -ms-transform:matrix(1.00,0.30,0.00,1.00,0,0);
+    -webkit-transform:matrix(1.00,0.30,0.00,1.00,0,0);
+}
     .BACKFLASH {
       /* width: 30vw; */
       padding: 10vh 0;
