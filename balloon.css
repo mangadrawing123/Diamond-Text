@@ -65,10 +65,10 @@ textarea{
 
 .buttons {
   grid-area: buttons;
+  display: grid;
   height: 100vh;
   padding: 0.5rem;
-  display: grid;
-  align-content: space-around;
+  align-content: space-between;
 }
 
 p, #count {color: white;}
