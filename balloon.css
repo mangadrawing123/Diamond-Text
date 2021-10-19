@@ -255,6 +255,13 @@ justify-self: end;
     -ms-transform:matrix(1.00,0.30,0.00,1.00,0,0);
     -webkit-transform:matrix(1.00,0.30,0.00,1.00,0,0);
 }
+.SKEW.HARD {
+  margin: 0px;
+  border-left: none; border-right: none;
+  transform:matrix(1.00,1.30,0.00,1.00,0,0);
+-ms-transform:matrix(1.00,1.30,0.00,1.00,0,0);
+-webkit-transform:matrix(1.00,1.30,0.00,1.00,0,0);
+}
     .BACKFLASH {
       /* width: 30vw; */
       padding: 10vh 0;
