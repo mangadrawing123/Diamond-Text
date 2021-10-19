@@ -21,6 +21,60 @@ $('#textInput').keydown(function (e) {
     }
 });
 
+//for balloon.js
+
+function breakWebtoonAt5(str) {
+    let word =str.split(" ");
+    let n=Math.round(Math.sqrt(word.length));
+    return word.reduce((a, e, j)=> a + e + (j%n === 0 ? '<br>' : ' '), '');
+}
+
+function breakWebtoonMoreThan5(str) {
+    var rows = Math.ceil(Math.sqrt(str.split(" ").length))
+    var len = Math.ceil(str.length/rows)
+    var re = RegExp("(?:\\s|^)(.{1," + len + "})(?=\\s|$)", "g");
+    var res = [];
+    var finalResult = [];
+    while ((m = re.exec(str)) !== null) {
+        res.push(m[1]);
+    }
+    for (var i = 0; i < res.length - 1; i++){    
+        if(res[i].indexOf(' ') != -1){  
+        while(res[i].length < len){      
+            for(var j=0; j < res[i].length-1; j++){
+            if(res[i][j] == ' '){
+                res[i] = res[i].substring(0, j) + " " + res[i].substring(j);
+                if(res[i].length == len) break;
+                while(res[i][j] == ' ') j++;
+            }
+            }
+        }      
+        }    
+        finalResult.push(res[i]);    
+    }
+    finalResult.push(res[res.length - 1]);
+    finalResult = finalResult.join('<br>').replace(/\s\s+/g, " ")
+    return "\t" + finalResult;
+}
+
+function divAddBrTagBalloonDiv(divInput) {
+        let result = "";
+        let sentenceArray = divInput.split("\n");
+        sentenceArray.forEach(sentence => {
+          if (sentence.startsWith("\t")) {
+            if (sentence.split(" ").length <= 6) {
+                result += breakWebtoonAt5(sentence) + '\n';
+            } else {
+                result +=  breakWebtoonMoreThan5(sentence) + '\n';
+            }
+          } else {
+                  result += sentence + "\n";
+      }})
+        return result;
+}
+
+// end ballon.js
+
 function copyText() {
     let textarea = document.querySelector("#textInput");
     textarea.select();
