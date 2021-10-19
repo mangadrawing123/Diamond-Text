@@ -109,7 +109,20 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - onclick rotate to switch to balloon idamong text -- https://www.bestcssbuttongenerator.com/ -- full jsfiddle : https://jsfiddle.net/mangadrawing123/y0j27g1t/
 - ctrl enter or enter before download - queryselctor all remove selected classlist https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll -- reddit : 
 - balloon add br https://www.reddit.com/r/learnjavascript/comments/qatt0g/how_to_count_length_of_sentence_that_doesnt_start/ - https://jsfiddle.net/mangadrawing123/xn1sk9rf/   solvevd: https://jsfiddle.net/mangadrawing123/7jqngp1w/1/ 
+- SKEW DOWN: https://www.reddit.com/r/css/comments/qb369q/is_it_possible_to_skew_down_link_css_matrix/ - https://angrytools.com/css-generator/transform/ - regex skew down: https://regex101.com/r/Mx8oNr/2 (sucess)-  
+- csp tips : google docs all the panel and balloon ; gogold slide presentiatno: https://docs.google.com/presentation/d/1sZ7WDLTekUaAZbjSk8SD-CdBMyd_lFoV90Ky8KIvIUU/edit?usp=sharing  -- https://tips.clip-studio.com/en-us/articles/5538 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- fix the original webpage;
+- hide textarea button, widht change textaera , font size shrin as well - main hide left.  https://www.figma.com/file/9PDOVevBuwlfEliybCYAuw/diamond-webtoon-layout?node-id=0%3A1  - textarea adjust table width? user? - not responsive :https://codepen.io/mangadrawing123/pen/rNzLLMV -- repsonsive: https://codepen.io/laivanduc/pen/yNRwJR
+- think though balloon cddpen beofre and after circl :
+- ignore first Letter captillie d: https://www.reddit.com/r/regex/comments/qb5opk/im_be_able_to_grap_all_line_start_with/ -https://regex101.com/r/OcpW3k/1
+- grid gneraotr : https://grid.layoutit.com/
+- TITLE ; EPISDOE: panel ; insert html: img or png with bakcgournd white.
+- save text .txt in at Desktop directory 
+- copy button icon , downlaod icon, enter icon. 
+- yell differnt font size and roatet or transform.
+- tranform action panell to appear larger than orignal 
+- transfonter - differnt panel? try out
 - auto save text to local desktop after downlaod image .txt file.
 - figma phone design simple - emssgaer : 
 - corner main blue radiue border
