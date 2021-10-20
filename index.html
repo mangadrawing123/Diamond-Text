@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="balloon.css">
     <link rel="stylesheet" href="/dist/balloon2.css">
+    <link rel="stylesheet" href="/css/share.css">
     <!-- FONT TYPE -->
     <link rel="preload" href="CCWildWordsRoman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wild+And+Crazy|Bangers|Comic+Neue|Acme|Chilanka|Coming+Soon|Neucha|Kalam|Patrick+Hand|AudioWide">
@@ -16,9 +17,38 @@
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> 
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    <title>Diamond Text Layout</title>
+    <title>Diamond Webtoon Layout</title>
 </head>
 <body>
+    
+    <div class="lightbox share-buttons-container">
+        <div class="share-list">
+      <!-- FACEBOOK -->
+      <a class="fb-h" onclick="return fbs_click()" target="_blank">
+        <img src="https://img.icons8.com/material-rounded/96/000000/facebook-f.png">
+      </a>
+  
+      <!-- TWITTER -->
+      <a class="tw-h" onclick="return tbs_click()"  target="_blank">
+        <img src="https://img.icons8.com/material-rounded/96/000000/twitter-squared.png">
+      </a>
+  
+      <!-- LINKEDIN -->
+      <a class="li-h" onclick="return lbs_click()"  target="_blank">
+        <img src="https://img.icons8.com/material-rounded/96/000000/linkedin.png">
+      </a>
+  
+      <!-- REDDIT -->
+      <a class="re-h" onclick="return rbs_click()" target="_blank">
+        <img src="https://img.icons8.com/ios-glyphs/90/000000/reddit.png">
+      </a>
+  
+      <!-- PINTEREST -->
+      <a data-pin-do="buttonPin" data-pin-config="none" class="pi-h" onclick="return pbs_click()" target="_blank">
+        <img src="https://img.icons8.com/ios-glyphs/90/000000/pinterest.png">
+      </a>
+    </div>
+  </div>
     <div class="grid">
         <div class="side main" class="active">
             <div class="toggle-btn"></div>  
@@ -65,12 +95,22 @@ SKEW: If you haven't thinking about it
 <br>
                 <div class="buttons">
                     <button onclick="button()">Ctrl+Enter</button>
-                    <button class="downloadWebtoonDesktop" onclick="downloadWebtoonDesktop()">Download Image</button>
                     <button onclick="copyText()">Save Text</button>
+                    <button class="downloadWebtoonDesktop" onclick="downloadWebtoonDesktop()">Download Image</button>
+                    <button class="share">Remove Watermark</button>
                     <p> <span id="count">0</span> views <p>
                     <a href="index2.html">
                         <p class="button old-version" href="index2.html">Old Version</p>
-                    </a>        
+                    </a>
+                        
+                          
+                </div>
+        </div> <!--main-->
+        
+        <div class="webtoonImage">
+        </div> <!--side display webtoon-->
+    </div><!--grid-->
+    
         <script>
             var countEl=document.getElementById("count");
 
@@ -81,15 +121,27 @@ SKEW: If you haven't thinking about it
                 .then(res => res.json())
                 .then(data => {countEl.innerHTML = data.value;});
             }
-        </script>
-                </div>
-        </div> <!--main-->
-        
-        <div class="webtoonImage">
-        </div> <!--side display webtoon-->
-    </div><!--grid-->
-    
-    <script src="balloon.js"></script>
-    <script src="script.js"></script>
+            </script>
+    <script src="src/balloon.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/share.js"></script>
+    <!-- <script>
+function loadScripts(){
+   var directory = 'src/';
+   var extension = '.js';
+   var files = ['model', 'view', 'controller'];  
+   for (var file of files){ 
+       var path = directory + file + extension; 
+       var script = document.createElement("script");
+       script.src = path;
+       document.body.appendChild(script);
+   } 
+ }        function loadScript (dir, file) {
+ var scr = document.createElement("script");
+ scr.src = dir + file;
+ document.body.appendChild(scr);
+ }
+ loadScripts()
+    </script> -->
 </body>
 </html>
