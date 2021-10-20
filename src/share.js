@@ -24,6 +24,7 @@ $(document).ready(function() {
   
     $('.close-btn').on('click', function(){
         $('.lightbox').fadeOut(200);
+        $(".webtoonImage").removeClass("watermark");
     });
 } )
 
