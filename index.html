@@ -95,7 +95,7 @@
 function loadScripts(){
    var directory = 'src/';
    var extension = '.js';
-   var files = ['balloon', 'script', 'share', 'watermark', 'autosave'];  
+   var files = ['balloon', 'script', 'share', 'watermark', 'localStorage','autosave'];  
    for (var file of files){ 
        var path = directory + file + extension; 
        var script = document.createElement("script");
@@ -122,6 +122,6 @@ function loadScripts(){
           AutoSave.stop();
       });
   </script>
-  
+
 </body>
 </html>
