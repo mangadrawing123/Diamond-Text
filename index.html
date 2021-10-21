@@ -54,14 +54,14 @@
     <div class="grid">
         <div class="side main" class="active">
             <div class="toggle-btn"></div>  
-            <textarea name="" id="textInput" cols="1" rows="1">
+            <textarea name="" class="textInput" id="textInput" cols="1" rows="1">
 
 </textarea>
 </textarea>            
 <br>
                 <div class="buttons">
                     <button onclick="button()">Ctrl+Enter</button>
-                    <button onclick="copyText()">Save Text</button>
+                    <button class="save-button"onclick="copyText()">Save Text</button>
                     <button class="downloadWebtoonDesktop" onclick="downloadWebtoonDesktop()">Download Image</button>
                     <button class="share">Remove Watermark (Free)</button>
                     <p> <span id="count">0</span> views <p>
@@ -95,7 +95,7 @@
 function loadScripts(){
    var directory = 'src/';
    var extension = '.js';
-   var files = ['balloon', 'script', 'share', 'watermark', 'localStorage'];  
+   var files = ['balloon', 'script', 'share', 'watermark', 'autosave'];  
    for (var file of files){ 
        var path = directory + file + extension; 
        var script = document.createElement("script");
@@ -109,5 +109,19 @@ function loadScripts(){
  }
  loadScripts()
     </script>
+
+    <script type="text/javascript" src="autosave.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+          AutoSave.start();
+      })
+
+      $(window).unload(function(){
+          AutoSave.stop();
+      });
+  </script>
+  
 </body>
 </html>
