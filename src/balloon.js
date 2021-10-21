@@ -89,8 +89,11 @@ function button() { //ENTER BUTTON
   let regexTwoThreeEnter = /\n{2,}/gms;
   let regexBackflashStart = /^(BACKFLASH)\s+?(START)/gm;
   let regexBackflashEnd = /^(BACKFLASH)\s+?(END)/gm;
-  let regexSkewDown = /^(?!\t|<)(?:(^[A-Z\s]+)?\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
-  let regexNoThreeEnter = /^(?!\t|<\/?div)(^PANEL\s+(\S+))?(?:(^NORMAL|SMALL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE|SKEW)\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
+  //   let regexPANElimg = /((?:^[^\t<].*\n?)+)((?:^\t.*\n?)+)?/mg;
+  let regexPANELimg = /^(?!\t|<)(?:(^\b[A-Z\s]+\b)?\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
+  let regexImgSrc = /(http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])/gm;
+//   let regexSkewDown = /^(?!\t|<)(?:(^[A-Z\s]+)?\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
+//   let regexNoThreeEnter = /^(?!\t|<\/?div)(^PANEL\s+(\S+))?(?:(^NORMAL|SMALL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE|SKEW)\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
   let regexBalloon = /(^\t)(\S.*)/gm;
   let regexActionMini = /^\t{1,}\((\S.*)\)/gm;
@@ -98,8 +101,9 @@ function button() { //ENTER BUTTON
   result = s.replace(regexTwoThreeEnter, '\n');
   result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
   result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
+  result = result.replace(regexPANELimg, '<div class="PANEL">\n<div class="action $1">$2</div>$3</div>\n\n');
+  result = result.replace(regexImgSrc, '<img class="cover" src="$0">');
   console.log(result);
-  result = result.replace(regexSkewDown, '<div class="PANEL">\n<div class="action $1">$2</div>$3</div>\n\n');
   result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
   result = divAddBrTagBalloonDiv(result);
