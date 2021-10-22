@@ -124,7 +124,7 @@ button {
 .webtoonImage {
   grid-area: webtoon;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
-    /* background: white; */
+    background: white;
     padding-top: var(--padding-top-bottom);
     padding-bottom: var(--padding-top-bottom);
   }
