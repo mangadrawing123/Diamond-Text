@@ -139,23 +139,27 @@ button {
   .action {
     grid-row: 2/3;
     min-height : 30vh;
-    /* margin: 0 10px; */
+    margin: 0 10px;
     border: 2px solid black;
     font-size: 1rem;
     line-height: 0.9rem;
     hyphens: auto;
     background: white;
     word-wrap: break-word;
-    /* background-color: lightpink; */
+    position: relative;
   }
   .action-img {
-    position: relative;
+    position: absolute;
     object-fit: cover;
     max-width: 100%;
   }
   .action-text {
   position: absolute;
-  color: red;
+  color: black;
+filter: drop-shadow(1px 0px 0px white) 
+drop-shadow(-1px 0px 0px white)
+drop-shadow(0px 1px 0px white) ;
+  z-index: 1000;
 }
 .object-fit_fill { object-fit: fill }
 .object-fit_contain { object-fit: contain }
