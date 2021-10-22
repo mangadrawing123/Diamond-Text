@@ -134,7 +134,8 @@ button {
     padding-top: var(--padding-top-bottom-panel);
     padding-bottom: var(--padding-top-bottom-panel);
     /* align-items: center; */
-    /* font-size: 1.3em; */
+    font-size: 10%;
+    /* font-size: 1.3rem; */
   }
   
   .action {
@@ -147,7 +148,8 @@ button {
     /* width: 90%; */
     border: 2px solid black;
     min-height: clamp(10vh, 20vh, 70vh); 
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 1vw;
     line-height: 0.9rem;
     hyphens: auto;
     background: white;
@@ -198,7 +200,8 @@ width: 70%;
 }
 .name {
 text-transform: uppercase;
-font-size: 1.2rem;
+/* font-size: 1.2rem; */
+    font-size: 1vw;
 filter: drop-shadow(1px 0px 0px white) 
 drop-shadow(-1px 0px 0px white)
 drop-shadow(0px 1px 0px white) 
@@ -212,7 +215,8 @@ margin: 0px;padding: 0px;
       font-family: 'CC Wild Words';
       font-weight: normal;
       font-style: normal;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
+    font-size: 1vw;
     /* line-height: 0.9; */
     padding: 2rem 2rem;
     border-radius: 50%;

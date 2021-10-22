@@ -142,11 +142,10 @@ $(document).ready(function() {
 function downloadWebtoonDesktop() {
     const balloons = document.querySelectorAll('.balloon')
     balloons.forEach(function(balloon) { 
-
         balloon.classList.remove("selected");
     })
     let node = document.querySelector(".webtoonImage");
-    node.style.width="800px";
+    node.style.width="1000px";
         domtoimage.toPng(node)
         .then(function (dataUrl) {
             node.style.width="";
