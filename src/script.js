@@ -12,7 +12,6 @@ function splitDialogOnlyToArray(textInput) {
     return array = str.split("\n")
         .map(s => s.replace(/^\t{1,}/gm, ""))
 }
-//for balloon.js
 
 function breakWebtoonAt5(str) {
     let word =str.split(" ");
