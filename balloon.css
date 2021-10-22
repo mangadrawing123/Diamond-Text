@@ -7,7 +7,7 @@
   --left-side-width: 50vw;
 
   --text-area: 40vw;
-  --webtoon-width: 50vh;
+  --webtoon-width: 54vh;
 
   --padding-top-bottom: 20vh;
   --padding-top-bottom-panel: 20vh;
@@ -133,34 +133,45 @@ button {
     display: grid;
     padding-top: var(--padding-top-bottom-panel);
     padding-bottom: var(--padding-top-bottom-panel);
+    /* align-items: center; */
     /* font-size: 1.3em; */
   }
   
   .action {
     grid-row: 2/3;
-    min-height : 30vh;
-    margin: 0 10px;
+    display: grid;
+    grid-template: "container";
+    /* place-items: center; */
+    /* place-content: center; */
+    margin: 0 2vw;
+    /* width: 90%; */
     border: 2px solid black;
+    min-height: clamp(10vh, 20vh, 70vh); 
     font-size: 1rem;
     line-height: 0.9rem;
     hyphens: auto;
     background: white;
     word-wrap: break-word;
-    position: relative;
   }
-  .action-img {
-    position: absolute;
-    object-fit: cover;
+  .action > * {
+    grid-area: container;
     max-width: 100%;
   }
   .action-text {
-  position: absolute;
-  color: black;
-filter: drop-shadow(1px 0px 0px white) 
-drop-shadow(-1px 0px 0px white)
-drop-shadow(0px 1px 0px white) ;
-  z-index: 1000;
-}
+    color: black;
+    align-self: start;
+    justify-self: start;
+    filter: drop-shadow(1px 0px 0px white) 
+    drop-shadow(-1px 0px 0px white)
+    drop-shadow(0px 1px 0px white) ;
+    z-index: 1000;
+  }
+  .action-img {
+    margin: 0; padding: 0;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
 .object-fit_fill { object-fit: fill }
 .object-fit_contain { object-fit: contain }
 .object-fit_cover { object-fit: cover }
