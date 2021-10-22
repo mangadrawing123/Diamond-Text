@@ -143,7 +143,7 @@ button {
     grid-template: "container";
     /* place-items: center; */
     /* place-content: center; */
-    margin: 0 2vw;
+    margin: 0 1rem;
     /* width: 90%; */
     border: 2px solid black;
     min-height: clamp(10vh, 20vh, 70vh); 

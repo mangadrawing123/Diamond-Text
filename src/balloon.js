@@ -146,7 +146,7 @@ function downloadWebtoonDesktop() {
         balloon.classList.remove("selected");
     })
     let node = document.querySelector(".webtoonImage");
-    node.style.width="100vw";
+    node.style.width="800px";
         domtoimage.toPng(node)
         .then(function (dataUrl) {
             node.style.width="";
