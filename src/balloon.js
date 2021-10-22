@@ -133,7 +133,6 @@ function button() { //ENTER BUTTON
 
 $(document).ready(function() {
     $('.toggle-btn').on('click', function() { 
-        // console.log("hello")
         $('.side').toggleClass("active");
         $('.grid').toggleClass("gridToggle")
     })
