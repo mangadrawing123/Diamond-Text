@@ -241,6 +241,7 @@ margin: 0px;padding: 0px;
   padding: 1rem 1.7rem;
   border-radius: 0;
 }
+
 .inner .balloon{
   font-style: italic;
   border-radius: 0;
@@ -320,7 +321,7 @@ justify-self: end;
 .FULL {height: 80vh;}
 .FULL.FULL {height: 80vh; margin: 0; border-left: none; border-right: none;}
 .LEFT {width: 50%;}
-.RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
+.RIGHT {width: 50%;  margin-left: auto; height: 60vh;} /* margin-left: auto;*/
 .FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
 .CENTER {width: 50%; justify-self: center;}
 .NONE {margin: none; border: none;}
