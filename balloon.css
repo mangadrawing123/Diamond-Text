@@ -138,8 +138,8 @@ button {
   
   .action {
     grid-row: 2/3;
-    min-height : 30vh;
-    margin: 0 10px;
+    /* min-height : 30vh; */
+    /* margin: 0 10px; */
     border: 2px solid black;
     font-size: 1rem;
     line-height: 0.9rem;
@@ -148,6 +148,21 @@ button {
 background: white;
 /* background-color: lightpink; */
 }
+.action-img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+}
+.action-text {
+  position: absolute;
+  color: red;
+}
+.object-fit_fill { object-fit: fill }
+.object-fit_contain { object-fit: contain }
+.object-fit_cover { object-fit: cover }
+.object-fit_none { object-fit: none }
+.object-fit_scale-down { object-fit: scale-down }
+
 .mini {
     border: 2px solid black;
     /* min-width: 50%; */
