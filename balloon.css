@@ -138,22 +138,22 @@ button {
   
   .action {
     grid-row: 2/3;
-    /* min-height : 30vh; */
+    min-height : 30vh;
     /* margin: 0 10px; */
     border: 2px solid black;
     font-size: 1rem;
     line-height: 0.9rem;
     hyphens: auto;
+    background: white;
     word-wrap: break-word;
-background: white;
-/* background-color: lightpink; */
-}
-.action-img {
-  position: relative;
-  object-fit: cover;
-  width: 100%;
-}
-.action-text {
+    /* background-color: lightpink; */
+  }
+  .action-img {
+    position: relative;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .action-text {
   position: absolute;
   color: red;
 }

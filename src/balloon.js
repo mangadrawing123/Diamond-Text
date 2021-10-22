@@ -103,7 +103,7 @@ function button() { //ENTER BUTTON
   result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
   result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
   result = result.replace(regexPANELaction, '<div class="PANEL">\n<div class="action $1">\n$2\n</div>$3</div>\n\n');
-  result = result.replace(regexImgSrc, '\n<img class="action-img object-fit_cover" src="$2">');
+  result = result.replace(regexImgSrc, '\n<img class="action-img " src="$2">');
   result = result.replace(regexActionTextP, '<p class="action-text">$1<p>');
   console.log(result);
   result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
