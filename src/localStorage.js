@@ -9,10 +9,9 @@ var save_button = document.querySelector(".save-button");
 //   window.localStorage["TextEditorData"] = editor.value;
 //   });
 
-textInput.value = localStorage.getItem("content")
+// textInput.value = localStorage.getItem("content")
 
-save_button.addEventListener("click", function() {
-    localStorage.setItem("content", textInput.value);
-
-})
+// save_button.addEventListener("click", function() {
+//     localStorage.setItem("content", textInput.value);
+// })
 

@@ -155,10 +155,3 @@ function downloadWebtoonDesktop() {
                   downloadLink.click();
         })
 }
-
-
-//togglebutton hide textarea
-// function toggleSidebar(ref) {
-//     document.getElementsByClassName('toggle-btn').classList.toggle('active');
-// //   document.getElementById("sidebar").classList.toggle('active');
-// }
