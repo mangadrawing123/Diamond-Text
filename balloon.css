@@ -7,16 +7,17 @@
   --left-side-width: 50vw;
 
   --text-area: 40vw;
-  --webtoon-width: 1000px;
+  --webtoon-width: 50vh;
 
-  --padding-top-bottom: 20vh;
-  --padding-top-bottom-panel: 20vh;
+  --padding-top-bottom: 5em;
+  --padding-top-bottom-panel: 7em;
 }
 html, body {
   margin:0px;
   padding:0px;
   background: var(--background);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
 }
 
 .grid {
@@ -31,10 +32,10 @@ html, body {
     grid-template-columns: auto var(--webtoon-width) auto;
 }
 .main, .side {
-  position: absolute;
   position: fixed;
   z-index: 1000;
   width: var(--main-width);
+  font-size: clam(0.5rem, 1rem, 1.5rem);
   display: grid;
   grid-template-columns: auto 80% auto;
   grid-template-areas: 
@@ -45,7 +46,6 @@ html, body {
     height: 100vh;
     background: var(--blue-color);
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.34);
 }
 .active {
   left: calc(var(--main-width) * -1);
@@ -68,16 +68,17 @@ background: var(--blue-color);
 textarea{
   grid-area: textarea;
   /* width: var(--text-area); */
+  font-size: 1em;
     height:85vh;
     align-self: center;
-    margin-right: 1rem;
-    margin-right: 1rem;
-    padding: 10px;
+    margin-right: 1em;
+    margin-right: 1em;
+    padding: 1em;
     border-radius: 6px;
     /* background: transparent; */
     /* color: rgba(255, 255, 255, 0.699); */
     box-shadow: 2px 2px 8px rgba(black, .3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
     color: black;
     background: white;
 }
@@ -86,8 +87,9 @@ textarea{
   grid-area: buttons;
   display: grid;
   height: 100vh;
-  padding: 0.5rem;
+  /* justify-content: end; */
   align-content: space-between;
+  padding: 0.5em 0;
 }
 
 p, #count {color: white;}
@@ -104,16 +106,14 @@ a:visited {
 button {
     background: none;
     color: var(--background);
-    /* font-size: 1rem; */
+    font-size: 1em;
     border: 3px solid;
-    padding: 0.5rem 0.5rem;
-    border-radius: 0.8rem;
+    padding: 0.5em 0.3em;
+    border-radius: 0.8em;
     font-weight: 600;
   }
   button:hover {
-    /* color: white; */
     color: rgba(255, 255, 255, 0.123);
-    
     cursor: pointer;
     border: 3px solid white;
     border-color: rgba(255, 255, 255, 0.123);
@@ -125,12 +125,14 @@ button {
     background: white;
     padding-top: var(--padding-top-bottom);
     padding-bottom: var(--padding-top-bottom);
-    /* transform: scale(2x, 2y); */
-    /* font-size: 2vw; */
+    width: 500px;
+    font-size: 20px;
+    /* width: 2000px; */
+    /* font-size: 80px; */
   }
   .webtoonDownload {
-    /* width: 1000px; */
-    /* font-size: 2rem; */
+    width: 2000px;
+    font-size: 80px;
 
   }
   
@@ -148,16 +150,12 @@ button {
     grid-template: "container";
     /* place-items: center; */
     /* place-content: center; */
-    /* margin: 0 1rem; */
-    width: 90%;
-    border: 2px solid black;
-    min-height: clamp(10vh, 20vh, 70vh); 
-    /* font-size: 1rem; */
-    line-height: 0.9rem;
+    margin: 0 1em;
+    border: 0.1em solid black;
+    min-height: 15em; 
     hyphens: auto;
     background: white;
     word-wrap: break-word;
-    justify-self: center;
   }
   .action > * {
     grid-area: container;
@@ -167,16 +165,17 @@ button {
     color: black;
     align-self: start;
     justify-self: start;
-    filter: drop-shadow(1px 0px 0px white) 
-    drop-shadow(-1px 0px 0px white)
-    drop-shadow(0px 1px 0px white) ;
-    /* z-index: 1000; */
+    filter: drop-shadow(0.05em 0px 0px white) 
+    drop-shadow(-0.05em 0px 0px white)
+    drop-shadow(0px 0.05em 0px white) ;
+    z-index: 1000;
   }
   .action-img {
-    margin: 0; padding: 0;
+    justify-self: center;
+    align-self: center;
     object-fit: cover;
-    height: auto;
-    width: 100%;
+    height: 100%;
+    /* width: 100%; */
     z-index: 1000;
   }
 .object-fit_fill { object-fit: fill }
@@ -185,32 +184,24 @@ button {
 .object-fit_none { object-fit: none }
 .object-fit_scale-down { object-fit: scale-down }
 
-.mini {
-    border: 2px solid black;
-    /* min-width: 50%; */
-    /* min-height: 100px; */
-    background: white;
-    /* background: lightgreen; */
-  }
-  .mini + .balloon {
-    margin-top: -30px;
-  }
-
 .nameAndBalloon {
 display:grid;
 z-index: 100;
-margin: 0.4rem ;
+margin: 0.4em ;
 width: 70%;
 /* background: orange; */
+}
+.nameAndBalloon .narrate {
+  width: 100%;
 }
 .name {
 text-transform: uppercase;
 /* font-size: 1.2rem; */
-filter: drop-shadow(1px 0px 0px white) 
-drop-shadow(-1px 0px 0px white)
-drop-shadow(0px 1px 0px white) 
-drop-shadow(0px -1px 0px white)
-drop-shadow(1px 1px 0px white);
+filter: drop-shadow(0.05em 0px 0px white) 
+drop-shadow(-0.05em 0px 0px white)
+drop-shadow(0px 0.05em 0px white) 
+drop-shadow(0px -0.05em 0px white)
+drop-shadow(0.05em 0.05em 0px white);
 margin: 0px;padding: 0px;
 /* background-color: grey; */
 }
@@ -221,7 +212,7 @@ margin: 0px;padding: 0px;
       font-style: normal;
   /* font-size: 0.8rem; */
     /* line-height: 0.9; */
-    padding: 2rem 2rem;
+    padding: 2em 2em;
     border-radius: 50%;
     hyphens: auto;
     text-align: center;
@@ -229,7 +220,7 @@ margin: 0px;padding: 0px;
 /* background: greenyellow; */
 }
 .balloon + .balloon{
-    margin-top: -2rem;
+    margin-top: -2em;
 }
 
 
@@ -237,15 +228,15 @@ margin: 0px;padding: 0px;
 
 .whisper .balloon {
   /* font-style: italic; */
-  border: 0.2rem dashed black;
+  border: 0.15em dashed black;
 }
 .cute .balloon {
-  border: 4px dotted black;
+  border: 0.05em dotted black;
 }
 .narrate .balloon, .narrator .balloon{
   font-style: italic;
   border: none;
-  padding: 1rem 1.7rem;
+  padding: 2em 1.7em 1.5em 2em;
   border-radius: 0;
 }
 
@@ -293,23 +284,22 @@ margin: 0px;padding: 0px;
 
 .container {
   display: grid;
-  filter: drop-shadow(1px 0px 0px black) 
-    drop-shadow(-1px 0px 0px black)
-    drop-shadow(0px 1px 0px black) 
-    drop-shadow(0px -1px 0px black)
-    drop-shadow(1px 1px 0px black);
+  filter: drop-shadow(0.05em 0px 0px black) 
+    drop-shadow(-0.05em 0px 0px black)
+    drop-shadow(0px 0.05em 0px black) 
+    drop-shadow(0px -0.05em 0px black)
+    drop-shadow(0.05em 0.05em 0px black);
 }
 
 .container.whisper, .container.cute {
     filter : none;
 }
 .container.dark {
-  
-  filter: drop-shadow(1px 0px 0px white) 
-  drop-shadow(-1px 0px 0px white)
-    drop-shadow(0px 1px 0px white) 
-    drop-shadow(0px -1px 0px white)
-    drop-shadow(1px 1px 0px white);
+  filter: drop-shadow(0.05em 0px 0px white) 
+  drop-shadow(-0.05em 0px 0px white)
+    drop-shadow(0px 0.05em 0px white) 
+    drop-shadow(0px -0.05em 0px white)
+    drop-shadow(0.05em 0.05em 0px white);
 }
 /*altenrative balloon */
 .nameAndBalloon:nth-child(odd) {
@@ -325,16 +315,18 @@ justify-self: end;
   justify-self: end;
 }
 
-.FULL {height: 80vh;}
-.FULL.FULL {height: 80vh; margin: 0; border-left: none; border-right: none;}
-.MED , .MEDIUM {width: 50%; height: 50vh;}
-.LEFT {width: 50%;}
-.RIGHT {width: 50%;  margin-left: auto; height: 60vh;} /* margin-left: auto;*/
-.FOCUS {width: 100%; min-height: 20vh; margin: 0; border-left: 0; border-right: 0;}
+/* .FULL {height: 100%;} */
+.FULL.FULL {height: 45em; margin: 0 1em; border-left: none; border-right: none;}
+
+.MID , .MED , .MEDIUM {width: 50%; height: 25em;}
+
+.LEFT {justify-self: start;}
+.RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
+.FOCUS {height: 1em; margin: 0; border-left: 0; border-right: 0;}
 .CENTER {width: 50%; justify-self: center;}
 .NONE {margin: none; border: none;}
 .SKEW {
-    margin: -1px;
+    margin: -0.05em;
     border-left: none; border-right: none;
     -ms-transform: matrix(1, -0.4, 0, 1, 1, 0); /* It is is used for internet explorer 9 */
     -webkit-transform: matrix(1, -0.4, 0, 1, 1, 0); /* It is is used for Safari */
