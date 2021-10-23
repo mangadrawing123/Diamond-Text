@@ -127,6 +127,7 @@ button {
     background: white;
     padding-top: var(--padding-top-bottom);
     padding-bottom: var(--padding-top-bottom);
+    /* width: 1000px; */
   }
   
   .PANEL {
@@ -134,7 +135,7 @@ button {
     padding-top: var(--padding-top-bottom-panel);
     padding-bottom: var(--padding-top-bottom-panel);
     /* align-items: center; */
-    font-size: 10%;
+    font-size: 1rem;
     /* font-size: 1.3rem; */
   }
   
@@ -148,8 +149,8 @@ button {
     /* width: 90%; */
     border: 2px solid black;
     min-height: clamp(10vh, 20vh, 70vh); 
-    /* font-size: 1rem; */
-    font-size: 1vw;
+    font-size: 1rem;
+    /* font-size: 1vw; */
     line-height: 0.9rem;
     hyphens: auto;
     background: white;
@@ -166,13 +167,14 @@ button {
     filter: drop-shadow(1px 0px 0px white) 
     drop-shadow(-1px 0px 0px white)
     drop-shadow(0px 1px 0px white) ;
-    z-index: 1000;
+    /* z-index: 1000; */
   }
   .action-img {
     margin: 0; padding: 0;
     object-fit: cover;
     height: auto;
     width: 100%;
+    z-index: 1000;
   }
 .object-fit_fill { object-fit: fill }
 .object-fit_contain { object-fit: contain }
@@ -200,8 +202,8 @@ width: 70%;
 }
 .name {
 text-transform: uppercase;
-/* font-size: 1.2rem; */
-    font-size: 1vw;
+font-size: 1.2rem;
+    /* font-size: 1rem; */
 filter: drop-shadow(1px 0px 0px white) 
 drop-shadow(-1px 0px 0px white)
 drop-shadow(0px 1px 0px white) 
@@ -215,8 +217,7 @@ margin: 0px;padding: 0px;
       font-family: 'CC Wild Words';
       font-weight: normal;
       font-style: normal;
-  /* font-size: 0.8rem; */
-    font-size: 1vw;
+  font-size: 0.8rem;
     /* line-height: 0.9; */
     padding: 2rem 2rem;
     border-radius: 50%;
