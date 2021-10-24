@@ -151,8 +151,6 @@ function downloadWebtoonDesktop() {
         .then(function (dataUrl) {
             $(".name").removeClass("name-none-display");
     $(".webtoonImage").removeClass("webtoonDownload");
-        domtoimage.toPng(node)
-        domtoimage.toPng(node)
             let downloadLink = document.createElement('a');
                   downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
                   let url = dataUrl.replace(/^data:image\/png/,'data:application/octet-stream');
