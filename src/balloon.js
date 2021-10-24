@@ -144,12 +144,12 @@ function downloadWebtoonDesktop() {
     balloons.forEach(function(balloon) { 
         balloon.classList.remove("selected");
     })
-    let node = document.querySelector(".webtoonImage");
-    // node.style.width="1000px";
+    $(".name").addClass("name-none-display");
     $(".webtoonImage").addClass("webtoonDownload");
+    let node = document.querySelector(".webtoonImage");
         domtoimage.toPng(node)
         .then(function (dataUrl) {
-            // node.style.width="";
+            $(".name").removeClass("name-none-display");
     $(".webtoonImage").removeClass("webtoonDownload");
         domtoimage.toPng(node)
         domtoimage.toPng(node)
