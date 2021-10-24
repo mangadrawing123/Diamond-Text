@@ -296,7 +296,7 @@ display: none;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 .sound {
-  font-family: "Banger";
+  font-family: "Banger"
 }
 
 .container {
@@ -343,7 +343,7 @@ justify-self: end;
 .CENTER {width: 50%; justify-self: center;}
 .NONE {margin: none; border: none;}
 .SKEW, .SKEW.UP {
-    /* margin: -0.05em; */
+    margin: 0;
     /* border-left: none; border-right: none; */
     clip-path: polygon(0 27%, 100% 0, 100% 70%, 0 100%);
     /* -ms-transform: matrix(1, -0.4, 0, 1, 1, 0); It is is used for internet explorer 9 */
