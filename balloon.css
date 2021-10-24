@@ -150,34 +150,46 @@ button {
     grid-row: 2/3;
     display: grid;
     grid-template: "container";
-    /* place-items: center; */
-    /* place-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
     margin: 0 1em;
-    border: 0.1em solid black;
+    /* border: 0.1em solid black; */
     min-height: 15em; 
     hyphens: auto;
     background: white;
-    word-wrap: break-word;
+   filter: drop-shadow(0.07em 0px 0px black) 
+    drop-shadow(-0.07em 0px 0px black)
+    drop-shadow(0px 0.07em 0px black) 
+    drop-shadow(0px -0.07em 0px black)
+    drop-shadow(0.07em 0.07em 0px black);   word-wrap: break-word;
   }
   .action > * {
     grid-area: container;
     max-width: 100%;
   }
+  /* .action > img {
+  filter: drop-shadow(0.07em 0px 0px black) 
+    drop-shadow(-0.07em 0px 0px black)
+    drop-shadow(0px 0.07em 0px black) 
+    drop-shadow(0px -0.07em 0px black)
+    drop-shadow(0.07em 0.07em 0px black);
+  } */
   .action-text {
     color: black;
     align-self: start;
     justify-self: start;
+    margin-left: 0.5em;
     filter: drop-shadow(0.05em 0px 0px white) 
     drop-shadow(-0.05em 0px 0px white)
     drop-shadow(0px 0.05em 0px white) ;
     z-index: 8;
   }
-  .action-img {
+  .action-img{
     justify-self: center;
     align-self: center;
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     z-index: 9;
   }
 .object-fit_fill { object-fit: fill }
@@ -330,19 +342,21 @@ justify-self: end;
 .FOCUS {height: 1em; margin: 0; border-left: 0; border-right: 0;}
 .CENTER {width: 50%; justify-self: center;}
 .NONE {margin: none; border: none;}
-.SKEW {
-    margin: -0.05em;
-    border-left: none; border-right: none;
-    -ms-transform: matrix(1, -0.4, 0, 1, 1, 0); /* It is is used for internet explorer 9 */
-    -webkit-transform: matrix(1, -0.4, 0, 1, 1, 0); /* It is is used for Safari */
-    transform: matrix(1, -0.4, 0, 1, 1, 0); /* This is standard syntax */
+.SKEW, .SKEW.UP {
+    /* margin: -0.05em; */
+    /* border-left: none; border-right: none; */
+    clip-path: polygon(0 27%, 100% 0, 100% 70%, 0 100%);
+    /* -ms-transform: matrix(1, -0.4, 0, 1, 1, 0); It is is used for internet explorer 9 */
+    /* -webkit-transform: matrix(1, -0.4, 0, 1, 1, 0); It is is used for Safari */
+    /* transform: matrix(1, -0.4, 0, 1, 1, 0); This is standard syntax */
     }
     .SKEW.DOWN {
     margin: 0px;
     border-left: none; border-right: none;
-    transform:matrix(1.00,0.30,0.00,1.00,0,0);
-    -ms-transform:matrix(1.00,0.30,0.00,1.00,0,0);
-    -webkit-transform:matrix(1.00,0.30,0.00,1.00,0,0);
+    clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 78%);
+    /* transform:matrix(1.00,0.30,0.00,1.00,0,0); */
+    /* -ms-transform:matrix(1.00,0.30,0.00,1.00,0,0); */
+    /* -webkit-transform:matrix(1.00,0.30,0.00,1.00,0,0); */
   }
 .SKEW.HARD {
   margin: 0px;
