@@ -167,13 +167,7 @@ button {
     grid-area: container;
     max-width: 100%;
   }
-  /* .action > img {
-  filter: drop-shadow(0.07em 0px 0px black) 
-    drop-shadow(-0.07em 0px 0px black)
-    drop-shadow(0px 0.07em 0px black) 
-    drop-shadow(0px -0.07em 0px black)
-    drop-shadow(0.07em 0.07em 0px black);
-  } */
+
   .action-text {
     color: black;
     align-self: start;
