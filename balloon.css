@@ -23,9 +23,9 @@ html, body {
 .grid {
     display: grid;
     grid-template-areas: 
-    "  . webtoon . "
+    "  . webtoon"
     ;
-    grid-template-columns: var(--main-width) var(--webtoon-width) auto;
+    grid-template-columns: var(--main-width) var(--webtoon-width) ;
     grid-gap: 10vw;
 }
 .gridToggle {
@@ -121,6 +121,9 @@ button {
 }
 .webtoonImage {
   grid-area: webtoon;
+  /* display: grid; */
+  justify-self: center;
+  align-self: center;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
     background: white;
     padding-top: var(--padding-top-bottom);
