@@ -33,7 +33,7 @@ html, body {
 }
 .main, .side {
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   width: var(--main-width);
   font-size: clam(0.5rem, 1rem, 1.5rem);
   display: grid;
@@ -171,7 +171,7 @@ button {
     filter: drop-shadow(0.05em 0px 0px white) 
     drop-shadow(-0.05em 0px 0px white)
     drop-shadow(0px 0.05em 0px white) ;
-    z-index: 1000;
+    z-index: 8;
   }
   .action-img {
     justify-self: center;
@@ -179,7 +179,7 @@ button {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    z-index: 1000;
+    z-index: 9;
   }
 .object-fit_fill { object-fit: fill }
 .object-fit_contain { object-fit: contain }
@@ -189,7 +189,7 @@ button {
 
 .nameAndBalloon {
 display:grid;
-z-index: 100;
+z-index: 11;
 margin: 0.4em ;
 width: 70%;
 /* background: orange; */
