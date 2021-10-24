@@ -10,7 +10,7 @@
   --webtoon-width: 50vh;
 
   --padding-top-bottom: 5em;
-  --padding-top-bottom-panel: 7em;
+  --padding-top-bottom-panel: 6em;
 }
 html, body {
   margin:0px;
@@ -153,15 +153,16 @@ button {
     /* align-items: center; */
     /* justify-content: center; */
     margin: 0 1em;
-    /* border: 0.1em solid black; */
+    border: 0.1em solid black;
     min-height: 15em; 
     hyphens: auto;
     background: white;
-   filter: drop-shadow(0.07em 0px 0px black) 
+   /* filter: drop-shadow(0.07em 0px 0px black) 
     drop-shadow(-0.07em 0px 0px black)
     drop-shadow(0px 0.07em 0px black) 
     drop-shadow(0px -0.07em 0px black)
-    drop-shadow(0.07em 0.07em 0px black);   word-wrap: break-word;
+    drop-shadow(0.07em 0.07em 0px black);   */
+     word-wrap: break-word;
   }
   .action > * {
     grid-area: container;
@@ -192,6 +193,13 @@ button {
     height: 100%;
     z-index: 9;
   }
+
+  .action-img {object-position: center;}
+  .left {object-position: left;}
+  .right {object-position: right;}
+  .bottom {object-position: bottom;}
+  .top {object-position: top;}
+  
 .object-fit_fill { object-fit: fill }
 .object-fit_contain { object-fit: contain }
 .object-fit_cover { object-fit: cover }
@@ -333,13 +341,13 @@ justify-self: end;
 }
 
 /* .FULL {height: 100%;} */
-.FULL.FULL {height: 45em; margin: 0 1em; border-left: none; border-right: none;}
+.FULL {height: 40em; margin: 0 1em; border-left: none; border-right: none;}
 
 .MID , .MED , .MEDIUM {width: 50%; height: 25em;}
 
 .LEFT {justify-self: start;}
 .RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
-.FOCUS {height: 1em; margin: 0; border-left: 0; border-right: 0;}
+.FOCUS {height: 1em; margin: 0; border-left: none; border-right: none;}
 .CENTER {width: 50%; justify-self: center;}
 .NONE {margin: none; border: none;}
 .SKEW, .SKEW.UP {
@@ -351,7 +359,7 @@ justify-self: end;
     /* transform: matrix(1, -0.4, 0, 1, 1, 0); This is standard syntax */
     }
     .SKEW.DOWN {
-    margin: 0px;
+    margin: 0;
     border-left: none; border-right: none;
     clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 78%);
     /* transform:matrix(1.00,0.30,0.00,1.00,0,0); */
