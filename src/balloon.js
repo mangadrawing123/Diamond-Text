@@ -104,7 +104,7 @@ function button() { //ENTER BUTTON
   result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
   result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3</div>\n\n');
 //   result = result.replace(regexPANELaction, '<div class="PANEL">\n<div class="action $1">\n$2\n</div>$3</div>\n\n');
-  result = result.replace(regexImgSrc, '\n<img class="action-img " src="$2">');
+  result = result.replace(regexImgSrc, '\n<div class="container-img"><img class="action-img " src="$2"></div>');
   result = result.replace(regexActionTextP, '<div class="action-text">$1</div>');
   result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
   //   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
@@ -146,13 +146,13 @@ function downloadWebtoonDesktop() {
         balloon.classList.remove("selected");
     })
     $(".name").addClass("name-none-display");
-    $(".action-text").addClass("action-text-none-display");
+    // $(".action-text").addClass("action-text-none-display");
     $(".webtoonImage").addClass("webtoonDownload");
     let node = document.querySelector(".webtoonImage");
         domtoimage.toPng(node)
         .then(function (dataUrl) {
             $(".name").removeClass("name-none-display");
-            $(".action-text").removeClass("action-text-none-display");
+            // $(".action-text").removeClass("action-text-none-display");
     $(".webtoonImage").removeClass("webtoonDownload");
             let downloadLink = document.createElement('a');
                   downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
