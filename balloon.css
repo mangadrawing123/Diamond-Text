@@ -152,39 +152,30 @@ button {
     grid-template: "container";
     /* align-items: center; */
     /* justify-content: center; */
-    margin: 0 1em;
-    border: 0.1em solid black;
     min-height: 15em; 
     hyphens: auto;
-    background: white;
-   /* filter: drop-shadow(0.07em 0px 0px black) 
+    /* width: 98%; */
+    word-wrap: break-word;
+   filter: drop-shadow(0.07em 0px 0px black) 
     drop-shadow(-0.07em 0px 0px black)
     drop-shadow(0px 0.07em 0px black) 
     drop-shadow(0px -0.07em 0px black)
-    drop-shadow(0.07em 0.07em 0px black);   */
-     word-wrap: break-word;
+    drop-shadow(0.07em 0.07em 0px black);  
   }
   .action > * {
-    grid-area: container;
-    max-width: 100%;
+    /* grid-area: container; */
   }
-  /* .action > img {
-  filter: drop-shadow(0.07em 0px 0px black) 
-    drop-shadow(-0.07em 0px 0px black)
-    drop-shadow(0px 0.07em 0px black) 
-    drop-shadow(0px -0.07em 0px black)
-    drop-shadow(0.07em 0.07em 0px black);
-  } */
+  
   .action-text {
-    color: black;
+    color: white;
     align-self: start;
     justify-self: start;
     margin-left: 0.5em;
-    filter: drop-shadow(0.05em 0px 0px white) 
-    drop-shadow(-0.05em 0px 0px white)
-    drop-shadow(0px 0.05em 0px white) ;
     z-index: 8;
+    display: "";
   }
+  .action-text-none-display{ display: none;}
+
   .action-img{
     justify-self: center;
     align-self: center;
@@ -193,13 +184,13 @@ button {
     height: 100%;
     z-index: 9;
   }
-
+/* for image positon onlys */
   .action-img {object-position: center;}
   .left {object-position: left;}
   .right {object-position: right;}
   .bottom {object-position: bottom;}
   .top {object-position: top;}
-  
+
 .object-fit_fill { object-fit: fill }
 .object-fit_contain { object-fit: contain }
 .object-fit_cover { object-fit: cover }
@@ -341,32 +332,34 @@ justify-self: end;
 }
 
 /* .FULL {height: 100%;} */
-.FULL {height: 40em; margin: 0 1em; border-left: none; border-right: none;}
+.FULL img{height: 40em; margin: 0 1em; border-left: none; border-right: none;}
 
-.MID , .MED , .MEDIUM {width: 50%; height: 25em;}
+.MID img, .MED img, .MEDIUM img{width: 50%; height: 25em;}
 
-.LEFT {justify-self: start;}
-.RIGHT {width: 50%;  margin-left: auto;} /* margin-left: auto;*/
-.FOCUS {height: 1em; margin: 0; border-left: none; border-right: none;}
-.CENTER {width: 50%; justify-self: center;}
-.NONE {margin: none; border: none;}
-.SKEW, .SKEW.UP {
-    margin: 0;
+.LEFT img{justify-self: start; width: 50%;}
+.LEFT img {object-position: left;}
+.RIGHT img{width: 50%;  justify-self: end;}
+.RIGHT img {object-position: right; justify-self: start;} /* margin-left: auto;*/
+.FOCUS img{height: 7em;}
+.CENTER img{width: 50%; justify-self: center;}
+.NONE img{margin: none; border: none;}
+.SKEW img{
+    /* margin: 0; */
     /* border-left: none; border-right: none; */
     clip-path: polygon(0 27%, 100% 0, 100% 70%, 0 100%);
     /* -ms-transform: matrix(1, -0.4, 0, 1, 1, 0); It is is used for internet explorer 9 */
     /* -webkit-transform: matrix(1, -0.4, 0, 1, 1, 0); It is is used for Safari */
     /* transform: matrix(1, -0.4, 0, 1, 1, 0); This is standard syntax */
     }
-    .SKEW.DOWN {
-    margin: 0;
-    border-left: none; border-right: none;
+    .SKEW.DOWN img{
+    /* margin: 0; */
+    /* border-left: none; border-right: none; */
     clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 78%);
     /* transform:matrix(1.00,0.30,0.00,1.00,0,0); */
     /* -ms-transform:matrix(1.00,0.30,0.00,1.00,0,0); */
     /* -webkit-transform:matrix(1.00,0.30,0.00,1.00,0,0); */
   }
-.SKEW.HARD {
+.SKEW.HARD img{
   margin: 0px;
   border-left: none; border-right: none;
   transform:matrix(1.00,1.30,0.00,1.00,0,0);

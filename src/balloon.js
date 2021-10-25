@@ -145,11 +145,13 @@ function downloadWebtoonDesktop() {
         balloon.classList.remove("selected");
     })
     $(".name").addClass("name-none-display");
+    $(".action-text").addClass("action-text-none-display");
     $(".webtoonImage").addClass("webtoonDownload");
     let node = document.querySelector(".webtoonImage");
         domtoimage.toPng(node)
         .then(function (dataUrl) {
             $(".name").removeClass("name-none-display");
+            $(".action-text").removeClass("action-text-none-display");
     $(".webtoonImage").removeClass("webtoonDownload");
             let downloadLink = document.createElement('a');
                   downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
