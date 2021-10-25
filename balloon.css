@@ -153,6 +153,7 @@ button {
     /* align-items: center; */
     /* justify-content: center; */
     min-height: 15em; 
+    margin: 1em;
     hyphens: auto;
     /* width: 98%; */
     word-wrap: break-word;
@@ -180,7 +181,7 @@ button {
     justify-self: center;
     align-self: center;
     object-fit: cover;
-    width: 100%;
+    width: 99.5%;
     height: 100%;
     z-index: 9;
   }
@@ -252,7 +253,7 @@ display: none;
 .narrate .balloon, .narrator .balloon{
   font-style: italic;
   border: none;
-  padding: 2em 1.7em 1.5em 2em;
+  padding: 2em 1.7em 2em 2em;
   border-radius: 0;
 }
 
