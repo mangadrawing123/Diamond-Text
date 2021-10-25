@@ -149,11 +149,11 @@ button {
   .action {
     grid-row: 2/3;
     display: grid;
-    grid-template: "container";
-    /* align-items: center; */
+    /* grid-template: "container"; */
+    align-content: center;
     /* justify-content: center; */
-    min-height: 15em; 
-    margin: 1em;
+    min-height: 15em;
+    /* border: 2em solid black; */
     hyphens: auto;
     /* width: 98%; */
     word-wrap: break-word;
@@ -172,6 +172,7 @@ button {
     align-self: start;
     justify-self: start;
     margin-left: 0.5em;
+    filter: none;
     z-index: 8;
     display: "";
   }
@@ -181,7 +182,7 @@ button {
     justify-self: center;
     align-self: center;
     object-fit: cover;
-    width: 99.5%;
+    width: 92%;
     height: 100%;
     z-index: 9;
   }
@@ -333,7 +334,7 @@ justify-self: end;
 }
 
 /* .FULL {height: 100%;} */
-.FULL img{height: 40em; margin: 0 1em; border-left: none; border-right: none;}
+.FULL .action-img{height: 35em;}
 
 .MID img, .MED img, .MEDIUM img{width: 50%; height: 25em;}
 
@@ -341,21 +342,19 @@ justify-self: end;
 .LEFT img {object-position: left;}
 .RIGHT img{width: 50%;  justify-self: end;}
 .RIGHT img {object-position: right; justify-self: start;} /* margin-left: auto;*/
-.FOCUS img{height: 7em;}
+.FOCUS img{height: 7em; width: 99%;}
 .CENTER img{width: 50%; justify-self: center;}
 .NONE img{margin: none; border: none;}
 .SKEW img{
-    /* margin: 0; */
-    /* border-left: none; border-right: none; */
-    clip-path: polygon(0 27%, 100% 0, 100% 70%, 0 100%);
+    clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 78%);
+    width: 100%
     /* -ms-transform: matrix(1, -0.4, 0, 1, 1, 0); It is is used for internet explorer 9 */
     /* -webkit-transform: matrix(1, -0.4, 0, 1, 1, 0); It is is used for Safari */
     /* transform: matrix(1, -0.4, 0, 1, 1, 0); This is standard syntax */
     }
-    .SKEW.DOWN img{
-    /* margin: 0; */
-    /* border-left: none; border-right: none; */
-    clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 78%);
+    .SKEW.UP img{
+    clip-path: polygon(0 27%, 100% 0, 100% 70%, 0 100%);
+    width: 10%
     /* transform:matrix(1.00,0.30,0.00,1.00,0,0); */
     /* -ms-transform:matrix(1.00,0.30,0.00,1.00,0,0); */
     /* -webkit-transform:matrix(1.00,0.30,0.00,1.00,0,0); */
