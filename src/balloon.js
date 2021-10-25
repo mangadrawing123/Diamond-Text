@@ -99,20 +99,20 @@ function button() { //ENTER BUTTON
   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
   let regexBalloon = /(^\t)(\S.*)/gm;
 //   let regexActionMini = /^\t{1,}\((\S.*)\)/gm;
-
-  result = s.replace(regexTwoThreeEnter, '\n');
-  result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
-  result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
-  result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3</div>\n\n');
-  result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/JsB9FX5/image.png');
-//   result = result.replace(regexPANELaction, '<div class="PANEL">\n<div class="action $1">\n$2\n</div>$3</div>\n\n');
+result = s.replace(regexTwoThreeEnter, '\n');
+result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
+result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
+result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3\n</div>\n\n');
 console.log(result);
+result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/JsB9FX5/image.png');
+//   result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/JsB9FX5/image.png');
+  //   result = result.replace(regexPANELaction, '<div class="PANEL">\n<div class="action $1">\n$2\n</div>$3</div>\n\n');
   result = result.replace(regexImgSrc, '\n<div class="container-img"><img class="action-img" src="$2"></div>');
-  result = result.replace(regexActionTextP, '<div class="action-text">$1</div>');
-  result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
-  //   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
-  result = divAddBrTagBalloonDiv(result);
-  result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
+result = result.replace(regexActionTextP, '<div class="action-text">$1</div>');
+result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
+//   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
+result = divAddBrTagBalloonDiv(result);
+result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
   
   document.querySelector(".webtoonImage").innerHTML = result;
   
