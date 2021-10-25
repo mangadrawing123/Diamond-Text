@@ -118,11 +118,49 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - sharing a screenshot html2canvas on hte whole screen to share tow tweiieter -- https://www.reddit.com/r/webdev/comments/qbpwq3/is_it_possible_to_have_the_website_take_a/ -- https://www.youtube.com/watch?v=YcEshVZNA5E  --begining of hte website when first log in./ or after download. (after donwload!) . - -fbbutton https://developers.facebook.com/docs/plugins/share-button/ -- facebook dlevoepeer https://developers.facebook.com/docs/plugins/share-button/  -- add logo diamond text layout, do you want to remove the watermark? sharing it social media.  -codepne reddit: https://codepen.io/iahello/pen/OdjOmz  - youtube after able to display video.  -- codepne sharing current link https://codepen.io/netsi1964/pen/EaZdjO -- sharing current screenshot website to facebook -- display the trademark after clikc donwlaod to review what will be downlaod then, next to it is hte button of "want to remove trademark logo" , sharing the website to your social media. thne after done will be remove trademark. -- don't have the link to  -- sahre facebook : https://codepen.io/josfervi/pen/mWyrJy -- dttatoURL sharing image link. https://stackoverflow.com/questions/5957382/how-to-save-a-html5-canvas-todataurl-string-as-a-png-on-a-php-backend  -- share facebook warp image https image link: https://stackoverflow.com/questions/5957382/how-to-save-a-html5-canvas-todataurl-string-as-a-png-on-a-php-backend  - share screenshot on phone? andrios? https://stackoverflow.com/questions/30196965/how-to-take-a-screenshot-of-a-current-activity-and-then-share-it  - simple sharing website first! reddit ,facebook instagram? not link allow, youtube? twitter.  -- bottom textarea share link. -- sharing local image to instagram. allowalbe. local iamge and link to evyer other website tiwtter facebook , reddit. --easy shareing button orgainztion order: https://vi.wordpress.org/plugins/simple-social-buttons/  -  -- alternative local image of the wbesite, many differnt image  - one button link facebook share website my link. just one first. posisble - force?! post online? - worked codpen: https://codepen.io/iahello/pen/OdjOmz?editors=1100 -- popup box: https://codepen.io/TheYuwana/pen/jyqewg  -- clikc outside of box to return to mnormal
 - regex break PANEL  with img https  https://www.reddit.com/r/regex/comments/qcq8xq/im_so_close_to_it_what_i_did_wrong_regex101_in_cmt/  so close PNAEL only ignore http.  https://www.reddit.com/r/regex/comments/qcu8ki/i_want_to_seperate_text_and_httpjpg_to_2_groups/  - bg image codpe https://codepen.io/roary_tubbs/pen/reWZGa 0 close https://stackoverflow.com/questions/51581441/detect-image-url-and-wrap-in-img-tags
 - replace before https at enter. remove it's first? it one line?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - img uplaod auto fit width size , no fram border need? https://www.reddit.com/r/css/comments/qd7qu8/why_the_img_objectfit_cover_didnt_cover_the/  - https://css-tricks.com/positioning-overlay-content-with-css-grid/
+- whtielein img
+- donado node.width ablaloon change size wiht it. https://www.reddit.com/r/webdev/comments/qdgy2z/ - https://www.reddit.com/r/css/comments/qdhflq/so_i_want_to_download_the_image_wiht_higher/im_able_to_download_the_image_width_2000px_but/
+- problem come when downoad imamge 
+- dispaly wait for second when downlaod image.
+- addd root -var-webtoon wdiht: to 1000px;
+- dispaly none name when donwload iTmage
+- git globale e open all im_be_able_to_grap_all_line_start_with all lais https://code.visualstudio.com/docs/editor/versioncontrol#_vs-code-as-git-editor
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- add new panel type clip-path.
+- link image locally.
+- fake instagrma or phoen caht.pone facke 3de and hpone face for comic.
+- if not have https then add div container-default with border. else return result. so that I can remove text normlally once donwload. https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg
+- donwlaod setting button ; check by default turn off name and action text
+- panel clip apth border drop shaow or scale before
+- number 1 234567 at the beginning to link to difffent image? in csp?
+- backgroudn image: outline intersting : https://codepen.io/PointC/pen/KRWgOK
+- csp tips add black/dark balloon?
+- red green filter easier text and backgroudn;
+- twitter share only tag clip stuid paitn.
+- add paper text layout multpel yor overlay, http jpg link, then overlay for overlay multiple for overlay.
+
+- ifrom google suggesiton link on website. 
+- downlaod seeprate layers  PANEL, baloon , text... 
+- sgugesting feature other display what other users input as well, so they can all vote on.
+- four panel comic quick adding. verital and f in one page.
+- csp docuet contain dark includ googld docs cheatsheet
+- add blue for panel
+- dsipaly buttong left right arrow to change hte ytpe of PANEL, and then put the text type to hte action panel back. 
+- add filter on the go  
+- flip iamge
+- option panel remove name when display in webtoon.- option panle rmeove name checkbox. aloow user to change font size of balloon.
+- git auto create brnahc and set-upstream one line? git?
+- layer phont mobile on top
+- canvas optiono . auto update http imge link whenver draw, but one link only
+-downlado abunk of layer difffernt layter graidnet apnel ballo text image.
+
+
+- text overlay texture. backgorund repeat. img repeat?
 - more deatilsi ntruction link to cip studio patin. below textarea main page.
 - removev watermark when click on one of hte facebook, twitter button - guilty
 - ask od you wnat to save text file ,when click download image?
+- autoamticla calculate the 50vh and turn it to px to apply to webtoon grid layout grid width, then calculate the font sisze accordingly
 - css random add class list in the array? before doing anything then? if the line start didn't ahve regez A-Z/b word bound then add class. if it alreayd had it then don't add random css class.
 - balloon stick together if they are in the same line.
 - seperate page layer panel , balloon balloon ,balloon text.... gradient ... just make other color trasnoframtnet so evyerthing stya in once palce
