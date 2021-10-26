@@ -345,11 +345,12 @@ justify-self: end;
 }
 
 /* .FULL {height: 100%;} */
-.LEFT img{justify-self: start; width: 50%; object-position: 30% 50%;}
-.RIGHT .action{justify-self: end; width: 60%;}
-.RIGHT img {height: 30em; object-position: 50% 50%;}
-.MID .action{width: 50%; justify-self: center;}
-.MID .action-img{width: 100%; height: 30em;}
+.LEFT .action{justify-self: START; width: 70%;}
+/* .LEFT img{height: 30em; object-position: 50% 50%;} */
+.RIGHT .action{justify-self: end; width: 70%;}
+.RIGHT img {height: 30em; object-position: 20% 50%;}
+.MID .action, .MIDDLE .action{width: 50%; justify-self: center;}
+.MID .action-img, .MIDDLE .action-img{width: 100%;}
 .CENTER img{width: 50%; justify-self: center;}
 .NONE img{padding: 0;}
 
@@ -358,6 +359,7 @@ justify-self: end;
 .EPISODE .action-text {justify-self: center;}
 .EPISODE .container-img{display: none;}
 
+.NO .container-img,
 .TITLE .container-img,
 .ENTIRE .container-img,
 .NONE .container-img {
@@ -374,24 +376,43 @@ justify-self: end;
   padding: 0;
 }
 
-
 .FULL .action-img{height: 35em;}
 .ENTIRE .action-img{height: 40em;}
 
 .PARALLEL .action-img {
-  width: 100%;
   height: 30em;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
-.SLAINTED .action-img{
-  clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
-  width: 70%; 
+.PARALLELL .action-img {
+  height: 30em;
+  clip-path: polygon(0 0, 64% 0, 100% 100%, 30% 100%);
+}
+
+.SLANT .action-img{
+  clip-path: polygon(0 0, 100% 0%, 55% 100%, 0% 100%);
   height: 30em; 
-  justify-self: start; 
+  /* justify-self: start;  */
+}
+.SLANT.RIGHT .action-img {
+  clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0 100%);
+  height: 30em;
+}
+.PANEL.SLANT , .PANEL.SLANTT {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.SLANTT .action-img {
+  clip-path: polygon(0 0, 54% 0, 100% 100%, 0 100%);
+  height: 30em;
+}
+.SLANTT.RIGHT .action-img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%);
+  height: 30em;
 }
 
 .FOCUS .action-img{height: 7em; width: 100%; padding: 0;}
-.SKEW .action-img{
+.SKEW .action-img, .SKEW.DOWN img{
   width: 100%;
   padding: 0;
   clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 78%);
@@ -415,6 +436,17 @@ justify-self: end;
 -webkit-transform:matrix(1.00,1.30,0.00,1.00,0,0);
 }
 
+
+
+
+
+.W30 {width: 30%}
+.W50 {width: 50%}
+.W70 {width: 70%}
+.W80 {width: 80%}
+
+
+
 .SHORT .action-img{
   height: 10em;
 }
@@ -424,7 +456,7 @@ justify-self: end;
 .LONG .action-img{
   height: 30em;
 }
-.SUPERLONG .action-img{
+.LONGER .action-img, .LONGG .action-img, .LLONG .action-img{
   height: 40em;
 }
 
