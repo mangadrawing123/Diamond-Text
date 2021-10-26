@@ -87,6 +87,7 @@ function button() { //ENTER BUTTON
   let result = '';
 
   let regexTwoThreeEnter = /\n{2,}/gms;
+  let regexEpisodeChapter = /^(EPISODE|CHAPTER)\W+(\w.+)/gm;
   let regexBackflashStart = /^(BACKFLASH)\s+(START)/gms
   let regexBackflashEnd = /^.*\bEND\b.*/gm; //anythign END
   //   let regexPANElimg = /((?:^[^\t<].*\n?)+)((?:^\t.*\n?)+)?/mg;
@@ -98,12 +99,15 @@ function button() { //ENTER BUTTON
 //   let regexNoThreeEnter = /^(?!\t|<\/?div)(^PANEL\s+(\S+))?(?:(^NORMAL|SMALL|FULL|LEFT|RIGHT|FOCUS|CENTER|NONE|SKEW)\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
   let regexBalloon = /(^\t)(\S.*)/gm;
+
+  
 //   let regexActionMini = /^\t{1,}\((\S.*)\)/gm;
 result = s.replace(regexTwoThreeEnter, '\n');
+result = result.replace(regexEpisodeChapter, '<div class="$1 episode-text">$1 $2</div>')
+console.log(result);
 result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
 result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
 result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3\n</div>\n\n');
-console.log(result);
 result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/wgHKHf8/white.jpg');
 // result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/JsB9FX5/image.png');
   result = result.replace(regexImgSrc, '\n<div class="container-img"><img class="action-img" src="$2"></div>');

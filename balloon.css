@@ -134,8 +134,8 @@ button {
     /* font-size: 80px; */
   }
   .webtoonDownload {
-    width: 2000px;
-    font-size: 80px;
+    /* width: 2000px; */
+    /* font-size: 80px; */
   }
   
   .PANEL {
@@ -355,9 +355,7 @@ justify-self: end;
 .NONE img{padding: 0;}
 
 .TITLE.PANEL {padding-bottom: 0;}
-.EPISODE.PANEL {padding-top: 0;}
-.EPISODE .action-text {justify-self: center;}
-.EPISODE .container-img{display: none;}
+.episode-text {text-align: center;}
 
 .NO .container-img,
 .TITLE .container-img,
@@ -367,7 +365,7 @@ justify-self: end;
 }
 
 .TITLE .action,
-.EPISODE .action,
+.episode-text,
 .FULL .action,
 .FULLWIDTH .action,
 .ENTIRE .action, 
