@@ -126,8 +126,20 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - addd root -var-webtoon wdiht: to 1000px;
 - dispaly none name when donwload iTmage
 - git globale e open all im_be_able_to_grap_all_line_start_with all lais https://code.visualstudio.com/docs/editor/versioncontrol#_vs-code-as-git-editor
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- slainted https://www.reddit.com/r/css/comments/qfug61/why_my_clip_path_have_this_extra_space_on_top_it/
 - add new panel type clip-path.
+- regex grab reaplce episode
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-regex case where there is no aciton-text
+
+- buttons below downlaod button "remove <br> checkbox name , action-text . downlado option side turn off action or name text before downlaod.
+- choose file and idspalyte codepen : https://codepen.io/maqnus/pen/oedWmq
+- prevent restart page copied text before restarted, save text file
+- test local mg src absolute path
+- differnt language font size, france , korean , vietnamese,.... option
+- option to see name and action-text displya and none display.
+- why I didn't see the whisper ballloon? of one accasion
+- warp episode in diffent text style and title too, no needneed action - or no need text case. PANEL in general
 - link image locally.
 - fake instagrma or phoen caht.pone facke 3de and hpone face for comic.
 - if not have https then add div container-default with border. else return result. so that I can remove text normlally once donwload. https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg
