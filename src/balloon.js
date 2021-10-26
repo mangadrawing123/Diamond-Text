@@ -90,7 +90,7 @@ function button() { //ENTER BUTTON
   let regexBackflashStart = /^(BACKFLASH)\s+(START)/gms
   let regexBackflashEnd = /^.*\bEND\b.*/gm; //anythign END
   //   let regexPANElimg = /((?:^[^\t<].*\n?)+)((?:^\t.*\n?)+)?/mg;
-  let regexPANELaction = /^(?!\t|<)(?:(^\b[A-Z\s]+\b)?\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
+  let regexPANELaction = /^(?!\t|<|\n)(?:(^\b[A-Z\s]+\b)?\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
   let regexAddImgLink = /(^(?!\t|\n|<|.*http).*$)/gm;
   let regexImgSrc = /(\W+)((http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-]))/gm;
   let regexActionTextP = /(^(?!\t|<).+)/gm;
@@ -104,16 +104,15 @@ result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH
 result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
 result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3\n</div>\n\n');
 console.log(result);
-result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/JsB9FX5/image.png');
-//   result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/JsB9FX5/image.png');
-  //   result = result.replace(regexPANELaction, '<div class="PANEL">\n<div class="action $1">\n$2\n</div>$3</div>\n\n');
+result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/wgHKHf8/white.jpg');
+// result = result.replace(regexAddImgLink, '$1 - https://i.ibb.co/JsB9FX5/image.png');
   result = result.replace(regexImgSrc, '\n<div class="container-img"><img class="action-img" src="$2"></div>');
 result = result.replace(regexActionTextP, '<div class="action-text">$1</div>');
 result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
 //   result = result.replace(regexActionMini, '<div class="mini">$1</div>');
 result = divAddBrTagBalloonDiv(result);
 result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
-  
+
   document.querySelector(".webtoonImage").innerHTML = result;
   
   ///copy each balloon
@@ -143,23 +142,28 @@ $(document).ready(function() {
 })
 
 function downloadWebtoonDesktop() {
-    const balloons = document.querySelectorAll('.balloon')
-    balloons.forEach(function(balloon) { 
-        balloon.classList.remove("selected");
-    })
+    // const balloons = document.querySelectorAll('.balloon')
+    // balloons.forEach(function(balloon) { 
+    //     balloon.classList.remove("selected");
+    // })
+    
     $(".name").addClass("name-none-display");
-    // $(".action-text").addClass("action-text-none-display");
+    $(".action-text").addClass("action-text-none-display");
     $(".webtoonImage").addClass("webtoonDownload");
-    let node = document.querySelector(".webtoonImage");
-        domtoimage.toPng(node)
+    let node = document.querySelector(".webtoonImage"); 
+    console.log(node);
+    domtoimage.toPng(node)
         .then(function (dataUrl) {
             $(".name").removeClass("name-none-display");
-            // $(".action-text").removeClass("action-text-none-display");
-    $(".webtoonImage").removeClass("webtoonDownload");
+            $(".action-text").removeClass("action-text-none-display");
+            $(".webtoonImage").removeClass("webtoonDownload");
             let downloadLink = document.createElement('a');
                   downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
                   let url = dataUrl.replace(/^data:image\/png/,'data:application/octet-stream');
                   downloadLink.setAttribute('href', url);
                   downloadLink.click();
         })
+        .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+    });
 }

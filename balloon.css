@@ -153,6 +153,7 @@ button {
     /* grid-template: "container"; */
     justify-items: center;
     min-height: 10em;
+    padding: 1em;
     /* border: 1em solid black; */
     hyphens: auto;
     word-wrap: break-word;
@@ -164,22 +165,20 @@ button {
   
   .action-text {
     color: black;
-    /* padding-bottom: 5em; */
     align-self: start;
     justify-self: start;
-    margin-left: 1em;
+    /* margin-left: 1em; */
     filter: none;
     text-shadow: -0.07em -0.07em 0 white, 0.07em -0.07em 0 white, -0.07em 0.07em 0 white, 0.07em 0.07em 0 white;
-     /* filter: drop-shadow(0.07em 0px 0px white) 
-    drop-shadow(-0.07em 0px 0px white)
-    drop-shadow(0px 0.07em 0px white); */
     z-index: 11;
+    /* display: none; */
   }
   .action-text-none-display{ display: none;}
 
   .container-img {
     display: grid;
     width: 100%;
+    height: 100%;
     justify-items: center;
     /* width: 100%; */
    filter: drop-shadow(0.07em 0px 0px black) 
@@ -187,16 +186,13 @@ button {
    drop-shadow(0px 0.07em 0px black) 
    drop-shadow(0px -0.07em 0px black)
    drop-shadow(0.07em 0.07em 0px black);  
+   /* padding: 0 1em; */
   }
   
   .action-img{
-    padding: 0 1em;
-    /* margin: 1em; */
-    /* justify-self: center; */
-    /* align-self: center; */
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    /* max-height: 100%; */
     z-index: 9;
   }
 /* for image positon onlys */
@@ -258,7 +254,8 @@ margin: 0px;padding: 0px;
 /* balloon and ballon types */
 
 .whisper .balloon {
-  /* font-style: italic; */
+  /* background: white; */
+  font-style: italic;
   border: 0.15em dashed black;
 }
 .cute .balloon {
@@ -276,6 +273,7 @@ margin: 0px;padding: 0px;
   border-radius: 0;
 }
 .think .balloon {
+  /* border-radius: 0;/ */
   clip-path: polygon(2% 34%, 1% 20%, 8% 17%, 14% 18%, 14% 10%, 19% 2%, 28% 5%, 38% 1%, 44% 4%, 46% 6%, 50% 8%, 54% 3%, 59% 2%, 62% 8%, 68% 7%, 74% 3%, 77% 6%, 77% 8%, 80% 12%, 83% 12%, 84% 11%, 88% 7%, 96% 12%, 96% 18%, 98% 23%, 98% 26%, 97% 30%, 97% 39%, 98% 46%, 95% 48%, 93% 53%, 94% 56%, 96% 59%, 97% 66%, 94% 69%, 90% 74%, 92% 78%, 94% 84%, 93% 89%, 91% 95%, 88% 95%, 81% 96%, 76% 97%, 73% 100%, 67% 97%, 61% 94%, 56% 95%, 53% 97%, 46% 99%, 43% 94%, 41% 94%, 35% 95%, 30% 97%, 23% 94%, 20% 90%, 15% 89%, 13% 93%, 9% 95%, 4% 90%, 5% 89%, 6% 79%, 2% 78%, 2% 75%, 2% 68%, 3% 66%, 5% 63%, 6% 61%, 3% 52%, 1% 49%, 2% 44%, 4% 42%, 4% 36%, 3% 34%, 1% 35%, 0% 35%, 1% 28%, 2% 27%, 2% 25%, 2% 25%, 3% 25%, 3% 25%);
 }
 .double .balloon {
@@ -347,17 +345,52 @@ justify-self: end;
 }
 
 /* .FULL {height: 100%;} */
-.FULL .action-img{width: 100%; height: 35em; padding: 0;}
-.LONG .action-img{height: 35em;}
-.MID img, .MED img, .MEDIUM img{width: 50%; height: 25em;}
-
-.LEFT img{justify-self: start; width: 50%;}
-.LEFT img {object-position: left;}
-/* .RIGHT img{width: 50%;  justify-self: end; margin: 1em;} */
-.RIGHT img {width: 50%; height: 30em; justify-content: end;} /* margin-left: auto;*/
-.FOCUS img{height: 7em; width: 100%; padding: 0;}
+.LEFT img{justify-self: start; width: 50%; object-position: 30% 50%;}
+.RIGHT .action{justify-self: end; width: 60%;}
+.RIGHT img {height: 30em; object-position: 50% 50%;}
+.MID .action{width: 50%; justify-self: center;}
+.MID .action-img{width: 100%; height: 30em;}
 .CENTER img{width: 50%; justify-self: center;}
-.NONE img{margin: 0; border: none;}
+.NONE img{padding: 0;}
+
+.TITLE.PANEL {padding-bottom: 0;}
+.EPISODE.PANEL {padding-top: 0;}
+.EPISODE .action-text {justify-self: center;}
+.EPISODE .container-img{display: none;}
+
+.TITLE .container-img,
+.ENTIRE .container-img,
+.NONE .container-img {
+  filter: none;
+}
+
+.TITLE .action,
+.EPISODE .action,
+.FULL .action,
+.FULLWIDTH .action,
+.ENTIRE .action, 
+.SKEW .action, 
+.FOCUS .action {
+  padding: 0;
+}
+
+
+.FULL .action-img{height: 35em;}
+.ENTIRE .action-img{height: 40em;}
+
+.PARALLEL .action-img {
+  width: 100%;
+  height: 30em;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.SLAINTED .action-img{
+  clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
+  width: 70%; 
+  height: 30em; 
+  justify-self: start; 
+}
+
+.FOCUS .action-img{height: 7em; width: 100%; padding: 0;}
 .SKEW .action-img{
   width: 100%;
   padding: 0;
@@ -381,6 +414,22 @@ justify-self: end;
 -ms-transform:matrix(1.00,1.30,0.00,1.00,0,0);
 -webkit-transform:matrix(1.00,1.30,0.00,1.00,0,0);
 }
+
+.SHORT .action-img{
+  height: 10em;
+}
+.MED .action-img, .MEDIUM .action-img{
+  height: 20em;
+}
+.LONG .action-img{
+  height: 30em;
+}
+.SUPERLONG .action-img{
+  height: 40em;
+}
+
+
+
     .BACKFLASH {
       /* width: 30vw; */
       padding: 10vh 0;
