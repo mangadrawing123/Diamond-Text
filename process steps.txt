@@ -129,12 +129,15 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - slainted https://www.reddit.com/r/css/comments/qfug61/why_my_clip_path_have_this_extra_space_on_top_it/
 - add new panel type clip-path.
 - regex grab reaplce episode
+- button textare ainsrcat text font size : https://codepen.io/robgolbeck/pen/yePRwa
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--regex case where there is no aciton-text
-- CLOSE if left and right, the thingbelow left or right is no padding top : 0 hte first is paddingbottom0
-
 - buttons below downlaod button "remove <br> checkbox name , action-text . downlado option side turn off action or name text before downlaod.
+- wrap PANEL and action sepreate , -> regex action case where there is no aciton-text, ignore and add image only
+- sky transtion iamge 3 paenl clip path 3 breka side or else.
+- absolute path folder iamge to link image easy.
+
 - choose file and idspalyte codepen : https://codepen.io/maqnus/pen/oedWmq
+- PANEL CLOSE if left and right, the thingbelow left or right is no padding top : 0 hte first is paddingbottom0
 - prevent restart page copied text before restarted, save text file
 - test local mg src absolute path
 - differnt language font size, france , korean , vietnamese,.... option
