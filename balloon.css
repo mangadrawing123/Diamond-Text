@@ -79,7 +79,7 @@ background: var(--blue-color);
   border-radius: 40%;
 }
 textarea{
-  /* font-size: 1rem; */
+  /* font-size: 1vh; */
   width: 100%;
   height:85vh;
     align-self: center;
@@ -148,8 +148,8 @@ button {
     /* font-size: 80px; */
   }
   .webtoonDownload {
-    /* width: 2000px; */
-    /* font-size: 80px; */
+    width: 2000px;
+    font-size: 80px;
   }
   
   .PANEL {
