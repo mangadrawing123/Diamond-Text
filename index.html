@@ -13,6 +13,7 @@
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wild+And+Crazy|Bangers|Comic+Neue|Acme|Chilanka|Coming+Soon|Neucha|Kalam|Patrick+Hand|AudioWide"> -->
 
   <script src="html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
@@ -53,7 +54,14 @@
   </div>
     <div class="grid">
         <div class="side main" class="active">
-            <div class="toggle-btn"></div>  
+            <div class="toggle-btn"></div>
+
+            <div class="textareaInput">
+            <div class="textcontrols">
+              <button role="button" id="decreaseText"><span>-</span></button>
+              <button role="button" id="increaseText"><span>+</span></button>
+            </div> 
+            <!-- textcontrols div end -->
             <textarea name="" class="textInput" id="textInput" cols="1" rows="1">
 TITLE: i love yoo -  https://i.ibb.co/nbBZcy9/image.png
 EPISODE: 15
@@ -102,6 +110,8 @@ TITLE: I love yoo - https://i.ibb.co/nbBZcy9/image.png
 
 
 </textarea>
+           </div> 
+           <!-- textareaInput div end -->
 </textarea>            
 <br>
                 <div class="buttons">
@@ -112,14 +122,14 @@ TITLE: I love yoo - https://i.ibb.co/nbBZcy9/image.png
                     <p> <span id="count">0</span><br> views <p>
                     <a href="index2.html">
                         <p class="button old-version" href="index2.html">Old Version</p>
-                    </a>
-                        
-                          
+                    </a>     
                 </div>
         </div> <!--main-->
         
         <div class="webtoonImage watermark">
-            
+            <img src="file:///C:/Users/TN/img/1.jpg" alt="download">
+            <img src="../img/white.jpg" alt="white">
+            <img src="https://i.ibb.co/nbBZcy9/image.png">
             <!-- <div class="watermark"></div> -->
         </div> <!--side display webtoon-->
     </div><!--grid-->
@@ -140,10 +150,10 @@ TITLE: I love yoo - https://i.ibb.co/nbBZcy9/image.png
 function loadScripts(){
    var directory = 'src/';
    var extension = '.js';
-   var files = ['balloon', 'script', 'share', 'watermark', 'localStorage',];  
+   var files = ['balloon', 'script', 'share', 'watermark', 'localStorage','textareaFontsizeIncrease'];  
    for (var file of files){ 
        var path = directory + file + extension; 
-       var script = document.createElement("script");
+       var script = document.createElement("script");""
        script.src = path;
        document.body.appendChild(script);
    } 
