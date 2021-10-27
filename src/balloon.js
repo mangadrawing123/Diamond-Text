@@ -94,7 +94,7 @@ function button() { //ENTER BUTTON
   let regexPANELaction = /^(?!\t|<|\n{1,})(?:(^\b[A-Z\s]+\b)?\W*)?([^\n]+)(.+?)(?=^(?!\t)\w+?|^<|$(?!\n))/gms;
   let regexAddImgLink = /(^(?!\t|\n|<|.*http|.*\w+\.(jpe?g|png|bmp|gif)).*$)/gm;
   let regexLocalImgSrc = /^\s-\s(img\/white.jpg)/gm;    
-    let regexImgSrc = /^(?!\t|\n|<)(\w.*)?\s+\-\s+(.*)\n/gm;
+    let regexImgSrc = /^(?!\t|\n|<)(\w.+)\s?\-\s+(.*)\n/gm;
 //   let regexImgSrc = /(\W+)((http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-]))/gm;
   let regexActionTextP = /(^(?!\t|<).+)/gm;
   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
@@ -109,8 +109,8 @@ result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
 // result = result.replace(regexPANELaction, '<div class="PANEL $1">\n$2</div>\n\n');
 result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3</div>\n\n');
 result = result.replace(regexAddImgLink, '$1 - img/white.jpg');
-console.log(result);
 result = result.replace(regexLocalImgSrc, '\n<div class="container-img" display="none"><img class="action-img" src="$1" display="></div>')
+console.log(result);
 result = result.replace(regexImgSrc, '<div class="action-text">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>');
 // result = result.replace(regexImgSrc, '\n<div class="container-img"><img class="action-img" src="$2"></div>');
 result = result.replace(regexActionTextP, '<div class="action-text">$1</div>')
