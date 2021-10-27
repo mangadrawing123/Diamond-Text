@@ -9,7 +9,8 @@
   --text-area: 40vw;
   --webtoon-width: 50vh;
 
-  --padding-top-bottom: 5em;
+  --padding-top-bottom: 9em;
+  --padding-webtoon-bottom: 23em;
   --padding-top-bottom-panel: 6em;
 }
 html, body {
@@ -141,7 +142,7 @@ button {
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
     background: white;
     padding-top: var(--padding-top-bottom);
-    padding-bottom: var(--padding-top-bottom);
+    padding-bottom: var(--padding-webtoon-bottom);
     width: 500px;
     font-size: 20px;
     /* width: 2000px; */
