@@ -21,31 +21,30 @@ html, body {
 }
 
 .grid {
-    display: grid;
-    grid-template-areas: 
-    "  . webtoon"
-    ;
-    grid-template-columns: var(--main-width) var(--webtoon-width) ;
-    grid-gap: 10vw;
+  display: grid;
+  grid-template-areas: " . webtoon";
+  grid-template-columns: var(--main-width) var(--webtoon-width);
+  /* grid-gap: 5vw; */
+  justify-content: center;
+  align-items: start;
 }
 .gridToggle {
     grid-template-columns: auto var(--webtoon-width) auto;
 }
 .main, .side {
   position: fixed;
+  font-size: clamp(1vh, 2vh , 3vh);
   z-index: 100;
   width: var(--main-width);
-  font-size: clam(0.5rem, 1rem, 1.5rem);
   display: grid;
-  grid-template-columns: auto 80% auto;
-  grid-template-areas: 
-  "buttons textarea ."
-  ;
-  justify-content: center;
+  grid-template-columns: auto 10% auto 80% auto;
+  grid-template-areas: ". buttons . textarea .";
+  justify-content: space-around;
   align-items: center;
-    height: 100vh;
-    background: var(--blue-color);
-    -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
+  height: 100vh;
+  background: var(--blue-color);
+  -webkit-box-shadow: -3px -2px 17px 6px rgb(0 0 0 / 24%);
+  align-items: baseline;
 }
 .active {
   left: calc(var(--main-width) * -1);
@@ -64,17 +63,30 @@ background: var(--blue-color);
   cursor: pointer;
 }
 
-
-textarea{
+.textareaInput {
   grid-area: textarea;
-  /* width: var(--text-area); */
-  font-size: 1em;
-    height:85vh;
+  height: 100vh;
+}
+
+.textcontrols {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+}
+.textcontrols button {
+  margin: 0 0.5vh;
+  width: 5vh;
+  border-radius: 40%;
+}
+textarea{
+  /* font-size: 1vh; */
+  width: 100%;
+  height:85vh;
     align-self: center;
     margin-right: 1em;
     margin-right: 1em;
     padding: 1em;
-    border-radius: 6px;
+    border-radius: 1vh;
     /* background: transparent; */
     /* color: rgba(255, 255, 255, 0.699); */
     box-shadow: 2px 2px 8px rgba(black, .3);
@@ -87,9 +99,11 @@ textarea{
   grid-area: buttons;
   display: grid;
   height: 100vh;
-  /* justify-content: end; */
-  align-content: space-between;
-  padding: 0.5em 0;
+  align-content: stretch;
+  /* padding: 0.05vh 0; */
+  justify-content: center;
+  align-items: center;
+  justify-items: stretch;
 }
 
 p, #count {color: white;}
@@ -106,10 +120,10 @@ a:visited {
 button {
     background: none;
     color: var(--background);
-    font-size: 1em;
-    border: 3px solid;
-    padding: 0.5em 0.3em;
-    border-radius: 0.8em;
+    font-size: inherit;
+    border: 0.3vh solid;
+    padding: 1vh 1vh;
+    border-radius: 1vh;
     font-weight: 600;
   }
   button:hover {
