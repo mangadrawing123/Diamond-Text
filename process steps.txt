@@ -131,6 +131,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - regex grab reaplce episode
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -regex case where there is no aciton-text
+- CLOSE if left and right, the thingbelow left or right is no padding top : 0 hte first is paddingbottom0
 
 - buttons below downlaod button "remove <br> checkbox name , action-text . downlado option side turn off action or name text before downlaod.
 - choose file and idspalyte codepen : https://codepen.io/maqnus/pen/oedWmq
