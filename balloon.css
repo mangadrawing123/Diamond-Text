@@ -238,7 +238,7 @@ transition: visibility 0s linear 0.3s, opacity 0.3s;
     /* grid-template: "container"; */
     justify-items: center;
     min-height: 10em;
-    padding: 1em;
+    padding: 0 1em;
     /* border: 1em solid black; */
     hyphens: auto;
     word-wrap: break-word;
