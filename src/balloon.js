@@ -144,31 +144,107 @@ $(document).ready(function() {
         $('.grid').toggleClass("gridToggle")
     })
     $('.button.old-version').on('click', function() { console.log("hello")})
+
+    $(".download-toggle").on('click', function(e) { 
+        e.preventDefault();
+        $(".download-option-panel").toggleClass("is-visible");
+    })
 })
 
-function downloadWebtoonDesktop() {
+function downloadWebtoonImage() {
     // const balloons = document.querySelectorAll('.balloon')
     // balloons.forEach(function(balloon) { 
     //     balloon.classList.remove("selected");
     // })
     
-    $(".name").addClass("name-none-display");
-    $(".action-text").addClass("action-text-none-display");
-    $(".webtoonImage").addClass("webtoonDownload");
     let node = document.querySelector(".webtoonImage"); 
     console.log(node);
     domtoimage.toPng(node)
-        .then(function (dataUrl) {
-            $(".name").removeClass("name-none-display");
-            $(".action-text").removeClass("action-text-none-display");
-            $(".webtoonImage").removeClass("webtoonDownload");
+    .then(function (dataUrl) {
+        // $(".name").removeClass("name-none-display");
+            // $(".action-text").removeClass("action-text-none-display");
+            // $(".webtoonImage").removeClass("webtoonDownload");
             let downloadLink = document.createElement('a');
-                  downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
-                  let url = dataUrl.replace(/^data:image\/png/,'data:application/octet-stream');
-                  downloadLink.setAttribute('href', url);
-                  downloadLink.click();
+            downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
+            let url = dataUrl.replace(/^data:image\/png/,'data:application/octet-stream');
+            downloadLink.setAttribute('href', url);
+            downloadLink.click();
         })
         .catch(function (error) {
-        console.error('oops, something went wrong!', error);
-    });
-}
+            console.error('oops, something went wrong!', error);
+        });
+    }
+    
+    //checkbox downlaod _options
+
+//     $(".checkbox-name").change(function () {
+//         $(".name").toggleClass("display-none");
+//         $(".action-text").toggleClass("display-none");
+//         $(".checkbox-2000px").toggleClass("webtoonDownload");
+
+// })
+
+// function toggle(className, obj) {
+//     if ( obj.checked ) $(className).removeClass("display-none");
+//     else $(className).addClass("display-none");
+// }
+
+$(".checkbox-name").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".name").toggleClass("visibility-hidden");
+    }
+})
+$(".checkbox-action").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".action-text").toggleClass("visibility-hidden");
+    }
+})
+
+$(".checkbox-img").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".action-img").toggleClass("visibility-hidden");
+    }
+})
+$(".checkbox-panel").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".action").toggleClass("visibility-hidden");
+    }
+})
+$(".checkbox-balloon").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".balloon").toggleClass("visibility-hidden");
+    }
+})
+
+$(".checkbox-gradient").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".BACKFLASH").toggleClass("background-none");
+    }
+})
+$(".checkbox-2000px").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".webtoonImage").toggleClass("webtoon2000px");
+    }
+})
+
+$(".checkbox-transparent").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+    } else {
+        $(".webtoonImage").toggleClass("background-white");
+    }
+})

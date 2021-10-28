@@ -1,6 +1,7 @@
 :root {
   --background: white;
   --blue-color: #3E8CEC;
+  --darkerblue-color: #3b7ecf;
 
 
   --main-width: 50vw;
@@ -140,7 +141,6 @@ button {
   justify-self: center;
   align-self: center;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
-    background: white;
     padding-top: var(--padding-top-bottom);
     padding-bottom: var(--padding-webtoon-bottom);
     width: 500px;
@@ -148,10 +148,80 @@ button {
     /* width: 2000px; */
     /* font-size: 80px; */
   }
-  .webtoonDownload {
+  .background-white {
+    background: white;
+  }
+  .webtoon2000px {
     width: 2000px;
     font-size: 80px;
   }
+  .download-option-panel { 
+    position: absolute;
+    grid-area: textarea;
+    display: grid;
+    /* font-size: ; */
+    width: 40vw;
+    height: 100vh;
+    z-index: 10000;
+    align-items: center;
+    visibility: hidden;
+    align-content: stretch;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .download-option-panel.is-visible {
+    visibility: visible;
+  }
+  
+  .panel-overlay {
+    position: fixed;
+    z-index: 20;
+    width: inherit;
+    height: 85vh;
+    /* background: rgba(35, 35, 187, 0.288); */
+    background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 3vh;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s linear 0.3s, opacity 0.3s;
+  }
+  .download-option-panel.is-visible .panel-overlay {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  .panel-wrapper { 
+    position: absolute;
+    display: grid;
+    z-index: 21;
+    padding: 3vh;
+    width: 80%;
+    height: 70%;
+    border-radius: 3vh;
+    color: white;
+    background: var(--darkerblue-color);
+    align-content: space-evenly;
+    justify-content: center;
+    justify-items: stretch;
+    justify-items: center;
+}
+.panel-transition {
+  /* transition: all 0.3s 0.12s; */
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.download-option-panel.is-visible .panel-transition {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
   
   .PANEL {
     display: grid;
@@ -190,6 +260,12 @@ button {
   }
   .action-text-none-display{ display: none;}
 
+.display-block {display: block;}
+.display-none {display: none;}
+.visibility-hidden {visibility:hidden;}
+.visibility-visible {visibility: visible;}
+
+
   .container-img {
     display: grid;
     width: 100%;
@@ -209,6 +285,7 @@ button {
     width: 100%;
     /* max-height: 100%; */
     z-index: 9;
+    background: white;
   }
 /* for image positon onlys */
   /* .action-img {object-position: center;} */
@@ -477,12 +554,14 @@ justify-self: end;
 
     .BACKFLASH {
       /* width: 30vw; */
-      padding: 10vh 0;
-      background: rgb(0,0,0);
+      padding: 10em 0 20em 0;
+      /* background: rgb(0,0,0); */
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(252,176,69,0) 100%);
     }
 
-
+.background-none {
+  background: transparent;
+}
 
 
   .selected {

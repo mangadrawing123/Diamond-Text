@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/dist/balloon2.css">
     <link rel="stylesheet" href="css/share.css">
     <link rel="stylesheet" href="css/watermark.css">
+    <link rel="stylesheet" href="css/downloadCheckbox.css">
     <!-- FONT TYPE -->
     <link rel="preload" href="CCWildWordsRoman.woff2" as="font" type="font/woff2" crossorigin>
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wild+And+Crazy|Bangers|Comic+Neue|Acme|Chilanka|Coming+Soon|Neucha|Kalam|Patrick+Hand|AudioWide"> -->
@@ -29,7 +30,7 @@
           <a class="tw-h" onclick="return tbs_click()"  target="_blank">
             <img src="https://img.icons8.com/material-rounded/96/000000/twitter-squared.png">
           </a>
-          
+
       <!-- FACEBOOK -->
       <a class="fb-h" onclick="return fbs_click()" target="_blank">
         <img src="https://img.icons8.com/material-rounded/96/000000/facebook-f.png">
@@ -116,12 +117,66 @@ TITLE: I love yoo - https://i.ibb.co/nbBZcy9/image.png
                 <div class="buttons">
                     <button onclick="button()">Ctrl+Enter</button>
                     <button class="save-button"onclick="copyText()">Save Text</button>
-                    <button class="downloadWebtoonDesktop" onclick="downloadWebtoonDesktop()">Download Image (2000px width)</button>
+                    <button class="downloadOptionsBtn download-toggle">Download Webtoon</button>
                     <button class="share">Share</button>
                     <p> <span id="count">0</span><br> views <p>
                     <a href="index2.html">
                         <p class="button old-version" href="index2.html">Old Version</p>
                     </a>     
+                </div>
+
+                <!-- DOWNLOAD option panel popup -->
+                <div class="download-option-panel">
+                  <div class="panel-overlay download-toggle"></div>
+                  <div class="panel-wrapper panel-transition">
+                    <!-- Checkbox -->
+                    <div class="control-group">
+                      <h1>Webtoon Page Settings:</h1>
+    <label class="control control-checkbox checkbox-name">
+        NAME
+            <input type="checkbox" checked="checked" />
+        <div class="control_indicator"></div>
+    </label>
+    <label class="control control-checkbox checkbox-action">
+        Action Text
+            <input type="checkbox" checked="checked"/>
+        <div class="control_indicator"></div>
+    </label>
+    <label class="control control-checkbox checkbox-balloon">
+      Balloon + Text
+      <input type="checkbox" checked="checked"/>
+      <div class="control_indicator"></div>
+    </label>
+    <!-- <label class="control control-checkbox checkbox-img">
+        Image
+            <input type="checkbox" checked="checked"/>
+        <div class="control_indicator"></div>
+    </label> -->
+    <label class="control control-checkbox checkbox-panel">
+        PANEL / image
+            <input type="checkbox" checked="checked"/>
+        <div class="control_indicator"></div>
+    </label>
+<label class="control control-checkbox checkbox-gradient">
+        Gradient BG
+            <input type="checkbox" checked="checked"/>
+        <div class="control_indicator"></div>
+    </label>
+    <label class="control control-checkbox checkbox-2000px">
+        2000px width (default 500px)
+            <input type="checkbox" />
+        <div class="control_indicator"></div>
+    </label>
+
+    <label class="control control-checkbox checkbox-transparent">
+        Transparent Image (.png)
+            <input type="checkbox" checked="checked"/>
+        <div class="control_indicator"></div>
+    </label>
+  </div>
+  <!-- checkbox div -->
+  <button class="downloadImageBtn" style="font-size: 1.5em; width: 100%;" onclick="downloadWebtoonImage()">Download Image </button>
+</div>
                 </div>
         </div> <!--main-->
         
@@ -129,11 +184,10 @@ TITLE: I love yoo - https://i.ibb.co/nbBZcy9/image.png
         </div> <!--side display webtoon-->
     </div><!--grid-->
     
-        <script>
+    <!-- script apit view counts -->
+        <script> 
             var countEl=document.getElementById("count");
-
             updateVisitCount();
-
             function updateVisitCount() {
             fetch('https://api.countapi.xyz/update/alex/webpage/?amount=1')
                 .then(res => res.json())
