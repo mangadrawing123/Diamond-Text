@@ -130,12 +130,17 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - add new panel type clip-path.
 - regex grab reaplce episode
 - button textare ainsrcat text font size : https://codepen.io/robgolbeck/pen/yePRwa
+- tip change  - old veresion website - q and a - csp link old version website tips link and video
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-- buttons below downlaod button "remove <br> checkbox name , action-text . downlado option side turn off action or name text before downlaod.
+- DONWLAOD no image dispaly nened - just tet INLCUDE name checkbox, action text checkbox (default unchekced) balloon auto customized keep balloon and text , or panel. let hte user decide . just add text box with name  . tehy can play aorund . buttons below downlaod button "remove <br> checkbox name , action-text . downlado option side turn off action or name text before downlaod. allow size (800px , 1000px , 2000px width) - https://codepen.io/1jnole/pen/XKGdPG?editors=1100 - checkbox gneroator : https://doodlenerd.com/html-control/css-checkbox-generator
+
+- blalonjs regex specicase case comment last image dpaslty eone iage wohit
 - wrap PANEL and action sepreate , -> regex action case where there is no aciton-text, ignore and add image only
 - sky transtion iamge 3 paenl clip path 3 breka side or else.
 - absolute path folder iamge to link image easy.
 
+- csp tips video how to add image http link ibb vidoe tutorial
+- csp tips balllon vidoe tuotiral
 - choose file and idspalyte codepen : https://codepen.io/maqnus/pen/oedWmq
 - PANEL CLOSE if left and right, the thingbelow left or right is no padding top : 0 hte first is paddingbottom0
 - prevent restart page copied text before restarted, save text file
