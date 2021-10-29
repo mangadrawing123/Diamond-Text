@@ -21,8 +21,18 @@ $('#textInput').keydown(function (e) {
     }
 });
 
-//for balloon.js
 
+// AUTO SAVE  textarea to local storage
+$(document).ready (function() {
+    $(".textInput").val(localStorage.getItem("userText"));
+    $(".textInput").on("keyup", function(itm) { 
+        localStorage.setItem("userText", $(".textInput").val());
+
+    })
+})
+
+
+//Break word for index.html
 function breakWebtoonAt5(str) {
     let word =str.split(" ");
     let n=Math.round(Math.sqrt(word.length));
