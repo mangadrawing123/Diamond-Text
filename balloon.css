@@ -467,7 +467,7 @@ justify-self: end;
   padding: 0;
 }
 
-.FULL .action-img{height: 35em;}
+.FULL .action-img{width: 100%;}
 .ENTIRE .action-img{height: 40em;}
 
 .PARALLEL .action-img {
