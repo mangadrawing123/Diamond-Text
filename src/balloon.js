@@ -1,5 +1,11 @@
 // import domtoimage from 'dom-to-image';
 
+
+// auto click ctrl + enter when refresh
+window.onload = function() {
+    $(".ctrlEnterBtn").click();
+}
+
 //enter and tab
 $('#textInput').keydown(function (e) { 
     if (e.keyCode == 10 || e.keyCode == 13) {
@@ -9,13 +15,10 @@ $('#textInput').keydown(function (e) {
         var val = this.value,
             start = this.selectionStart,
             end = this.selectionEnd;
-
         // set textarea value to: text before caret + tab + text after caret
         this.value = val.substring(0, start) + '\t' + val.substring(end);
-
         // put caret at right position again
         this.selectionStart = this.selectionEnd = start + 1;
-
         // prevent the focus lose
         return false;
     }
