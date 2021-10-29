@@ -565,7 +565,8 @@ justify-self: end;
 }
 
 
-  .selected {
+  .selected.balloon {
     color: white;	
     background-color:var(--blue-color);
+
   }
