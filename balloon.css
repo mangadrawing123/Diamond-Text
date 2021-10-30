@@ -306,7 +306,7 @@ transition: visibility 0s linear 0.3s, opacity 0.3s;
 .nameAndBalloon {
 /* display:grid; */
 z-index: 11;
-/* margin: 0 0.4em ; */
+margin: 0 0.9em ;
 /* width: 70%; */
 /* background: orange; */
 height: auto;
