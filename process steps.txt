@@ -135,8 +135,21 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - csp tip hwoto 
 - csp tips video how to add image http link ibb vidoe tutorial
 - wrap PANEL and action sepreate , -> regex action case where there is no aciton-text, ignore and add image only
+- turn website to desktop softawre
+- autolcik c enter button when respreofe https://www.codegrepper.com/code-examples/javascript/autoclick+button+if+refresh+page+html
+- web server chrome application serice  - now save textarea on the go.
+- just clip path all of it.
+- textarea autosave : https://www.genuitec.com/forums/topic/autosave-recall-text-box-with-local-storage/ - https://stackoverflow.com/questions/42963091/how-to-save-the-value-of-textarea-to-localstorage-then-display-it-in-the-same-te
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- regex grab page number - put to 128000.0.00 - and also display with action text as well for easy locate - seperate action text and number image. ot display for easy location.can turn later if needed
+- clipstuidpaint long short pages seperate.
+- learn img grid object-fit: cover work. and how to move image around. iamge fit height?
+- no shaodw two side?!
+- svg balloon at the middle
+- checkbox donwlaod img and download text file as well.
+
 - overlap balloon type grid coepn T
+
 
 
 
