@@ -140,15 +140,20 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - web server chrome application serice  - now save textarea on the go.
 - just clip path all of it.
 - textarea autosave : https://www.genuitec.com/forums/topic/autosave-recall-text-box-with-local-storage/ - https://stackoverflow.com/questions/42963091/how-to-save-the-value-of-textarea-to-localstorage-then-display-it-in-the-same-te
+- overlap balloon type grid coepn T
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- balloon tail first child last and second child first!
+
+
+- balloon 12345 order postition? similar with image? wont' because it the balloon and naem
 - regex grab page number - put to 128000.0.00 - and also display with action text as well for easy locate - seperate action text and number image. ot display for easy location.can turn later if needed
-- clipstuidpaint long short pages seperate.
 - learn img grid object-fit: cover work. and how to move image around. iamge fit height?
 - no shaodw two side?!
 - svg balloon at the middle
 - checkbox donwlaod img and download text file as well.
+- SKEW shadow not right or left dor shaowr
+- clipstuidpaint long short pages seperate.
 
-- overlap balloon type grid coepn T
 
 
 
