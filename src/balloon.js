@@ -123,13 +123,13 @@ result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
 result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3</div>\n\n');
 result = result.replace(regexAddImgLink, '$1 - img/white.jpg');
 result = result.replace(regexLocalImgSrc, '\n<div class="container-img" display="none"><img class="action-img" src="$1" display="></div>')
-console.log(result);
 result = result.replace(regexImgSrc, '<div class="action-text">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>');
 // result = result.replace(regexImgSrc, '\n<div class="container-img"><img class="action-img" src="$2"></div>');
 result = result.replace(regexActionTextP, '<div class="action-text">$1</div>')
 result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
 result = divAddBrTagBalloonDiv(result);
 result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
+console.log(result);
 
   document.querySelector(".webtoonImage").innerHTML = result;
   
