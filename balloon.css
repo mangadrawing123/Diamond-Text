@@ -140,7 +140,7 @@ button {
   /* display: grid; */
   justify-self: center;
   align-self: center;
-    -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
+    /* -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24);  */
     padding-top: var(--padding-top-bottom);
     padding-bottom: var(--padding-webtoon-bottom);
     width: 500px;
@@ -241,7 +241,7 @@ transition: visibility 0s linear 0.3s, opacity 0.3s;
     /* height: 5em; */
     padding: 0 1em;
     /* border: 1em solid black; */
-    hyphens: auto;
+    /* hyphens: auto; */
     word-wrap: break-word;
   }
   .action > * {
@@ -320,8 +320,6 @@ drop-shadow(0px 0.05em 0px white)
 drop-shadow(0px -0.05em 0px white)
 drop-shadow(0.05em 0.05em 0px white);
 margin: 0px;padding: 0px;
-/* display: none; */
-  /* visibility: hidden; */
 }
 .name , .action-text {
   visibility: hidden;
@@ -334,19 +332,19 @@ margin: 0px;padding: 0px;
       font-family: 'CC Wild Words';
       font-weight: normal;
       font-style: normal;
-  /* font-size: 0.8rem; */
+  /* font-size: 1em; */
     /* line-height: 0.9; */
     padding: 2em 2em;
     border-radius: 50%;
-    hyphens: auto;
+    /* hyphens: auto; */
     text-align: center;
     background: white;
-/* background: greenyellow; */
+    /* clip-path: ellipse(49% 42% at 50% 50%); */
+    /* background: greenyellow; */
 }
 .balloon + .balloon{
     margin-top: -2em;
 }
-
 
 /* balloon and ballon types */
 
@@ -375,7 +373,7 @@ margin: 0px;padding: 0px;
 }
 .double .balloon {
   /* font-family: "Neucha"; */
-  border: 5px double black;
+  border: 0.5em double black;
 }
 .dark .balloon {
   color: white;
@@ -426,19 +424,6 @@ margin: 0px;padding: 0px;
     drop-shadow(0px 0.05em 0px white) 
     drop-shadow(0px -0.05em 0px white)
     drop-shadow(0.05em 0.05em 0px white);
-}
-/*altenrative balloon */
-.nameAndBalloon:nth-child(odd) {
-justify-self: end;
-}
-.balloon:nth-child(odd) {
-justify-self: start;
-}
-.balloon:nth-child(even) {
-justify-self: end;
-}
-.mini:nth-child(odd) {
-  justify-self: end;
 }
 
 /* .FULL {height: 100%;} */
@@ -574,3 +559,14 @@ justify-self: end;
     background-color:var(--blue-color);
 
   }
+
+/*altenrative balloon */
+.nameAndBalloon:nth-child(odd) {
+justify-self: end;
+}
+.balloon:nth-child(odd) {
+justify-self: start;
+}
+.balloon:nth-child(even) {
+justify-self: end;
+}

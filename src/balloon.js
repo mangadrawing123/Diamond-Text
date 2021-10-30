@@ -244,12 +244,12 @@ $(".checkbox-transparent").change(function() {
 
 
 // ons screen name and action remove
-$(".nameRemoveCheckbox").change(function() {
-    if($(this).is(":checked")) {
-        alert("checked");
-        $(".name, .action-text").toggleClass("visibility-hidden");
-    } else {
-        // alert("hello")
-        $(".name, .action-text").toggleClass("visibility-visible");
-    }
-})
+// $(".nameRemoveCheckbox").change(function() {
+//     if($(this).is(":checked")) {
+//         alert("checked");
+//         $(".name, .action-text").toggleClass("visibility-hidden");
+//     } else {
+//         // alert("hello")
+//         $(".name, .action-text").toggleClass("visibility-visible");
+//     }
+// })
