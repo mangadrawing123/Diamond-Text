@@ -321,6 +321,10 @@ drop-shadow(0px -0.05em 0px white)
 drop-shadow(0.05em 0.05em 0px white);
 margin: 0px;padding: 0px;
 /* display: none; */
+  /* visibility: hidden; */
+}
+.name , .action-text {
+  visibility: hidden;
 }
 .name-none-display {
   display: none;

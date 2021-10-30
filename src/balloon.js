@@ -3,7 +3,7 @@
 
 // auto click ctrl + enter when refresh
 window.onload = function() {
-    $(".ctrlEnterBtn").click();
+    $(".ctrlEnterBtn, #nameRemoveCheckbox").click();
 }
 
 //enter and tab
@@ -165,18 +165,9 @@ $(document).ready(function() {
 })
 
 function downloadWebtoonImage() {
-    // const balloons = document.querySelectorAll('.balloon')
-    // balloons.forEach(function(balloon) { 
-    //     balloon.classList.remove("selected");
-    // })
-    
     let node = document.querySelector(".webtoonImage"); 
-    console.log(node);
     domtoimage.toPng(node)
     .then(function (dataUrl) {
-        // $(".name").removeClass("name-none-display");
-            // $(".action-text").removeClass("action-text-none-display");
-            // $(".webtoonImage").removeClass("webtoonDownload");
             let downloadLink = document.createElement('a');
             downloadLink.setAttribute('download', 'DiamondWebtoonLayout-Episode-.png');
             let url = dataUrl.replace(/^data:image\/png/,'data:application/octet-stream');
@@ -187,21 +178,10 @@ function downloadWebtoonImage() {
             console.error('oops, something went wrong!', error);
         });
     }
-    
-    //checkbox downlaod _options
 
-//     $(".checkbox-name").change(function () {
-//         $(".name").toggleClass("display-none");
-//         $(".action-text").toggleClass("display-none");
-//         $(".checkbox-2000px").toggleClass("webtoonDownload");
 
-// })
 
-// function toggle(className, obj) {
-//     if ( obj.checked ) $(className).removeClass("display-none");
-//     else $(className).addClass("display-none");
-// }
-
+    // checkbox list functio
 $(".checkbox-name").change(function() {
     if($(this).is(":checked")) {
         alert("checked");
@@ -259,5 +239,17 @@ $(".checkbox-transparent").change(function() {
         alert("checked");
     } else {
         $(".webtoonImage").toggleClass("background-white");
+    }
+})
+
+
+// ons screen name and action remove
+$(".nameRemoveCheckbox").change(function() {
+    if($(this).is(":checked")) {
+        alert("checked");
+        $(".name, .action-text").toggleClass("visibility-hidden");
+    } else {
+        // alert("hello")
+        $(".name, .action-text").toggleClass("visibility-visible");
     }
 })
