@@ -140,7 +140,7 @@ button {
   /* display: grid; */
   justify-self: center;
   align-self: center;
-    /* -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24);  */
+    -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
     padding-top: var(--padding-top-bottom);
     padding-bottom: var(--padding-webtoon-bottom);
     width: 500px;
