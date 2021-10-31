@@ -461,7 +461,8 @@ margin: 0px;padding: 0px;
 .NONE img{padding: 0;}
 
 .TITLE.PANEL {padding-bottom: 0;}
-.episode-text {text-align: center;}
+.episode-text {text-align: center; padding-bottom: 10em;}
+
 
 .NO .container-img,
 .TITLE .container-img,
@@ -471,7 +472,7 @@ margin: 0px;padding: 0px;
 }
 
 .TITLE .action,
-.episode-text,
+/* .episode-text, */
 .FULL .action,
 .FULLWIDTH .action,
 .ENTIRE .action, 
