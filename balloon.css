@@ -226,9 +226,8 @@ transition: visibility 0s linear 0.3s, opacity 0.3s;
   .PANEL {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 2.5em minmax(6em, auto) 2.5em auto;
-    margin-top: var(--padding-top-bottom-panel);
-    margin-bottom: var(--padding-top-bottom-panel);
+    grid-template-rows: auto 2.5em minmax(6em, auto) 0.5em auto;
+    padding: var(--padding-top-bottom-panel) 0 ;
     /* background: lightblue; */
   }
   
@@ -354,6 +353,17 @@ margin: 0px;padding: 0px;
     /* clip-path: ellipse(49% 42% at 50% 50%); */
     /* background: greenyellow; */
 }
+/* .balloon:last-of-type::after {
+    content:"";
+  width: 0.5em;
+  height: 3em;
+  position:absolute;
+  clip-path: polygon(49% 100%, 0 0, 100% 0);
+  bottom:-2.5em; 
+  left: 50%; 
+  background: white;
+  display:block;
+} */
 .balloon + .balloon{
     margin-top: -2em;
 }
@@ -425,6 +435,7 @@ margin: 0px;padding: 0px;
     drop-shadow(0px 0.05em 0px black) 
     drop-shadow(0px -0.05em 0px black)
     drop-shadow(0.05em 0.05em 0px black);
+    /* background: lightblue; */
 }
 
 
@@ -582,4 +593,48 @@ justify-self: start;
 }
 .balloon:nth-child(even) {
 justify-self: end;
+}
+
+
+
+/* .nameAndBalloon .balloon:last-of-type::after {
+    content:"";
+  width: 0.7em;
+  height: 4em;
+  position:absolute;
+  clip-path: polygon(49% 100%, 0 0, 100% 0);
+  bottom:-2.5em; 
+  transform: rotate(-30deg);
+  transform: translate(200%, 0) rotate(
+343deg);
+  background: inherit;
+  display:block;
+} */
+
+.nameAndBalloon:nth-child(2) .balloon:last-of-type::after {
+    content:"";
+  width: 0.7em;
+  height: 4em;
+  position:absolute;
+  clip-path: polygon(49% 100%, 0 0, 100% 0);
+  bottom:-2.5em;
+  transform-origin: top center;
+  transform: rotate(-30deg);
+  transform: translate(200%, 0) rotate(
+343deg);
+  background: inherit;
+  display:block;
+}
+
+.nameAndBalloon:nth-child(3) .balloon:first-of-type::before {
+    content:"";
+  width: 0.5em;
+  height: 2em;
+  position:absolute;
+  transform-origin: bottom center;
+  clip-path: polygon(0 100%, 48% 0, 100% 100%);
+  top: -1.5em; 
+  transform: translate(400%, 0) rotate(343deg);
+  background: inherit;
+  display:block;
 }
