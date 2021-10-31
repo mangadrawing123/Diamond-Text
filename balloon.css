@@ -401,6 +401,7 @@ margin: 0px;padding: 0px;
   color: white;
   background-color: black;
 }
+
 .phone .balloon {
   /* border: 0.3rem double black; */
   border-radius: 0;
@@ -638,4 +639,27 @@ justify-self: end;
   transform: translate(400%, 0) rotate(343deg);
   background: inherit;
   display:block;
+}
+
+
+.nameAndBalloon.dark ~ .balloon:last-of-type::before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: inherit;
+  border-radius: 30px;
+}
+
+.nameAndBalloon.dark ~ .balloon:last-of-type::after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: inherit;
 }
