@@ -96,6 +96,7 @@ textarea{
     color: black;
     background: white;
 }
+.instruction-link { justify-self: center;}
 
 .buttons {
   grid-area: buttons;
