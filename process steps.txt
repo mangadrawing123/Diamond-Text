@@ -145,6 +145,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - balloon thought bubble? clip pth three?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - turn to dekstop
+- ballonon boxshaodw: https://codepen.io/alvaromontoro/pen/zYqzgoy?editors=1100
 
 - regex grab page number - put to 128000.0.00 - and also display with action text as well for easy locate - seperate action text and number image. ot display for easy location.can turn later if needed
 - balloon 12345 order postition? similar with image? wont' because it the balloon and naem
