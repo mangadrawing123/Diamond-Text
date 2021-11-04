@@ -1,9 +1,6 @@
-// import domtoimage from 'dom-to-image';
-
-
 // auto click ctrl + enter when refresh
 window.onload = function() {
-    $(".ctrlEnterBtn, #nameRemoveCheckbox").click();
+    $(".ctrlEnterBtn").click();
 }
 
 //enter and tab
@@ -24,7 +21,6 @@ $('#textInput').keydown(function (e) {
     }
 });
 
-
 // AUTO SAVE  textarea to local storage
 $(document).ready (function() {
     $(".textInput").val(localStorage.getItem("userText"));
@@ -33,6 +29,21 @@ $(document).ready (function() {
 
     })
 })
+
+//remove name and action hidden 
+// function nameActionRemoveCheckbox(string) {
+//     let result = "";
+//     let regexImgSrc = /^(?!\t|\n|<)(\w.+)\s?\-\s+(.*)\n/gm;
+//   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
+//         if($(".nameActionRemoveCheckbox").is(':checked')) {
+//         result = string.replace(regexImgSrc, '<div class="action-text">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>')
+//         result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
+//           } else {
+//         result = string.replace(regexImgSrc, '<div class="action-text" style="visibility: hidden;">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>')
+//         result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name" style="visibility: hidden;">$1</div>\n<div class="container $3">\n$4</div></div>\n');
+//           }
+//           return result;
+// }
 
 
 //Break word for index.html
@@ -86,7 +97,7 @@ function divAddBrTagBalloonDiv(divInput) {
         return result;
 }
 
-// end ballon.js
+// end ballon.je
 
 function copyText() {
     let textarea = document.querySelector("#textInput");
@@ -98,7 +109,6 @@ function copyText() {
 function button() { //ENTER BUTTON
   var s = document.getElementById("textInput").value;
   let result = '';
-
   let regexTwoThreeEnter = /\n{2,}/gms;
   let regexEpisodeChapter = /^(EPISODE|CHAPTER)\W+(\w.+)/gm;
   let regexBackflashStart = /^(BACKFLASH)\s+(START)/gms
@@ -109,12 +119,8 @@ function button() { //ENTER BUTTON
   let regexLocalImgSrc = /^\s-\s(img\/white.jpg)/gm;    
     let regexImgSrc = /^(?!\t|\n|<)(\w.+)\s?\-\s+(.*)\n/gm;
 //   let regexImgSrc = /(\W+)((http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-]))/gm;
-  let regexActionTextP = /(^(?!\t|<).+)/gm;
   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
   let regexBalloon = /(^\t)(\S.*)/gm;
-
-  
-//   let regexActionMini = /^\t{1,}\((\S.*)\)/gm;
 result = s.replace(regexTwoThreeEnter, '\n');
 result = result.replace(regexEpisodeChapter, '<div class="$1 episode-text">$1 $2</div>')
 result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
@@ -123,16 +129,20 @@ result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
 result = result.replace(regexPANELaction, '<div class="PANEL $1">\n<div class="action">\n$2\n</div>$3</div>\n\n');
 result = result.replace(regexAddImgLink, '$1 - img/white.jpg');
 result = result.replace(regexLocalImgSrc, '\n<div class="container-img" display="none"><img class="action-img" src="$1" display="></div>')
-result = result.replace(regexImgSrc, '<div class="action-text">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>');
-// result = result.replace(regexImgSrc, '\n<div class="container-img"><img class="action-img" src="$2"></div>');
-result = result.replace(regexActionTextP, '<div class="action-text">$1</div>')
-result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
+// result = nameActionRemoveCheckbox(result);
+        if($(".nameActionRemoveCheckbox").is(':checked')) {
+        result = result.replace(regexImgSrc, '<div class="action-text">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>')
+        result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
+          } else {
+        result = result.replace(regexImgSrc, '<div class="action-text" style="visibility: hidden;">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>')
+        result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name" style="visibility: hidden;">$1</div>\n<div class="container $3">\n$4</div></div>\n');
+          }
 result = divAddBrTagBalloonDiv(result);
 result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
-console.log(result);
+          
+          console.log(result);
+document.querySelector(".webtoonImage").innerHTML = result;
 
-  document.querySelector(".webtoonImage").innerHTML = result;
-  
   ///copy each balloon
   $(document).ready(function() {
       $('.balloon').on('click', function() {

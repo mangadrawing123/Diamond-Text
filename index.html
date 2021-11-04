@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="css/watermark.css">
     <link rel="stylesheet" href="css/downloadCheckbox.css">
     <!-- FONT TYPE -->
-    <link rel="preload" href="CCWildWordsRoman.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- <link rel="preload" href="CCWildWordsRoman.woff2" as="font" type="font/woff2" crossorigin> -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wild+And+Crazy|Bangers|Comic+Neue|Acme|Chilanka|Coming+Soon|Neucha|Kalam|Patrick+Hand|AudioWide"> -->
 
-  <script src="html2canvas.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -163,14 +162,13 @@ EPISODE: 15 end
            <!-- textareaInput div end -->
 <br>
                 <div class="buttons">
+                    <label for="checkbox" >
+                      Name and action turn on
+                      <input type="checkbox" name="removeName" class="nameActionRemoveCheckbox"/>
+                    </label>
                     <button class="ctrlEnterBtn" onclick="button()">Ctrl+Enter</button>
                     <button class="save-button"onclick="copyText()">Save Text</button>
                     <button class="downloadOptionsBtn download-toggle">Download Webtoon</button>
-                    <label for="checkbox" class="nameRemoveCheckbox">
-                      Name and action turn off
-                      <input type="checkbox" name="removeName" id="nameRemoveCheckbox" value="Name" checked="checked" />
-                    </label>
-                  
                     <button class="share">Share</button>
                     <p> <span id="count">0</span><br> views <p>
                     <a href="index2.html">
@@ -252,7 +250,7 @@ EPISODE: 15 end
 function loadScripts(){
    var directory = 'src/';
    var extension = '.js';
-   var files = ['balloon', 'script', 'share', 'watermark', 'localStorage','textareaFontsizeIncrease'];  
+   var files = ['balloon', 'share', 'localStorage','textareaFontsizeIncrease'];  
    for (var file of files){ 
        var path = directory + file + extension; 
        var script = document.createElement("script");""

@@ -47,21 +47,21 @@ function breakWebtoonMoreThan5(str) {
     return "\t" + finalResult;
 }
 
-function divAddBrTagBalloonDiv(divInput) {
-        let result = "";
-        let sentenceArray = divInput.split("\n");
-        sentenceArray.forEach(sentence => {
-          if (sentence.startsWith("\t")) {
-            if (sentence.split(" ").length <= 6) {
-                result += breakWebtoonAt5(sentence) + '\n';
-            } else {
-                result +=  breakWebtoonMoreThan5(sentence) + '\n';
-            }
-          } else {
-                  result += sentence + "\n";
-      }})
-        return result;
-}
+// function divAddBrTagBalloonDiv(divInput) {
+//         let result = "";
+//         let sentenceArray = divInput.split("\n");
+//         sentenceArray.forEach(sentence => {
+//           if (sentence.startsWith("\t")) {
+//             if (sentence.split(" ").length <= 6) {
+//                 result += breakWebtoonAt5(sentence) + '\n';
+//             } else {
+//                 result +=  breakWebtoonMoreThan5(sentence) + '\n';
+//             }
+//           } else {
+//                   result += sentence + "\n";
+//       }})
+//         return result;
+// }
 
 // end ballon.js
 
