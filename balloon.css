@@ -258,7 +258,7 @@ transition: visibility 0s linear 0.3s, opacity 0.3s;
     /* margin-left: 1em; */
     filter: none;
     text-shadow: -0.07em -0.07em 0 white, 0.07em -0.07em 0 white, -0.07em 0.07em 0 white, 0.07em 0.07em 0 white;
-    z-index: 11;
+    z-index: 100000;
     /* display: none; */
   }
   .action-text-none-display{ display: none;}
@@ -333,8 +333,7 @@ drop-shadow(0.05em 0.05em 0px white);
 margin: 0px;padding: 0px;
 }
 .name , .action-text {
-  visibility: hidden;
-  /* display: hidden; */
+  /* visibility: hidden; */
 }
 .name-none-display {
   display: none;
