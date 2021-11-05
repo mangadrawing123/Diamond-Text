@@ -9,6 +9,13 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'Jack Armstrong BB';
+    src: url('fonts/Jack-Armstrong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'HLcomic1_normal';
     src: url('fonts/HLcomic1_normal.ttf') format('truetype');
     font-weight: normal;
@@ -202,6 +209,7 @@ button {
 .webtoonImage {
   grid-area: webtoon;
   /* display: grid; */
+  font-family: "CC Wild Words";
   justify-self: center;
   align-self: center;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
@@ -482,9 +490,10 @@ margin: 0px;padding: 0px;
   font-family: "Bangers";
 }
 .yell .balloon, .loud .balloon{
-  font-family: "Zud Juice";
+  /* font-family: "Zud Juice"; */
   padding: 3em;
   font-style: italic;
+  font-weight: 900;
     border-radius: 0;
     clip-path: polygon(8% 6%, 24% 19%, 28% 1%, 36% 16%, 45% 0%, 46% 15%, 64% 4%, 66% 18%, 84% 5%, 81% 26%, 100% 19%, 89% 37%, 97% 45%, 100% 49%, 88% 62%, 100% 83%, 81% 81%, 87% 100%, 68% 86%, 64% 100%, 47% 84%, 39% 98%, 31% 83%, 15% 98%, 15% 78%, 1% 88%, 10% 66%, 1% 67%, 11% 54%, 1% 43%, 10% 34%, 2% 18%, 17% 23%);
 }
