@@ -143,8 +143,18 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - overlap balloon type grid coepn T
 - balloon tail first child last and second child first!
 - balloon thought bubble? clip pth three?
+- cheatshehtst enw tagaraelstee tab link 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- differnt optiton for text font comic 
+
+- checkbox unable action text and name regex two option
+- txt file comic scirpt test temapltet insert to textarea.
+- store firebase text file liek gogole docs , users sign in
+- difert font failty or ehte wbestoon iamge, if pssobilte have support for hte diffenrt langauge textaera as welewl
+- switch div main with working with balloon only or dscirpt to dilaog or dialgo-to-dialog only
+- csp is it pososble to chance frmae cnavas size animation ?
 - turn to dekstop
+
 - ballonon boxshaodw: https://codepen.io/alvaromontoro/pen/zYqzgoy?editors=1100
 
 - regex grab page number - put to 128000.0.00 - and also display with action text as well for easy locate - seperate action text and number image. ot display for easy location.can turn later if needed
