@@ -374,14 +374,14 @@ margin: 0px;padding: 0px;
 .balloon {
   /* /* font-family: 'Komika Text Kaps'; */
   /* font-family: 'HLcomic1_normal'; */
-      font-family: 'CC Wild Words';
+      /* font-family: 'CC Wild Words'; */
       /* font-family: 'JackArmstrongBB'; */
       /* font-family: 'CC Astro City'; */
       /* text-transform: uppercase; */
       font-weight: normal;
       font-style: normal;
   /* font-size: 1em; */
-    /* line-height: 0.9; */
+    line-height: 0.9;
     padding: 2em 2em;
     border-radius: 50%;
     /* hyphens: auto; */
