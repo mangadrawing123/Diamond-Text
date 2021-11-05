@@ -146,6 +146,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - cheatshehtst enw tagaraelstee tab link 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - differnt optiton for text font comic 
+- replace 4 \s to one tab, 8 tab for 2 \t
 
 - checkbox unable action text and name regex two option
 - txt file comic scirpt test temapltet insert to textarea.
