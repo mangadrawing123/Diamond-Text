@@ -455,7 +455,8 @@ margin: 0px;padding: 0px;
 }
 .think .balloon, .thought .balloon {
   border-radius: 0;
-  font-family: "CC Jim Lee";
+  /* font-family: "CC Jim Lee"; */
+  font-style: italic;
 }
 .double .balloon {
   /* font-family: "Neucha"; */
@@ -500,7 +501,8 @@ margin: 0px;padding: 0px;
 .weird .balloon {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
-.sound {
+.sound .balloon{
+  
   font-family: "Banger"
 }
 
@@ -714,27 +716,4 @@ justify-self: start;
   transform: translate(400%, 0) rotate(343deg);
   background: inherit;
   display:block;
-}
-
-
-.nameAndBalloon.dark ~ .balloon:last-of-type::before{
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 50px;
-  width: 30px;
-  height: 30px;
-  background: inherit;
-  border-radius: 30px;
-}
-
-.nameAndBalloon.dark ~ .balloon:last-of-type::after{
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: 30px;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background: inherit;
 }
