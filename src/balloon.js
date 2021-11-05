@@ -26,25 +26,15 @@ $(document).ready (function() {
     $(".textInput").val(localStorage.getItem("userText"));
     $(".textInput").on("keyup", function(itm) { 
         localStorage.setItem("userText", $(".textInput").val());
-
     })
 })
 
-//remove name and action hidden 
-// function nameActionRemoveCheckbox(string) {
-//     let result = "";
-//     let regexImgSrc = /^(?!\t|\n|<)(\w.+)\s?\-\s+(.*)\n/gm;
-//   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
-//         if($(".nameActionRemoveCheckbox").is(':checked')) {
-//         result = string.replace(regexImgSrc, '<div class="action-text">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>')
-//         result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name">$1</div>\n<div class="container $3">\n$4</div></div>\n');
-//           } else {
-//         result = string.replace(regexImgSrc, '<div class="action-text" style="visibility: hidden;">$1</div>\n<div class="container-img"><img class="action-img" src="$2"></div>')
-//         result = result.replace(regexNameBalloonType, '<div class="nameAndBalloon">\n<div class="name" style="visibility: hidden;">$1</div>\n<div class="container $3">\n$4</div></div>\n');
-//           }
-//           return result;
-// }
-
+// change font family webtoon image fav_language
+$(function() {
+    $("#ListMenuFonts").change(function() {
+        $(".balloon").css("font-family", $(this).val());
+    })
+})
 
 //Break word for index.html
 function breakWebtoonAt5(str) {
@@ -159,6 +149,9 @@ document.querySelector(".webtoonImage").innerHTML = result;
         $(this).toggleClass("selected");
       });
     });
+
+
+
 }
 
 $(document).ready(function() {

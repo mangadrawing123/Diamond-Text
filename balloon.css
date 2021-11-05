@@ -1,3 +1,33 @@
+@import url(//db.onlinewebfonts.com/c/71976204cf6d53991ececd406824ec45?family=JackArmstrongBB);
+
+@font-face {
+    font-family: 'CC Astro City';
+    src: url('fonts/CCAstroCity.woff2') format('woff2'),
+        url('fonts/CCAstroCity.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HLcomic1_normal';
+    src: url('fonts/HLcomic1_normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Komika Text Kaps';
+    src: url('fonts/KomikaTextKaps.woff2') format('woff2'),
+        url('fonts/KomikaTextKaps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* @font-face {
+  font-family: 'komika';
+  src: url('fonts/KOMTXTK_.ttf') format('truetype');
+  font-display: swap;
+} */
 :root {
   --background: white;
   --blue-color: #3E8CEC;
@@ -18,9 +48,7 @@ html, body {
   margin:0px;
   padding:0px;
   background: var(--background);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
-}
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; }
 
 .grid {
   display: grid;
@@ -73,12 +101,16 @@ background: var(--blue-color);
 .textcontrols {
   display: grid;
   grid-auto-flow: column;
-  justify-content: end;
+  justify-content: space-between;
 }
 .textcontrols button {
   margin: 0 0.5vh;
   width: 5vh;
   border-radius: 40%;
+}
+#ListMenuFonts {
+  margin: 0.5em;
+  justify-self: start;
 }
 textarea{
   /* font-size: 1vh; */
@@ -340,7 +372,12 @@ margin: 0px;padding: 0px;
 }
 
 .balloon {
+  /* /* font-family: 'Komika Text Kaps'; */
+  /* font-family: 'HLcomic1_normal'; */
       font-family: 'CC Wild Words';
+      /* font-family: 'JackArmstrongBB'; */
+      /* font-family: 'CC Astro City'; */
+      /* text-transform: uppercase; */
       font-weight: normal;
       font-style: normal;
   /* font-size: 1em; */

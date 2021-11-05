@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="css/share.css">
     <link rel="stylesheet" href="css/watermark.css">
     <link rel="stylesheet" href="css/downloadCheckbox.css">
+    <link rel="preload" href="fonts/CCAstroCity.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HLcomic1_normal.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/KomikaTextKaps.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="CCWildWordsRoman.woff2" as="font" type="font/woff2" crossorigin>
+
+
     <!-- FONT TYPE -->
-    <!-- <link rel="preload" href="CCWildWordsRoman.woff2" as="font" type="font/woff2" crossorigin> -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wild+And+Crazy|Bangers|Comic+Neue|Acme|Chilanka|Coming+Soon|Neucha|Kalam|Patrick+Hand|AudioWide"> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -58,55 +63,54 @@
             <div class="toggle-btn"></div>
 
             <div class="textareaInput">
-            <div class="textcontrols">
+              <div class="textcontrols">
+              <select name="ListMenuFonts" id="ListMenuFonts">
+                <option value="CC Wild Words">default-CC Wild Words</option>
+                <option value="JackArmstrongBB">French - JackArmstrongBB</option>
+                <option value="HLcomic1_normal">Vietnamese - HLcomic1_normal</option>
+              </select>
+              <div>
               <button role="button" id="decreaseText"><span>-</span></button>
               <button role="button" id="increaseText"><span>+</span></button>
+              </div>
             </div> 
             <!-- textcontrols div end -->
             <textarea name="" class="textInput" id="textInput" cols="1" rows="1">
-TITLE: nonsense - img/img4.jpg
+TITLE: Testing Webtoon Layout - img/img4.jpg
 EPISODE: 15 
 
-link - img2\Timeline 10000.png
+Ahhh, comme il fait beau. Enfin du soleil ! C’est bien agréable, vous ne trouvez pas  - img2\Timeline 10000.png
 		ghariel
-	something erky
-	but what if 
-
+	Bonjour.
+	Comment ça va ?
 
 BACKFLASH START
-FULL NO: Shin asked Yoo for a dance, - img2\Timeline 10001.png
+FULL NO: Minh hỏi rằng mình có được đi ra biển- img2\Timeline 10001.png
 		Shin
-	You know that will be no easy task for you right?
+	Ça va très bien, merci. Et vous?
 		alis
-	I won't guarantty any of this will work out
+	Et vous?
+	Nếu mà nó như thế này?
 
 
 SHORT: Shin look at Yoo while they both walk into the dancefloor - img2\Timeline 10003.png
 		Yoo
-	It's quite crowded tonight, right?
-	Let go look for him
-	He won't be far!
+	Ça va, merci.
 		Shin (cute)
-	If that what you think about me
-	Then I have no other choice!
+	Comment vous appelez-vous ?
 
 
 FULL NO: Diana poiting the wrong doing 8- img2\Timeline 10002.png
 		dian
-	I can't bear the thought that he left us.
-	without even saying anything
-
+	Je m'appelle Diana, et vous ?
 		dian
-	Such a selfish man he is
-	Pathetic!
+	Comment vous appelez-vous ?
 
 FULL LONG NO SKEW: Yoo can't lift her face up because she is can't contained her happiness- img2\Timeline 10003.png
 		Yoo (dark)
-	Will I be able to handle the task?
-	You ask?
-
+	Je m'appelle Dominique.
 		yoo (dark)
-	Don't worry!
+	Enchanté(e), Dominique.	
 
 FULL NO SKEW UP: Shin carefully held Yoo's hand to the dance floor. - img2\Timeline 10004.png
 		diana (think)
@@ -114,53 +118,50 @@ FULL NO SKEW UP: Shin carefully held Yoo's hand to the dance floor. - img2\Timel
 
 FULL LONGG NO SKEW: Shin carefully held Yoo's hand to the dance floor. - img2\Timeline 10004.png
 		Shin (think)
-	I don't care what he will do...
+	Et vous venez d'où, Dominique?
 		DIANA (think)
-	I will certainly won't let him get away that easily
+	Je viens de France. Je suis français(e).
 
 
 FOCUS: YeognGi notice the two dancing together faraway - img2\Timeline 10005.png
 		alisa
 	...
 		alisa (dark)
-	You're out of your mind	
+	Ah, vous êtes français(e). 
 
 Yeongi look away while the other two dancing and having fun, he don't feel good. - img2\Timeline 10006.png
 		YeongGi (dark)
-	what do I expected from you?!
-	You are alwasy like this!
+	Je viens des États-Unis. 
 		shi (dark)
-	I won't be able to stop you!
+	Je suis américain(e).
 
 BACKFLASH END
 
 I love yoo - img2\Timeline 10007.png
 		alisa
-	do what ever you need to do!
+	Ah, vous êtes américain(e). 
 		alis
-	I believe in you!
+	Vous venez d'où exactement ?
 
 
 FULL NO: dian look at alisa - img2\Timeline 10008.png
 		diana
-	wait...
-	You do believe in me?
+	Ah, vous êtes professeur d'anglais ? 
 		diana
-	no kidding?! 
-	right
-
+	Vous parlez anglais ?
 
 LONG FULL: dian look at alisa - img2\Timeline 10009.png
 		diana
-	thanks sis!
+	Oui. Et vous parlez français ?
 		diana
-	I really appreciate it!
+	Oui. Un petit peu.
 
 
 NONE: emtpy
 
 TITLE: nonsense - img/img4.jpg
 EPISODE: 15 end
+
 
 
 
@@ -275,7 +276,6 @@ function loadScripts(){
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
