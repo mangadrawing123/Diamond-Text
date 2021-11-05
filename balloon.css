@@ -366,6 +366,7 @@ margin: 0px;padding: 0px;
 }
 .name , .action-text {
   /* visibility: hidden; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;
 }
 .name-none-display {
   display: none;

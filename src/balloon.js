@@ -30,11 +30,11 @@ $(document).ready (function() {
 })
 
 // change font family webtoon image fav_language
-$(function() {
-    $("#ListMenuFonts").change(function() {
-        $(".balloon").css("font-family", $(this).val());
-    })
-})
+// $(function() {
+//     $("#ListMenuFonts").change(function() {
+//         $(".webtoonImage").css("font-family", $(this).val());
+//     })
+// })
 
 //Break word for index.html
 function breakWebtoonAt5(str) {
@@ -130,6 +130,11 @@ result = result.replace(regexLocalImgSrc, '\n<div class="container-img" display=
 result = divAddBrTagBalloonDiv(result);
 result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
           
+$(function() {
+    $("#ListMenuFonts").change(function() {
+        $(".webtoonImage").css("font-family", $(this).val());
+    })
+})
           console.log(result);
 document.querySelector(".webtoonImage").innerHTML = result;
 
