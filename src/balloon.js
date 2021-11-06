@@ -100,6 +100,8 @@ function button() { //ENTER BUTTON
   var s = document.getElementById("textInput").value;
   let result = '';
   let regexTwoThreeEnter = /\n{2,}/gms;
+  let regex4SpaceToTab = /(^\s{3,5})(\w.*)/gm;
+  let regex5SpaceTwoTabs = /(^\s{5,})(\w.*)/gm;
   let regexEpisodeChapter = /^(EPISODE|CHAPTER)\W+(\w.+)/gm;
   let regexBackflashStart = /^(BACKFLASH)\s+(START)/gms
   let regexBackflashEnd = /^.*\bEND\b.*/gm; //anythign END
@@ -112,6 +114,8 @@ function button() { //ENTER BUTTON
   let regexNameBalloonType = /^\t{2,}(\w+)\s+?(\(?(\w+)\)?\n)?(.*?)(?=^\t{2,}|^(?!\t)|$(?!\n))/gms; 
   let regexBalloon = /(^\t)(\S.*)/gm;
 result = s.replace(regexTwoThreeEnter, '\n');
+result = s.replace(regex4SpaceToTab, "\t$2");
+result = s.replace(regex5SpaceTwoTabs, "\t\t$2");
 result = result.replace(regexEpisodeChapter, '<div class="$1 episode-text">$1 $2</div>')
 result = result.replace(regexBackflashStart, '<div class="$1 $2">'); //BACKFLASH START
 result = result.replace(regexBackflashEnd, '</div>\n'); //BACKFLASH end
