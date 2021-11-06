@@ -98,7 +98,7 @@ function copyText() {
 
 function button() { //ENTER BUTTON
   var s = document.getElementById("textInput").value;
-  let result = '';
+  let tresult = '';
   let regexTwoThreeEnter = /\n{2,}/gms;
   let regex4SpaceToTab = /(^\s{3,5})(\w.*)/gm;
   let regex5SpaceTwoTabs = /(^\s{5,})(\w.*)/gm;
