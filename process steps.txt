@@ -144,19 +144,25 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - balloon tail first child last and second child first!
 - balloon thought bubble? clip pth three?
 - cheatshehtst enw tagaraelstee tab link 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- downlaod , Imfinenow, Kehard - Girl Can Get Sad  - 
 - differnt optiton for text font comic 
+- csp link webtoon image setting
 - replace 4 \s to one tab, 8 tab for 2 \t
-
+-  dekstop pracitce small react .
 - checkbox unable action text and name regex two option
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- desktop app save textarea at txt in local folder , and able to open local txt folder.
+
+
+- whisper tail f up
 - txt file comic scirpt test temapltet insert to textarea.
 - store firebase text file liek gogole docs , users sign in
 - difert font failty or ehte wbestoon iamge, if pssobilte have support for hte diffenrt langauge textaera as welewl
 - switch div main with working with balloon only or dscirpt to dilaog or dialgo-to-dialog only
 - csp is it pososble to chance frmae cnavas size animation ?
-- turn to dekstop
 
-- ballonon boxshaodw: https://codepen.io/alvaromontoro/pen/zYqzgoy?editors=1100
+- ballonon boxshaodw: https://codepen.io/alva romontoro/pen/zYqzgoy?editors=1100
 
 - regex grab page number - put to 128000.0.00 - and also display with action text as well for easy locate - seperate action text and number image. ot display for easy location.can turn later if needed
 - balloon 12345 order postition? similar with image? wont' because it the balloon and naem
