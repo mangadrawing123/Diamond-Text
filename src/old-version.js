@@ -1,6 +1,14 @@
 window.onload = function() {
-    $('#pasteButton').click();
+    // $('#pasteButton').click();
 }
+
+// AUTO SAVE  textarea to local storage
+$(document).ready (function() {
+    $(".textInput").val(localStorage.getItem("old-version-textInput"));
+    $(".textInput").on("keyup", function(itm) { 
+        localStorage.setItem("old-version-textInput", $(".textInput").val());
+    })
+})
 
 var textInput = document.getElementById("textInput").value;
 var textOutput = document.getElementById("textOutput").value;
