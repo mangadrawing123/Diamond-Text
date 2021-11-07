@@ -2,36 +2,36 @@
 
 @font-face {
     font-family: 'CC Astro City';
-    src: url('fonts/CCAstroCity.woff2') format('woff2'),
-        url('fonts/CCAstroCity.woff') format('woff');
+    src: url('/fonts/CCAstroCity.woff2') format('woff2'),
+        url('/fonts/CCAstroCity.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Jack Armstrong BB';
-    src: url('fonts/Jack-Armstrong.ttf') format('truetype');
+    src: url('/fonts/Jack-Armstrong.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'HLcomic1_normal';
-    src: url('fonts/HLcomic1_normal.ttf') format('truetype');
+    src: url('/fonts/HLcomic1_normal.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'CC Astro City';
-    src: url('fonts/ccastro-city.ttf') format('truetype');
+    src: url('/fonts/ccastro-city.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'CC Jim Lee';
-    src: url('fonts/ccjim-lee-italic.ttf') format('truetype');
+    src: url('/fonts/ccjim-lee-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -39,7 +39,7 @@
 
 @font-face {
     font-family: 'Augie';
-    src: url('fonts/augie.ttf') format('truetype');
+    src: url('/fonts/augie.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -47,7 +47,7 @@
 
 @font-face {
     font-family: 'Zud Juice';
-    src: url('fonts/zud-juice.regular.ttf') format('truetype');
+    src: url('/fonts/zud-juice.regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
     font-family: 'Anime Ace Regular';
-    src: url('fonts/animeace2_reg.ttf') format('truetype');
+    src: url('/fonts/animeace2_reg.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
     font-family: 'Anime Ace Bold';
-    src: url('fonts/animeace2_bld.ttf') format('truetype');
+    src: url('/fonts/animeace2_bld.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
     font-family: 'Anime Ace Italic';
-    src: url('fonts/animeace2_ital.ttf') format('truetype');
+    src: url('/fonts/animeace2_ital.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -80,8 +80,8 @@
 
 @font-face {
     font-family: 'Komika Text Kaps';
-    src: url('fonts/KomikaTextKaps.woff2') format('woff2'),
-        url('fonts/KomikaTextKaps.woff') format('woff');
+    src: url('/fonts/KomikaTextKaps.woff2') format('woff2'),
+        url('/fonts/KomikaTextKaps.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

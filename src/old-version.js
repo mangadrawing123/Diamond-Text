@@ -1,3 +1,7 @@
+window.onload = function() {
+    $('#pasteButton').click();
+}
+
 var textInput = document.getElementById("textInput").value;
 var textOutput = document.getElementById("textOutput").value;
 

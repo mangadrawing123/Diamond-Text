@@ -93,7 +93,7 @@ function copyText() {
     let textarea = document.querySelector("#textInput");
     textarea.select();
     document.execCommand("copy");
-    alert("INPUT copied!")
+    // alert("INPUT copied!")
 }
 
 function button() { //ENTER BUTTON
@@ -168,7 +168,10 @@ $(document).ready(function() {
         $('.side').toggleClass("active");
         $('.grid').toggleClass("gridToggle")
     })
-    $('.button.old-version').on('click', function() { console.log("hello")})
+    $('.button.old-version').on('click', function() { 
+        console.log("hello");
+        copyText();
+    })
 
     $(".download-toggle").on('click', function(e) { 
         e.preventDefault();
