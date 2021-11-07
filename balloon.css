@@ -53,6 +53,31 @@
     font-display: swap;
 }
 
+
+@font-face {
+    font-family: 'Anime Ace Regular';
+    src: url('fonts/animeace2_reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Anime Ace Bold';
+    src: url('fonts/animeace2_bld.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Anime Ace Italic';
+    src: url('fonts/animeace2_ital.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'Komika Text Kaps';
     src: url('fonts/KomikaTextKaps.woff2') format('woff2'),
@@ -61,11 +86,7 @@
     font-style: normal;
     font-display: swap;
 }
-/* @font-face {
-  font-family: 'komika';
-  src: url('fonts/KOMTXTK_.ttf') format('truetype');
-  font-display: swap;
-} */
+
 :root {
   --background: white;
   --blue-color: #3E8CEC;
