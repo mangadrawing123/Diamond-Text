@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'CC Astro City';
-    src: url('fonts/CCAstroCity.woff2') format('woff2'),
-        url('fonts/CCAstroCity.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
