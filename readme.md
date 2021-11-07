@@ -15,6 +15,11 @@ Here is a tutorial :
 
 https://www.youtube.com/watch?v=kOqdpEsisSI
 
+
+#### CheatSheet + Script Template - google docs link:
+
+![CheatSheet Google Docs](https://docs.google.com/document/d/1oRFdTXfcPPsUMA76TO1fOLLClGGem4W7DCmLSgDB_BA/edit#)
+
 #### Add images :
 
 ![types_of_images](https://celcliptipsprod.s3-ap-northeast-1.amazonaws.com/tips_article_body/afc5/1409672/aea0a0fea1dc8122ded5f3e078774b11)
