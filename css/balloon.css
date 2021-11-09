@@ -239,7 +239,7 @@ button {
 .webtoonImage {
   grid-area: webtoon;
   /* display: grid; */
-  font-family: "CC Wild Words";
+  /* font-family: "CC Wild Words"; */
   justify-self: center;
   align-self: center;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
