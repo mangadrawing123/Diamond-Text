@@ -136,7 +136,8 @@ result = result.replace(regexBalloon, '<div class="balloon">$2</div>');
           
 $(function() {
     $("#ListMenuFonts").change(function() {
-        $(".webtoonImage").css("font-family", $(this).val());
+        // $(".webtoonImage").css("font-family", $(this).val());
+        $(".balloon").css("font-family", $(this).val());
     })
 })
           console.log(result);
