@@ -1,6 +1,15 @@
 @import url(//db.onlinewebfonts.com/c/71976204cf6d53991ececd406824ec45?family=JackArmstrongBB);
 
 @font-face {
+    font-family: 'Anime Ace';
+    src: url('/fonts/AnimeAce.woff2') format('woff2'),
+        url('/fonts/AnimeAce.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'CC Astro City';
     src: url('/fonts/CCAstroCity.woff2') format('woff2'),
         url('/fonts/CCAstroCity.woff') format('woff');
