@@ -31,13 +31,13 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
+/* @font-face {
     font-family: 'CC Astro City';
     src: url('/fonts/ccastro-city.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 @font-face {
     font-family: 'CC Jim Lee';
     src: url('/fonts/ccjim-lee-italic.ttf') format('truetype');
