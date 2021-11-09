@@ -153,7 +153,7 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - desktop app save textarea at txt in local folder , and able to open local txt folder.
-
+- donwlaod yutube  yaeow - Behind the Clouds 
 
 - whisper tail f up
 - txt file comic scirpt test temapltet insert to textarea.
