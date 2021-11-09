@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Anime Ace';
     src: url('/fonts/AnimeAce.woff2') format('woff2'),
@@ -10,7 +9,7 @@
 
 @font-face {
     font-family: 'CC Astro City';
-    src: url('/fonts/CCAstroCity.woff2') format('woff2'),
+    src: url('/fonts/CCAs/AstroCity.woff2') format('woff2'),
         url('/fonts/CCAstroCity.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -61,7 +60,7 @@
     font-display: swap;
 }
 
-/* 
+
 @font-face {
     font-family: 'Anime Ace Regular';
     src: url('/fonts/animeace2bb_tt/animeace2_reg.ttf') format('truetype');
@@ -84,7 +83,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 @font-face {
     font-family: 'Komika Text Kaps';
@@ -238,7 +237,7 @@ button {
 .webtoonImage {
   grid-area: webtoon;
   /* display: grid; */
-  /* font-family: "CC Wild Words"; */
+  font-family: "CC Wild Words";
   justify-self: center;
   align-self: center;
     -webkit-box-shadow: -3px -2px 17px 6px rgba(0,0,0,0.24); 
