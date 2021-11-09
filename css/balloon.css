@@ -56,7 +56,7 @@
 
 @font-face {
     font-family: 'Anime Ace Regular';
-    src: url('/fonts/animeace2_reg.ttf') format('truetype');
+    src: url('/fonts/animeace.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
     font-family: 'Anime Ace Bold';
-    src: url('/fonts/animeace2_bld.ttf') format('truetype');
+    src: url('/fonts/animeace_b.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
     font-family: 'Anime Ace Italic';
-    src: url('/fonts/animeace2_ital.ttf') format('truetype');
+    src: url('/fonts/animeace_i.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
