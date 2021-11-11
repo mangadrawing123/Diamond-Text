@@ -152,9 +152,12 @@ FINAL - seperaete action to big rectangle , dialog to balloon , with just typing
 - checkbox unable action text and name regex two option
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-- desktop app save textarea at txt in local folder , and able to open local txt folder.
-- donwlaod yutube  yaeow - Behind the Clouds 
+- 15 pages outlien animatino- 
+- anime ace font elble use on webiste onlie
 
+
+- donwlaod yutube  yaeow - Behind the Clouds 
+- desktop app save textarea at txt in local folder , and able to open local txt folder.
 - whisper tail f up
 - txt file comic scirpt test temapltet insert to textarea.
 - store firebase text file liek gogole docs , users sign in
