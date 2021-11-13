@@ -160,6 +160,14 @@ document.querySelector(".webtoonImage").innerHTML = result;
       });
     });
 
+    //display image list in webtoon img3/long0001, 0002, ...
+    let count = 0;
+    let pad = "0000";
+    $(".container-img").each(function() {
+        let answer = pad.substring(0, pad.length - count.toString().length) + count;
+        $(this).find("img").attr("src", "img3/long" + answer + ".png");
+        count++;
+    });
 
 }
 
