@@ -161,7 +161,6 @@ document.querySelector(".webtoonImage").innerHTML = result;
     });
 
 
-
 }
 
 $(document).ready(function() {
