@@ -19,10 +19,25 @@ function separateScriptDialogToArray(textInput) {
     .map(s => s.replace("\t", ""))
     .filter(Boolean);
 }
+
 function splitDialogOnlyToArray(textInput) {
     let str = textInput.replace(/\n{1,}/g, "\n")
     return array = str.split("\n")
         .map(s => s.replace(/^\t{1,}/gm, ""))
+}
+
+function breakAtCommaToArray(textInput) {
+    let str = textInput.replace(/\.\s/g, ".\n")
+    resultI = str.replace(/\"/g, "");
+    resultH = resultI.replace(/\-\-\s/g, "--\n");
+    resultG = resultH.replace(/\u2026|\.{3}/g, "...\n");
+    resultF = resultG.replace(/\!\s/g, "!\n");
+    resultE = resultF.replace(/\)\s/g, ")\n");
+    resultD = resultE.replace(/\,\s/g, ",\n");
+    resultC = resultD.replace(/\:/g, ":\n");
+    resultB = resultC.replace(/\.\s/g, ".\n");
+    let resultA = resultB.replace(/\?\s/g, "?\n");
+    return splitDialogOnlyToArray(resultA);
 }
 
 function breakWebtoonAt5(str) {
@@ -202,27 +217,31 @@ function keepDialogOnly() {
     document.getElementById("textOutput").value=result;
 }
 
-
-
 async function checkBox() {
 var dialogFileRadioButton = document.getElementById("dialogFileRadioButton");
 var scriptDialogRadioButton = document.getElementById("scriptDialogRadioButton");
+var breakAtCommaRadioButton = document.getElementById("breakAtCommaRadioButton");
 var textInput = document.getElementById("textInput").value;
 var textOutput = document.getElementById("textOutput").value;
 
-if(scriptDialogRadioButton.checked == true) {
+if (scriptDialogRadioButton.checked == true) {
         let array = separateScriptDialogToArray(textInput);
         let result = turnArrayToBalloonShortToArray(array);
         let  myTable = populateTable(result);
         document.getElementById("myDiv").innerHTML = myTable;
-        document.getElementById("textOutput").value = result.join("\n\n\n");
-        console.log(myTable)
+        document.getElementById("textOutput").value = result.join("\n\n");
     } else if (dialogFileRadioButton.checked == true) {
         let array = splitDialogOnlyToArray(textInput)
         let result = turnArrayToBalloonShortToArray(array)
         let  myTable = populateTable(result);
         document.getElementById("myDiv").innerHTML = myTable;
-        document.getElementById("textOutput").value = result.join("\n\n\n");
+        document.getElementById("textOutput").value = result.join("\n\n");
+    } else if (breakAtCommaRadioButton.checked == true) {
+        let array = breakAtCommaToArray(textInput)
+        let result = turnArrayToBalloonShortToArray(array)
+        let  myTable = populateTable(result);
+        document.getElementById("myDiv").innerHTML = myTable;
+        document.getElementById("textOutput").value = result.join("\n\n");
     }
 }
 
@@ -346,6 +365,7 @@ document.getElementById("enterButton").addEventListener("click", checkBox);
 document.getElementById("pasteButton").addEventListener("click", paste);
 document.getElementById("scriptDialogRadioButton").addEventListener("click", checkBox);
 document.getElementById("dialogFileRadioButton").addEventListener("click", checkBox);
+document.getElementById("breakAtCommaRadioButton").addEventListener("click", checkBox);
 document.getElementsByClassName("copyEachButton").addEventListener("click", copyEachButtonClick);
 
 function copyEachButtonClick() {
